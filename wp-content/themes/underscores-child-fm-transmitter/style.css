@@ -1,0 +1,13 @@
+/*!
+Theme Name: underscores Child (Fm transmitter)
+Template: underscores
+Author: Kondaurov Dmytro
+Author URI: http://kondaurov.sytes.net/
+Description: child theme of underscores
+Version: 1.0
+*/
+/*--------------------------------------------------------------
+# import main style from parent theme underscores
+--------------------------------------------------------------*/
+@import url("../underscores/style.css");
+/*_______________________________________________________________*/
