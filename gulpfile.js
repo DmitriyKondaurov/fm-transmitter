@@ -33,7 +33,7 @@ gulp.task('css-libs', function() {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "localhost/wp/",
+        proxy: "localhost/",
         // proxy: "https://shops/sytes.net",
         // server: {
         //     baseDir: './wp-content/themes'
