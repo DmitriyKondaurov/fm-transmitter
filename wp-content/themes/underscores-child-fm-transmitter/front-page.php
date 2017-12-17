@@ -17,7 +17,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 <h1>www</h1>
-            <ul><li>1</li><li>2</li></ul>
 			<?php // Show the selected frontpage content.
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
