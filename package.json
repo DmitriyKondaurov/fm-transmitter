@@ -1,8 +1,9 @@
 {
-  "name": "Fm-transmitter",
+  "name": "fm-transmitter",
   "version": "1.0.0",
-  "description": "landingpage",
+  "description": "shops.sytes.net",
   "main": "gulpfile.js",
+  "dependencies": {},
   "scripts": {
     "test": "mocha"
   },
@@ -10,13 +11,15 @@
     "type": "git",
     "url": "git+ssh://git@github.com/DmitriyKondaurov/fm-transmitter.git"
   },
-  "author": "Kondaurov Dmitriy",
+  "keywords": [
+    "fm-transmitter"
+  ],
+  "author": "DmitriyKondaurov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DmitriyKondaurov/fm-transmitter/issues"
   },
-  "homepage": "https://github.com/DmitriyKondaurov/fm-transmitter",
-  "dependencies": {},
+  "homepage": "https://github.com/DmitriyKondaurov/fm-transmitter#readme",
   "devDependencies": {
     "bower": "^1.8.0",
     "browser-sync": "^2.11.1",

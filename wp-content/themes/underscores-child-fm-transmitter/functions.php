@@ -28,4 +28,26 @@ function add_robotstxt($output){
 
 	return $output;
 }
-?>
+function underscores_child_scripts() {
+	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
+
+//_____________________________________________ CUSTOM STYLES libs __________________________________________________
+	wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/libs-style.min.css',
+		array(), '1.0', false );
+//-----------------------------------------------------------------------------------------------------------------
+
+//___________________________________________    FONT AWESOME    ____________________________________________
+	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/b41b6eacb2.js', array(), '1.0',
+		false );
+//-----------------------------------------------------------------------------------------------------------------
+
+//_______________________________________ CUSTOM  JS PLUGINS libs__________________________________________________
+	wp_enqueue_script( 'custom-libs-plugins-js', get_template_directory_uri() . '/libs.min.js', array(), '1.0',
+		false );
+//-----------------------------------------------------------------------------------------------------------------
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'underscores_child_scripts' );

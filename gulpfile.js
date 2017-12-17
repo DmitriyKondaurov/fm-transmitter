@@ -33,13 +33,13 @@ gulp.task('css-libs', function() {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
+        //     baseDir: './wp-content/themes'
         proxy: "localhost/",
         // proxy: "https://shops/sytes.net",
         // server: {
-        //     baseDir: './wp-content/themes'
         // },
-        notify: false,
-        browser: ["chrome"]
+        // browser: ["chrome"].,
+        notify: false
     });
 });
 
@@ -61,7 +61,7 @@ gulp.task('watch', ['browser-sync', 'build'], function() {
     gulp.watch('./wp-content/themes/underscores-child-fm-transmitter/sass/**/*.+(scss|sass)', ['sass']);
     gulp.watch('./wp-content/themes/underscores-child-fm-transmitter/**/*.+(php|js)', browserSync.reload);
 });
-//перед watch, build надо сделать clean
+//перед watch, build надо сделать clean папки dist
 gulp.task('clean', function () {
     return del.sync('./wp-content/themes/underscores-child-fm-transmitter/dist');
 });

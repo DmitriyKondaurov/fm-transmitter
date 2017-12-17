@@ -1,0 +1,30 @@
+body {
+  color: $main-text-color;
+  font: 400 14px/24px $main-font;
+  background-color: lightyellow;
+}
+img {
+  max-width: 100%;
+}
+select, input:not([type=submit]) {
+  width: 90%;
+  height: 25px;
+  text-align: center;
+}
+
+
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
