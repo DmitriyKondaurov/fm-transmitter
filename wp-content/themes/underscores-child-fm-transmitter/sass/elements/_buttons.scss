@@ -1,4 +1,6 @@
-
+a {
+  text-decoration-color: $brand-color;
+}
 @media screen and ($xs) {
   .button {
   }

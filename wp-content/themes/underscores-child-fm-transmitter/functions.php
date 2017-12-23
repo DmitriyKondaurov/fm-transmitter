@@ -42,7 +42,7 @@ function underscores_child_scripts() {
 //-----------------------------------------------------------------------------------------------------------------
 
 //_______________________________________ CUSTOM  JS PLUGINS libs__________________________________________________
-	wp_enqueue_script( 'custom-libs-plugins-js', get_template_directory_uri() . '/libs.min.js', array(), '1.0',
+	wp_enqueue_script( 'custom-libs-plugins-js', get_stylesheet_directory_uri() . '/libs.min.js', array(), '1.0',
 		false );
 //-----------------------------------------------------------------------------------------------------------------
 

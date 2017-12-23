@@ -1,7 +1,9 @@
 body {
   color: $main-text-color;
   font: 400 14px/24px $main-font;
-  background-color: lightyellow;
+  background-color: black;
+  max-width: $wrapper;
+  margin: auto;
 }
 img {
   max-width: 100%;

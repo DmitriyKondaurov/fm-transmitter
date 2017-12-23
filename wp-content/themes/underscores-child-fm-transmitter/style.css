@@ -259,8 +259,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("fonts/Glyphicons/glyphicons-halflings-regular.eot");
+  src: url("fonts/Glyphicons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/Glyphicons/glyphicons-halflings-regular.woff2") format("woff2"), url("fonts/Glyphicons/glyphicons-halflings-regular.woff") format("woff"), url("fonts/Glyphicons/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/Glyphicons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -6358,9 +6358,11 @@ template {
   display: none; }
 
 body {
-  color: #222222;
-  font: 400 14px/24px "Open Sans";
-  background-color: lightyellow; }
+  color: lightyellow;
+  font: 400 14px/24px "Arial";
+  background-color: black;
+  max-width: 1070px;
+  margin: auto; }
 
 img {
   max-width: 100%; }
@@ -6370,6 +6372,16 @@ select, input:not([type=submit]) {
   height: 25px;
   text-align: center; }
 
+.slider_scroll_bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font: 400 34px/24px 'FontAwesome'; }
+
 ul {
   list-style: none;
   padding: 0; }
@@ -6378,75 +6390,70 @@ ol {
   list-style: none;
   padding: 0; }
 
-.site-header .wrapper {
-  max-width: 1170px;
-  margin: auto; }
+.wpcf7-form {
+  width: 265px;
+  height: 40px;
+  margin: auto;
+  padding: 5px;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.26);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.26);
+  border: 1px solid rgba(121, 120, 118, 0.71);
+  background-color: #2c2c2b; }
 
-.connect_message, .authorization {
-  text-align: right; }
+.wpcf7-submit {
+  position: relative;
+  left: 20px;
+  z-index: 2;
+  width: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-left: 1px solid rgba(224, 224, 222, 0.17);
+  color: #2c2c2b; }
 
-.author {
-  text-align: center;
-  color: red; }
+.wpcf7-text {
+  background-color: #2c2c2b;
+  border: none; }
 
-.logo {
-  text-align: center;
-  margin: 0;
-  padding: 20px 0; }
-  .logo .textwidget {
-    font-family: "Comic Sans";
-    font-size: 30px;
-    text-transform: uppercase; }
-    .logo .textwidget span:first-child {
-      color: #ffd500;
-      font-weight: 300; }
-    .logo .textwidget span:last-child {
-      color: grey;
-      font-weight: 700; }
+a {
+  -webkit-text-decoration-color: darkgoldenrod;
+          text-decoration-color: darkgoldenrod; }
 
-.top_search {
-  text-align: center;
-  padding: 10px 0; }
-  .top_search input {
-    height: 30px; }
-  .top_search .fa-search {
-    position: relative;
-    right: -50px;
-    font-size: 18px;
-    color: rgba(224, 224, 222, 0.17); }
-  .top_search .wpcf7-form {
-    width: 265px;
-    height: 40px;
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1070px;
+  height: 40px;
+  padding: 5px; }
+  .site-header.active {
+    background-color: rgba(135, 199, 255, 0.3); }
+  .site-header .site-title {
+    display: inline-block;
     margin: auto;
-    padding: 5px;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.26);
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.26);
-    border: 1px solid rgba(121, 120, 118, 0.71);
-    background-color: #2c2c2b; }
-  .top_search .wpcf7-submit {
-    position: relative;
-    left: 20px;
-    z-index: 2;
-    width: 40px;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    border-left: 1px solid rgba(224, 224, 222, 0.17);
-    color: #2c2c2b; }
-  .top_search .wpcf7-text {
-    background-color: #2c2c2b;
-    border: none; }
-
-@media screen and (min-width: 568px) {
-  .logo {
-    float: left;
+    height: 30px;
     overflow: hidden; }
-  .top_search {
+    .site-header .site-title a {
+      font: 400 12px/18px "Arial";
+      color: darkgoldenrod;
+      vertical-align: 7px; }
+  .site-header .phone {
     float: right;
-    overflow: hidden;
-    padding: 20px 0; }
-    .top_search input {
-      height: 40px; } }
+    margin: auto;
+    height: 30px;
+    overflow: hidden; }
+    .site-header .phone .tel {
+      font: 400 12px/18px "Arial";
+      color: lightyellow;
+      vertical-align: middle; }
+    .site-header .phone .viber {
+      border: 1px solid lightyellow;
+      -webkit-border-radius: 8px;
+              border-radius: 8px;
+      padding: 1px 2px;
+      background-color: #a16fff; }
 
 footer {
   padding-top: 200px;
