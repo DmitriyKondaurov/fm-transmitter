@@ -6372,15 +6372,89 @@ select, input:not([type=submit]) {
   height: 25px;
   text-align: center; }
 
-.slider_scroll_bottom {
-  position: fixed;
+.loader {
+  background: none repeat scroll 0 0 #000;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader .loader_inner {
+    background-image: url("img/load.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000;
+    height: 70px;
+    width: 70px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
+a.slider_scroll_bottom {
+  z-index: 2;
+  position: absolute;
+  bottom: 40px;
+  left: 46%;
+  width: 33px;
+  height: 33px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid darkgoldenrod;
+  -webkit-animation: bounce 2s infinite 2s;
+          animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
   text-align: center;
-  font: 400 34px/24px 'FontAwesome'; }
+  font: 400 24px/28px 'FontAwesome';
+  color: darkgoldenrod; }
+  a.slider_scroll_bottom:visited, a.slider_scroll_bottom:focus {
+    text-decoration: none; }
+  a.slider_scroll_bottom:hover {
+    text-decoration: none;
+    color: purple;
+    border-color: purple;
+    cursor: pointer; }
+
+@-webkit-keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); } }
 
 ul {
   list-style: none;
@@ -6414,10 +6488,6 @@ ol {
 .wpcf7-text {
   background-color: #2c2c2b;
   border: none; }
-
-a {
-  -webkit-text-decoration-color: darkgoldenrod;
-          text-decoration-color: darkgoldenrod; }
 
 .site-header {
   position: fixed;
@@ -6461,9 +6531,5 @@ footer {
   footer .site-info {
     text-align: center; }
 
-.container:not(.site-info) {
-  background-color: #fff;
-  padding: 30px;
-  border: 2px solid grey; }
-  .container:not(.site-info) h1 {
-    text-align: center; }
+.title_new_brand {
+  text-align: center; }

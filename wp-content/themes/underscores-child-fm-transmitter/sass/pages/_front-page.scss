@@ -1,12 +1,9 @@
-  .container:not(.site-info) {
-    background-color: #fff;
-    padding: 30px;
-    border: 2px solid grey;
-    h1 {
-      text-align: center;
-    }
-  }
+.container:not(.site-info) {
 
+}
+.title_new_brand {
+  text-align: center;
+}
 //________________________________________________________________________________
 @media screen and ($xs) {
 
