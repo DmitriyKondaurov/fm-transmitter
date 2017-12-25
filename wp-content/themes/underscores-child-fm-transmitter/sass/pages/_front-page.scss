@@ -1,5 +1,10 @@
+.hero {
+  background: linear-gradient(rgba(16, 32, 48, 1),rgba(16, 32, 48, 0.7),rgba(16, 32, 48, 1)),url(img/bg-hero.jpg) center/cover no-repeat ;
+  background-blend-mode: multiply;
+  height: 100vh;
+}
 .container:not(.site-info) {
-
+  max-width: $wrapper;
 }
 .title_new_brand {
   text-align: center;

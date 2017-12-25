@@ -1,8 +1,8 @@
 body {
   color: $main-text-color;
   font: 400 14px/24px $main-font;
-  background-color: black;
-  max-width: $wrapper;
+  background: linear-gradient(to right, #000000, rgb(32, 67, 89), #000000);
+
   margin: auto;
 }
 img {

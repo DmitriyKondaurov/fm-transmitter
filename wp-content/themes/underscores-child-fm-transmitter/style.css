@@ -6360,8 +6360,9 @@ template {
 body {
   color: lightyellow;
   font: 400 14px/24px "Arial";
-  background-color: black;
-  max-width: 1070px;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#204359), to(#000000));
+  background: -webkit-linear-gradient(left, #000000, #204359, #000000);
+  background: linear-gradient(to right, #000000, #204359, #000000);
   margin: auto; }
 
 img {
@@ -6499,7 +6500,7 @@ ol {
   height: 40px;
   padding: 5px; }
   .site-header.active {
-    background-color: rgba(135, 199, 255, 0.3); }
+    background-color: rgba(32, 67, 89, 0.3); }
   .site-header .site-title {
     display: inline-block;
     margin: auto;
@@ -6530,6 +6531,16 @@ footer {
   margin: auto; }
   footer .site-info {
     text-align: center; }
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(#102030), color-stop(rgba(16, 32, 48, 0.7)), to(#102030)), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: -webkit-linear-gradient(#102030, rgba(16, 32, 48, 0.7), #102030), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: linear-gradient(#102030, rgba(16, 32, 48, 0.7), #102030), url(img/bg-hero.jpg) center/cover no-repeat;
+  background-blend-mode: multiply;
+  height: 100vh; }
+
+.container:not(.site-info) {
+  max-width: 1070px; }
 
 .title_new_brand {
   text-align: center; }

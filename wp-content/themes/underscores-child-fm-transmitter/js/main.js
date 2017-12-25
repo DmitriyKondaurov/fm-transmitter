@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(window).scroll(function() {
+    $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
             $(".site-header").addClass("active");
         } else {
@@ -7,7 +7,7 @@ $(document).ready(function() {
         }
     });
 });
-$(window).load(function() {
+$(window).on("load", function() {
     $(".loader_inner").fadeOut();
     $(".loader").delay(400).fadeOut("slow");
 });
