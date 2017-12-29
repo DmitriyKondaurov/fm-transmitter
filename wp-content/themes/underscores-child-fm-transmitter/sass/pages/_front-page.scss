@@ -1,10 +1,118 @@
+.wrapper  {
+  max-width: $wrapper;
+  margin: auto;
+}
 .hero {
-  background: linear-gradient(rgba(16, 32, 48, 1),rgba(16, 32, 48, 0.7),rgba(16, 32, 48, 1)),url(img/bg-hero.jpg) center/cover no-repeat ;
+  background: linear-gradient(rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9)),url(img/bg-hero.jpg) center/cover no-repeat ;
   background-blend-mode: multiply;
   height: 100vh;
+  //height: 500px;
+  .brand_name {
+    max-width: 620px;
+    margin: auto;
+    img.brand_new {
+      padding: 50px 10px 0 5px;
+      width: 100px;
+    }
+    .slogan {
+      margin: 0;
+      padding: 5px;
+      color: $sec-text-color;
+      font: 400 20px/24px $sec-font;
+    }
+  }
+  .hero_main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    &>* {
+      margin: 10px;
+    }
+  }
+  img.main_img {
+    max-width: 300px;
+  }
+  .hero_shot_spec {
+    li {
+      padding: 5px;
+      font: 400 14px/24px $main-font;
+      &:before {
+        content: url('img/checkbox-icon-red.png');
+        margin: 10px;
+        vertical-align: -3px;
+      }
+    }
+  }
+  .call_to_action {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid $brand-color;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    .attention {
+      position: relative;
+      top: -22px;
+      width: 100px;
+      margin: auto;
+      border-radius: 20px;
+      background-color: rgba(255, 50, 50, 1);
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .prices {
+      text-align: center;
+      margin: 20px 0 10px 0;
+      .old_price {
+        color: #8A2525;
+        font: 700 24px/28px $main-font;
+        text-decoration: line-through;
+      }
+      .new_price {
+        font: 700 32px/28px $main-font;
+        color: $main-color;
+      }
+    }
+    .discount{
+      padding: 10px 3px;
+      border-radius: 20px;
+      color: #fbed50;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .left_pcs {
+      padding: 3px 10px;
+      border-radius: 5px;
+      background-color: lightgrey;
+      color: black;
+      font-size: 18px;
+    }
+    .order_button {
+      padding: 10px 25px;
+      margin: 20px auto;
+      outline: none;
+      border-color: $brand-color;
+      color: $sec-color;
+      background-color: #2aca76;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 700;
+      &:hover {
+        color: $main-text-color;
+        border-color: black;
+      }
+      &:active{
+        transition: all 50ms;
+        transform: translateY(2px);
+      }
+    }
+  }
 }
-.container:not(.site-info) {
-  max-width: $wrapper;
+.brand {
+  text-transform: uppercase;
+  color: $brand-color;
+  font-family: $sec-font;
 }
 .title_new_brand {
   text-align: center;

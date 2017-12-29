@@ -32,10 +32,12 @@
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo(
 				        'name' ); ?></a></h1>
+			<?php else : ?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo(
+				        'name' ); ?> <span
+                                class="brand"> 'BT-800'</span></a></h1>
                 <div class="phone" >
                     <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
                             +380978314414</a>

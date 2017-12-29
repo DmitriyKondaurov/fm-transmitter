@@ -3,12 +3,15 @@
   top: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  max-width: 1070px;
   height: 40px;
   padding: 5px;
   &.active {
-    background-color: rgba(32, 67, 89, 0.3);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .site-branding {
+    max-width: $wrapper;
+    margin: auto;
   }
   .site-title {
     display: inline-block;
@@ -16,9 +19,11 @@
     height: 30px;
     overflow: hidden;
     a {
-      font: 400 12px/18px $main-font;
-      color: $brand-color;
       vertical-align: 7px;
+      font: 400 12px/18px $main-font;
+      text-transform: capitalize;
+      word-spacing: 2px;
+      color: $sec-text-color;
     }
   }
   .phone {
