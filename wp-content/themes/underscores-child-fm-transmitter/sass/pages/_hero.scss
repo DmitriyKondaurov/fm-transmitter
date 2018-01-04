@@ -1,12 +1,6 @@
-.wrapper  {
-  max-width: $wrapper;
-  margin: auto;
-}
 .hero {
   background: linear-gradient(rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9)),url(img/bg-hero.jpg) center/cover no-repeat ;
   background-blend-mode: multiply;
-  height: 100vh;
-  //height: 500px;
   .brand_name {
     max-width: 620px;
     margin: auto;
@@ -45,6 +39,7 @@
     }
   }
   .call_to_action {
+    //flex-grow: 1;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid $brand-color;
     border-radius: 10px;
@@ -56,25 +51,32 @@
       width: 100px;
       margin: auto;
       border-radius: 20px;
+      border: 1px solid $brand-color;
       background-color: rgba(255, 50, 50, 1);
       font-weight: 900;
       text-align: center;
       text-transform: uppercase;
+      letter-spacing: 2px;
     }
     .prices {
       text-align: center;
-      margin: 20px 0 10px 0;
+      margin: 10px 0 10px 0;
       .old_price {
+        display: block;
         color: #8A2525;
         font: 700 24px/28px $main-font;
         text-decoration: line-through;
       }
       .new_price {
+        display: block;
         font: 700 32px/28px $main-font;
         color: $main-color;
       }
     }
-    .discount{
+    .discount {
+      color: $sec-text-color;
+    }
+    .discount_amount {
       padding: 10px 3px;
       border-radius: 20px;
       color: #fbed50;
@@ -89,21 +91,21 @@
       font-size: 18px;
     }
     .order_button {
-      padding: 10px 25px;
-      margin: 20px auto;
-      outline: none;
+      padding: 7px 15px;
+      margin: 10px auto;
       border-color: $brand-color;
-      color: $sec-color;
+      border-radius: 7px;
+      outline: none;
+      color: black;
       background-color: #2aca76;
       text-transform: uppercase;
-      font-size: 20px;
-      font-weight: 700;
+      font: 700 18px/24px $sec-font;
       &:hover {
         color: $main-text-color;
         border-color: black;
       }
       &:active{
-        transition: all 50ms;
+        transition: all 20ms;
         transform: translateY(2px);
       }
     }
@@ -116,6 +118,13 @@
 }
 .title_new_brand {
   text-align: center;
+}
+#carousel_1 {
+  width: 300px;
+  vertical-align: bottom;
+  & .owl-dots .owl-dot.active span, & .owl-dots .owl-dot:hover span {
+    background-color: $brand-color;
+  }
 }
 //________________________________________________________________________________
 @media screen and ($xs) {

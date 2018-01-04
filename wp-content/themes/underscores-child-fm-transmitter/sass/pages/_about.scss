@@ -1,0 +1,30 @@
+.about {
+  background: linear-gradient(rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9)),url(img/bg-hero.jpg) center/cover no-repeat ;
+  background-blend-mode: multiply;
+    li {
+      padding: 5px;
+      font: 400 14px/24px $main-font;
+      &:before {
+        content: url('img/checkbox-icon-red.png');
+        margin: 10px;
+        vertical-align: -3px;
+      }
+    }
+  }
+//________________________________________________________________________________
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
+

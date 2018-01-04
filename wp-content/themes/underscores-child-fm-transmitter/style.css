@@ -6373,6 +6373,10 @@ select, input:not([type=submit]) {
   height: 25px;
   text-align: center; }
 
+.wrapper {
+  max-width: 1280px;
+  margin: auto; }
+
 .loader {
   z-index: 9999;
   position: fixed;
@@ -6405,14 +6409,14 @@ a.slider_scroll_bottom {
   height: 33px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  border: 2px solid rgba(232, 136, 22, 0.92);
+  border: 2px solid #ff9616;
   -webkit-animation: bounce 2s infinite 2s;
           animation: bounce 2s infinite 2s;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   text-align: center;
   font: 400 24px/28px 'FontAwesome';
-  color: rgba(232, 136, 22, 0.92); }
+  color: #ff9616; }
   a.slider_scroll_bottom:visited, a.slider_scroll_bottom:focus {
     text-decoration: none; }
   a.slider_scroll_bottom:hover {
@@ -6536,16 +6540,11 @@ footer {
   footer .site-info {
     text-align: center; }
 
-.wrapper {
-  max-width: 1280px;
-  margin: auto; }
-
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 32, 48, 0.9)), color-stop(rgba(16, 32, 48, 0.9)), to(rgba(16, 32, 48, 0.9))), url(img/bg-hero.jpg) center/cover no-repeat;
   background: -webkit-linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
   background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
-  background-blend-mode: multiply;
-  height: 100vh; }
+  background-blend-mode: multiply; }
   .hero .brand_name {
     max-width: 620px;
     margin: auto; }
@@ -6587,7 +6586,7 @@ footer {
       vertical-align: -3px; }
   .hero .call_to_action {
     background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(232, 136, 22, 0.92);
+    border: 1px solid #ff9616;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     padding: 10px;
@@ -6599,21 +6598,27 @@ footer {
       margin: auto;
       -webkit-border-radius: 20px;
               border-radius: 20px;
+      border: 1px solid #ff9616;
       background-color: #ff3232;
       font-weight: 900;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: 2px; }
     .hero .call_to_action .prices {
       text-align: center;
-      margin: 20px 0 10px 0; }
+      margin: 10px 0 10px 0; }
       .hero .call_to_action .prices .old_price {
+        display: block;
         color: #8A2525;
         font: 700 24px/28px "Arial";
         text-decoration: line-through; }
       .hero .call_to_action .prices .new_price {
+        display: block;
         font: 700 32px/28px "Arial";
         color: #6ef5ff; }
     .hero .call_to_action .discount {
+      color: #DEF1B8; }
+    .hero .call_to_action .discount_amount {
       padding: 10px 3px;
       -webkit-border-radius: 20px;
               border-radius: 20px;
@@ -6628,29 +6633,49 @@ footer {
       color: black;
       font-size: 18px; }
     .hero .call_to_action .order_button {
-      padding: 10px 25px;
-      margin: 20px auto;
+      padding: 7px 15px;
+      margin: 10px auto;
+      border-color: #ff9616;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
       outline: none;
-      border-color: rgba(232, 136, 22, 0.92);
-      color: darkblue;
+      color: black;
       background-color: #2aca76;
       text-transform: uppercase;
-      font-size: 20px;
-      font-weight: 700; }
+      font: 700 18px/24px "Montserrat", sans-serif; }
       .hero .call_to_action .order_button:hover {
         color: lightyellow;
         border-color: black; }
       .hero .call_to_action .order_button:active {
-        -webkit-transition: all 50ms;
-        transition: all 50ms;
+        -webkit-transition: all 20ms;
+        transition: all 20ms;
         -webkit-transform: translateY(2px);
             -ms-transform: translateY(2px);
                 transform: translateY(2px); }
 
 .brand {
   text-transform: uppercase;
-  color: rgba(232, 136, 22, 0.92);
+  color: #ff9616;
   font-family: "Montserrat", sans-serif; }
 
 .title_new_brand {
   text-align: center; }
+
+#carousel_1 {
+  width: 300px;
+  vertical-align: bottom; }
+  #carousel_1 .owl-dots .owl-dot.active span, #carousel_1 .owl-dots .owl-dot:hover span {
+    background-color: #ff9616; }
+
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 32, 48, 0.9)), color-stop(rgba(16, 32, 48, 0.9)), to(rgba(16, 32, 48, 0.9))), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: -webkit-linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
+  background-blend-mode: multiply; }
+  .about li {
+    padding: 5px;
+    font: 400 14px/24px "Arial"; }
+    .about li:before {
+      content: url("img/checkbox-icon-red.png");
+      margin: 10px;
+      vertical-align: -3px; }

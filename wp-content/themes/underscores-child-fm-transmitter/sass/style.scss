@@ -26,15 +26,17 @@ Version: 1.0
 
 @import 'fonts/fonts';
 
-@import 'elements/_navigation',
-        'elements/_lists',
-        'elements/_forms',
-        'elements/_tables',
-        'elements/_buttons';
+@import 'elements/navigation',
+        'elements/lists',
+        'elements/forms',
+        'elements/tables',
+        'elements/buttons';
 
 @import
         'layouts/header',
         'layouts/footer',
         'layouts/sidebar';
 
-@import 'pages/front-page';
+@import
+        'pages/hero',
+        'pages/about';
