@@ -69,7 +69,8 @@ get_header(); ?>
             <section class="about">
                 <div class="wrapper">
                 <ul class="about_full_spec">
-                    <li>Безпроводная громкая связь в авто (hands free). С помощью Bluetooth соединения с телефоном и
+                    <li class="icon-card2">Безпроводная громкая связь в авто (hands free). С помощью Bluetooth
+                        соединения с телефоном и
                         передачи звука по радио волнам в Fm диапазоне на штатную магнитолу автомобиля.
                     </li>
                     <li>Громкая связь в авто (hands free) c AUX входа. С помощью кабельного переходника (выход

@@ -6400,6 +6400,658 @@ select, input:not([type=submit]) {
     background-position: center center;
     background-color: #000; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/iconmoon/fonts/icomoon.eot?80o8la");
+  src: url("fonts/iconmoon/fonts/icomoon.eot?80o8la#iefix") format("embedded-opentype"), url("fonts/iconmoon/fonts/icomoon.ttf?80o8la") format("truetype"), url("fonts/iconmoon/fonts/icomoon.woff?80o8la") format("woff"), url("fonts/iconmoon/fonts/icomoon.svg?80o8la#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-aux1:before {
+  content: ""; }
+
+.icon-aux2:before {
+  content: ""; }
+
+.icon-aux3:before {
+  content: ""; }
+
+.icon-aux4:before {
+  content: ""; }
+
+.icon-aux5:before {
+  content: ""; }
+
+.icon-bluetooth2:before {
+  content: ""; }
+
+.icon-bluetooth3:before {
+  content: ""; }
+
+.icon-bluetooth-b:before {
+  content: ""; }
+
+.icon-bt4:before {
+  content: ""; }
+
+.icon-phone:before {
+  content: ""; }
+
+.icon-cellular:before {
+  content: ""; }
+
+.icon-phone2:before {
+  content: ""; }
+
+.icon-contact:before {
+  content: ""; }
+
+.icon-phone-outline:before {
+  content: ""; }
+
+.icon-phone3:before {
+  content: ""; }
+
+.icon-volume-control-phone2:before {
+  content: ""; }
+
+.icon-phone-square:before {
+  content: ""; }
+
+.icon-phone4:before {
+  content: ""; }
+
+.icon-phone-call:before {
+  content: ""; }
+
+.icon-phone-incoming:before {
+  content: ""; }
+
+.icon-phone-outgoing:before {
+  content: ""; }
+
+.icon-phone-off:before {
+  content: ""; }
+
+.icon-phone-missed:before {
+  content: ""; }
+
+.icon-car1:before {
+  content: ""; }
+
+.icon-card1:before {
+  content: ""; }
+
+.icon-card2:before {
+  content: ""; }
+
+.icon-card3:before {
+  content: ""; }
+
+.icon-card4:before {
+  content: ""; }
+
+.icon-card6:before {
+  content: ""; }
+
+.icon-charg1:before {
+  content: ""; }
+
+.icon-charg2:before {
+  content: ""; }
+
+.icon-charg3 .path1:before {
+  content: "";
+  color: #9e9e9e; }
+
+.icon-charg3 .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #5a5a5a; }
+
+.icon-charg3 .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #252525; }
+
+.icon-charg5:before {
+  content: ""; }
+
+.icon-charg6:before {
+  content: ""; }
+
+.icon-radio:before {
+  content: ""; }
+
+.icon-radio-tower:before {
+  content: ""; }
+
+.icon-mic:before {
+  content: ""; }
+
+.icon-microphone2:before {
+  content: ""; }
+
+.icon-record:before {
+  content: ""; }
+
+.icon-voice:before {
+  content: ""; }
+
+.icon-audio:before {
+  content: ""; }
+
+.icon-microphone3:before {
+  content: ""; }
+
+.icon-microphone4:before {
+  content: ""; }
+
+.icon-voice2:before {
+  content: ""; }
+
+.icon-record2:before {
+  content: ""; }
+
+.icon-microphone5:before {
+  content: ""; }
+
+.icon-record3:before {
+  content: ""; }
+
+.icon-voice3:before {
+  content: ""; }
+
+.icon-microphone6:before {
+  content: ""; }
+
+.icon-record4:before {
+  content: ""; }
+
+.icon-voice4:before {
+  content: ""; }
+
+.icon-microphone7:before {
+  content: ""; }
+
+.icon-record5:before {
+  content: ""; }
+
+.icon-voice5:before {
+  content: ""; }
+
+.icon-music2:before {
+  content: ""; }
+
+.icon-songs:before {
+  content: ""; }
+
+.icon-sound:before {
+  content: ""; }
+
+.icon-music3:before {
+  content: ""; }
+
+.icon-music4:before {
+  content: ""; }
+
+.icon-music5:before {
+  content: ""; }
+
+.icon-song:before {
+  content: ""; }
+
+.icon-music6:before {
+  content: ""; }
+
+.icon-songs2:before {
+  content: ""; }
+
+.icon-audio2:before {
+  content: ""; }
+
+.icon-music7:before {
+  content: ""; }
+
+.icon-song2:before {
+  content: ""; }
+
+.icon-audio3:before {
+  content: ""; }
+
+.icon-sound2:before {
+  content: ""; }
+
+.icon-note:before {
+  content: ""; }
+
+.icon-phone5:before {
+  content: ""; }
+
+.icon-mobile:before {
+  content: ""; }
+
+.icon-contact2:before {
+  content: ""; }
+
+.icon-telephone:before {
+  content: ""; }
+
+.icon-iphone:before {
+  content: ""; }
+
+.icon-touch:before {
+  content: ""; }
+
+.icon-phone6:before {
+  content: ""; }
+
+.icon-mobile2:before {
+  content: ""; }
+
+.icon-phone7:before {
+  content: ""; }
+
+.icon-cellular-phone:before {
+  content: ""; }
+
+.icon-mobile3:before {
+  content: ""; }
+
+.icon-media-play-outline:before {
+  content: ""; }
+
+.icon-play-alt:before {
+  content: ""; }
+
+.icon-video:before {
+  content: ""; }
+
+.icon-play:before {
+  content: ""; }
+
+.icon-play2:before {
+  content: ""; }
+
+.icon-media-control:before {
+  content: ""; }
+
+.icon-video2:before {
+  content: ""; }
+
+.icon-movie:before {
+  content: ""; }
+
+.icon-media-play-outline2:before {
+  content: ""; }
+
+.icon-media-play:before {
+  content: ""; }
+
+.icon-play-circle-o:before {
+  content: ""; }
+
+.icon-play-circle2:before {
+  content: ""; }
+
+.icon-play-circle3:before {
+  content: ""; }
+
+.icon-play3:before {
+  content: ""; }
+
+.icon-radio2:before {
+  content: ""; }
+
+.icon-radio3:before {
+  content: ""; }
+
+.icon-radio6:before {
+  content: ""; }
+
+.icon-radio7:before {
+  content: ""; }
+
+.icon-megaphone:before {
+  content: ""; }
+
+.icon-news:before {
+  content: ""; }
+
+.icon-announcements:before {
+  content: ""; }
+
+.icon-advertisement:before {
+  content: ""; }
+
+.icon-megaphone2:before {
+  content: ""; }
+
+.icon-advertise:before {
+  content: ""; }
+
+.icon-notify:before {
+  content: ""; }
+
+.icon-announce:before {
+  content: ""; }
+
+.icon-megaphone3:before {
+  content: ""; }
+
+.icon-advertise2:before {
+  content: ""; }
+
+.icon-notify2:before {
+  content: ""; }
+
+.icon-announce2:before {
+  content: ""; }
+
+.icon-usb2:before {
+  content: ""; }
+
+.icon-usb3:before {
+  content: ""; }
+
+.icon-usb9:before {
+  content: ""; }
+
+.icon-voice1:before {
+  content: ""; }
+
+.icon-bluetooth4:before {
+  content: ""; }
+
+.icon-bluetooth_searching:before {
+  content: ""; }
+
+.icon-bluetooth_connected:before {
+  content: ""; }
+
+.icon-directions_car:before {
+  content: ""; }
+
+.icon-markunread:before {
+  content: ""; }
+
+.icon-fiber_new:before {
+  content: ""; }
+
+.icon-label:before {
+  content: ""; }
+
+.icon-label_outline:before {
+  content: ""; }
+
+.icon-leak_add:before {
+  content: ""; }
+
+.icon-room:before {
+  content: ""; }
+
+.icon-mail_outline:before {
+  content: ""; }
+
+.icon-menu:before {
+  content: ""; }
+
+.icon-message:before {
+  content: ""; }
+
+.icon-mic2:before {
+  content: ""; }
+
+.icon-mic_none:before {
+  content: ""; }
+
+.icon-phone_bluetooth_speaker:before {
+  content: ""; }
+
+.icon-phone_forwarded:before {
+  content: ""; }
+
+.icon-phone_in_talk:before {
+  content: ""; }
+
+.icon-phone_iphone:before {
+  content: ""; }
+
+.icon-phonelink_ring:before {
+  content: ""; }
+
+.icon-play_arrow:before {
+  content: ""; }
+
+.icon-play_circle_filled:before {
+  content: ""; }
+
+.icon-play_circle_outline:before {
+  content: ""; }
+
+.icon-record_voice_over:before {
+  content: ""; }
+
+.icon-ring_volume:before {
+  content: ""; }
+
+.icon-router:before {
+  content: ""; }
+
+.icon-rss_feed:before {
+  content: ""; }
+
+.icon-sd_storage:before {
+  content: ""; }
+
+.icon-sentiment_satisfied:before {
+  content: ""; }
+
+.icon-settings_bluetooth:before {
+  content: ""; }
+
+.icon-settings_input_antenna:before {
+  content: ""; }
+
+.icon-settings_phone:before {
+  content: ""; }
+
+.icon-settings_remote:before {
+  content: ""; }
+
+.icon-settings_voice:before {
+  content: ""; }
+
+.icon-share:before {
+  content: ""; }
+
+.icon-speaker_phone:before {
+  content: ""; }
+
+.icon-star_border:before {
+  content: ""; }
+
+.icon-star_half:before {
+  content: ""; }
+
+.icon-stars:before {
+  content: ""; }
+
+.icon-tap_and_play:before {
+  content: ""; }
+
+.icon-thumb_down:before {
+  content: ""; }
+
+.icon-thumb_up:before {
+  content: ""; }
+
+.icon-thumbs_up_down:before {
+  content: ""; }
+
+.icon-usb4:before {
+  content: ""; }
+
+.icon-voicemail:before {
+  content: ""; }
+
+.icon-volume_up:before {
+  content: ""; }
+
+.icon-wifi:before {
+  content: ""; }
+
+.icon-wifi_tethering:before {
+  content: ""; }
+
+.icon-envelope-o:before {
+  content: ""; }
+
+.icon-thumbs-o-up:before {
+  content: ""; }
+
+.icon-thumbs-o-down:before {
+  content: ""; }
+
+.icon-facebook3:before {
+  content: ""; }
+
+.icon-facebook-f:before {
+  content: ""; }
+
+.icon-google-plus4:before {
+  content: ""; }
+
+.icon-envelope:before {
+  content: ""; }
+
+.icon-smile-o:before {
+  content: ""; }
+
+.icon-microphone:before {
+  content: ""; }
+
+.icon-play-circle:before {
+  content: ""; }
+
+.icon-thumbs-up:before {
+  content: ""; }
+
+.icon-thumbs-down:before {
+  content: ""; }
+
+.icon-youtube-square:before {
+  content: ""; }
+
+.icon-youtube:before {
+  content: ""; }
+
+.icon-skype2:before {
+  content: ""; }
+
+.icon-facebook-official:before {
+  content: ""; }
+
+.icon-usb:before {
+  content: ""; }
+
+.icon-bluetooth:before {
+  content: ""; }
+
+.icon-volume-control-phone:before {
+  content: ""; }
+
+.icon-music:before {
+  content: ""; }
+
+.icon-star-empty:before {
+  content: ""; }
+
+.icon-star-half:before {
+  content: ""; }
+
+.icon-star-full:before {
+  content: ""; }
+
+.icon-smile:before {
+  content: ""; }
+
+.icon-point-up:before {
+  content: ""; }
+
+.icon-point-right:before {
+  content: ""; }
+
+.icon-point-down:before {
+  content: ""; }
+
+.icon-point-left:before {
+  content: ""; }
+
+.icon-cancel-circle:before {
+  content: ""; }
+
+.icon-cross:before {
+  content: ""; }
+
+.icon-checkmark:before {
+  content: ""; }
+
+.icon-checkmark2:before {
+  content: ""; }
+
+.icon-checkbox-checked:before {
+  content: ""; }
+
+.icon-mail:before {
+  content: ""; }
+
+.icon-mail2:before {
+  content: ""; }
+
+.icon-mail3:before {
+  content: ""; }
+
+.icon-mail4:before {
+  content: ""; }
+
+.icon-google-plus:before {
+  content: ""; }
+
+.icon-google-plus2:before {
+  content: ""; }
+
+.icon-google-plus3:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-facebook2:before {
+  content: ""; }
+
+.icon-instagram:before {
+  content: ""; }
+
+.icon-youtube2:before {
+  content: ""; }
+
+.icon-skype:before {
+  content: ""; }
+
 a.slider_scroll_bottom {
   z-index: 2;
   position: absolute;
@@ -6672,10 +7324,28 @@ footer {
   background: -webkit-linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
   background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
   background-blend-mode: multiply; }
-  .about li {
-    padding: 5px;
-    font: 400 14px/24px "Arial"; }
-    .about li:before {
-      content: url("img/checkbox-icon-red.png");
-      margin: 10px;
-      vertical-align: -3px; }
+  .about .about_full_spec {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .about .about_full_spec li {
+      padding: 5px;
+      font: 400 14px/24px "Arial"; }
+      .about .about_full_spec li:before {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        vertical-align: middle;
+        border: 1px solid #ff9616;
+        -webkit-border-radius: 25px;
+                border-radius: 25px;
+        background-color: black;
+        color: #ff9616;
+        text-align: center;
+        font: 400 24px/50px 'icomoon'; }

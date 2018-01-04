@@ -1,16 +1,29 @@
 .about {
-  background: linear-gradient(rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9)),url(img/bg-hero.jpg) center/cover no-repeat ;
+  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
   background-blend-mode: multiply;
+  .about_full_spec {
+    display: flex;
+    justify-content: center;
+
     li {
       padding: 5px;
       font: 400 14px/24px $main-font;
       &:before {
-        content: url('img/checkbox-icon-red.png');
+        display: inline-block;
+        width: 50px;
+        height: 50px;
         margin: 10px;
-        vertical-align: -3px;
+        vertical-align: middle;
+        border: 1px solid $brand-color;
+        border-radius: 25px;
+        background-color: black;
+        color: $brand-color;
+        text-align: center;
+        font: 400 24px/50px 'icomoon';
       }
     }
   }
+}
 //________________________________________________________________________________
 @media screen and ($xs) {
 

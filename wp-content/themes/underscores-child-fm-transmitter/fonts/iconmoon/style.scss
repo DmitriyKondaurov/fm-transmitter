@@ -1,37 +1,12 @@
-//@font-face {
-//  font-family: 'Oswald';
-//  src: url('fonts/Oswald-Regular/Oswald-Regular.eot'); /* IE9*/
-//  src: local("Oswald"),
-//  url('fonts/Oswald-Regular/Oswald-Regular.woff') format('woff'),
-//  url('fonts/Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
-//  url('fonts/Oswald-Regular/Oswald-Regular.svg') format('svg');
-//  font-weight: 400;
-//  font-style: normal;
-//}
-//
-
-//
-//@font-face {
-//  font-family: 'Oswald';
-//  src: url('fonts/Oswald-Bold/Oswald-Bold.eot'); /* IE9*/
-//  src: local("Oswald"),
-//  url('fonts/Oswald-Bold/Oswald-Bold.woff') format('woff'),
-//  url('fonts/Oswald-Bold/Oswald-Bold.ttf') format('truetype'),
-//  url('fonts/Oswald-Bold/Oswald-Bold.svg') format('svg');
-//  font-weight: 700;
-//  font-style: normal;
-//}
-
-//ICONS---------------------------------------------------------------
 @import "variables";
 
 @font-face {
   font-family: 'icomoon';
   src:  url('#{$icomoon-font-path}/icomoon.eot?80o8la');
   src:  url('#{$icomoon-font-path}/icomoon.eot?80o8la#iefix') format('embedded-opentype'),
-  url('#{$icomoon-font-path}/icomoon.ttf?80o8la') format('truetype'),
-  url('#{$icomoon-font-path}/icomoon.woff?80o8la') format('woff'),
-  url('#{$icomoon-font-path}/icomoon.svg?80o8la#icomoon') format('svg');
+    url('#{$icomoon-font-path}/icomoon.ttf?80o8la') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?80o8la') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?80o8la#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -191,6 +166,11 @@
     content: $icon-card4;
   }
 }
+.icon-card5.gif {
+  &:before {
+    content: $icon-card5.gif;
+  }
+}
 .icon-card6 {
   &:before {
     content: $icon-card6;
@@ -208,21 +188,21 @@
 }
 .icon-charg3 .path1 {
   &:before {
-    content: $icon-charg3-path1;
+    content: $icon-charg3-path1;  
     color: rgb(158, 158, 158);
   }
 }
 .icon-charg3 .path2 {
   &:before {
-    content: $icon-charg3-path2;
-    margin-left: -1em;
+    content: $icon-charg3-path2;  
+    margin-left: -1em;  
     color: rgb(90, 90, 90);
   }
 }
 .icon-charg3 .path3 {
   &:before {
-    content: $icon-charg3-path3;
-    margin-left: -1em;
+    content: $icon-charg3-path3;  
+    margin-left: -1em;  
     color: rgb(37, 37, 37);
   }
 }
@@ -1102,4 +1082,3 @@
   }
 }
 
-//------------------------------------------------------------------
