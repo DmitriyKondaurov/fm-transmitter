@@ -20,6 +20,8 @@ $(function() {
     );
 });
 
+
+// Owl-Carousel
 $(document).ready(function () {
     $('#carousel_1').owlCarousel({
         loop: true,

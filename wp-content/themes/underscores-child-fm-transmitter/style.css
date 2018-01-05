@@ -6358,7 +6358,7 @@ template {
   display: none; }
 
 body {
-  color: lightyellow;
+  color: #DEF1B8;
   font: 400 14px/24px "Arial";
   background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#204359), to(#000000));
   background: -webkit-linear-gradient(left, #000000, #204359, #000000);
@@ -6372,6 +6372,18 @@ select, input:not([type=submit]) {
   width: 90%;
   height: 25px;
   text-align: center; }
+
+section {
+  padding: 100px 10px; }
+  section .title {
+    width: 200px;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ff9616;
+    color: lightyellow;
+    font: 400 24px/24px "Montserrat", sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
 
 .wrapper {
   max-width: 1280px;
@@ -6409,7 +6421,6 @@ select, input:not([type=submit]) {
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -6435,343 +6446,352 @@ select, input:not([type=submit]) {
 .icon-aux5:before {
   content: ""; }
 
-.icon-bluetooth2:before {
+.icon-aux10:before {
   content: ""; }
 
-.icon-bluetooth3:before {
+.icon-bluetooth2:before {
   content: ""; }
 
-.icon-bluetooth-b:before {
+.icon-bluetooth3:before {
   content: ""; }
 
-.icon-bt4:before {
+.icon-bluetooth-b:before {
   content: ""; }
 
-.icon-phone:before {
+.icon-bt4:before {
   content: ""; }
+
+.icon-phone:before {
+  content: ""; }
 
 .icon-cellular:before {
-  content: ""; }
+  content: ""; }
 
 .icon-phone2:before {
-  content: ""; }
-
-.icon-contact:before {
-  content: ""; }
-
-.icon-phone-outline:before {
   content: ""; }
 
-.icon-phone3:before {
+.icon-contact:before {
+  content: ""; }
+
+.icon-phone-outline:before {
   content: ""; }
 
-.icon-volume-control-phone2:before {
+.icon-phone3:before {
   content: ""; }
 
-.icon-phone-square:before {
+.icon-volume-control-phone2:before {
   content: ""; }
 
-.icon-phone4:before {
+.icon-phone-square:before {
   content: ""; }
 
-.icon-phone-call:before {
+.icon-phone4:before {
   content: ""; }
 
-.icon-phone-incoming:before {
+.icon-phone-call:before {
   content: ""; }
 
-.icon-phone-outgoing:before {
+.icon-phone-incoming:before {
   content: ""; }
 
-.icon-phone-off:before {
+.icon-phone-outgoing:before {
   content: ""; }
 
-.icon-phone-missed:before {
+.icon-phone-off:before {
   content: ""; }
 
-.icon-car1:before {
+.icon-phone-missed:before {
   content: ""; }
 
-.icon-card1:before {
+.icon-car1:before {
   content: ""; }
 
-.icon-card2:before {
+.icon-card1:before {
   content: ""; }
 
-.icon-card3:before {
+.icon-card2:before {
   content: ""; }
 
-.icon-card4:before {
+.icon-card3:before {
   content: ""; }
 
-.icon-card6:before {
+.icon-card4:before {
+  content: ""; }
+
+.icon-card5:before {
   content: ""; }
 
-.icon-charg1:before {
+.icon-card6:before {
   content: ""; }
 
-.icon-charg2:before {
+.icon-charg1:before {
   content: ""; }
 
+.icon-charg2:before {
+  content: ""; }
+
 .icon-charg3 .path1:before {
-  content: "";
+  content: "";
   color: #9e9e9e; }
 
 .icon-charg3 .path2:before {
-  content: "";
+  content: "";
   margin-left: -1em;
   color: #5a5a5a; }
 
 .icon-charg3 .path3:before {
-  content: "";
+  content: "";
   margin-left: -1em;
   color: #252525; }
 
 .icon-charg5:before {
-  content: ""; }
-
-.icon-charg6:before {
   content: ""; }
 
-.icon-radio:before {
+.icon-charg6:before {
   content: ""; }
 
-.icon-radio-tower:before {
+.icon-charg66:before {
   content: ""; }
 
-.icon-mic:before {
+.icon-radio:before {
   content: ""; }
 
-.icon-microphone2:before {
-  content: ""; }
-
-.icon-record:before {
-  content: ""; }
-
-.icon-voice:before {
-  content: ""; }
-
-.icon-audio:before {
-  content: ""; }
-
-.icon-microphone3:before {
+.icon-radio-tower:before {
   content: ""; }
 
-.icon-microphone4:before {
+.icon-mic:before {
   content: ""; }
+
+.icon-microphone2:before {
+  content: ""; }
+
+.icon-record:before {
+  content: ""; }
+
+.icon-voice:before {
+  content: ""; }
+
+.icon-audio:before {
+  content: ""; }
+
+.icon-microphone3:before {
+  content: ""; }
+
+.icon-microphone4:before {
+  content: ""; }
 
 .icon-voice2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-record2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-microphone5:before {
-  content: ""; }
+  content: ""; }
 
 .icon-record3:before {
-  content: ""; }
+  content: ""; }
 
 .icon-voice3:before {
-  content: ""; }
+  content: ""; }
 
 .icon-microphone6:before {
-  content: ""; }
+  content: ""; }
 
 .icon-record4:before {
-  content: ""; }
+  content: ""; }
 
 .icon-voice4:before {
-  content: ""; }
+  content: ""; }
 
 .icon-microphone7:before {
-  content: ""; }
-
-.icon-record5:before {
-  content: ""; }
-
-.icon-voice5:before {
-  content: ""; }
-
-.icon-music2:before {
-  content: ""; }
-
-.icon-songs:before {
-  content: ""; }
-
-.icon-sound:before {
-  content: ""; }
-
-.icon-music3:before {
   content: ""; }
 
-.icon-music4:before {
+.icon-record5:before {
+  content: ""; }
+
+.icon-voice5:before {
+  content: ""; }
+
+.icon-music2:before {
   content: ""; }
 
-.icon-music5:before {
+.icon-songs:before {
+  content: ""; }
+
+.icon-sound:before {
+  content: ""; }
+
+.icon-music3:before {
   content: ""; }
+
+.icon-music4:before {
+  content: ""; }
+
+.icon-music5:before {
+  content: ""; }
 
 .icon-song:before {
-  content: ""; }
+  content: ""; }
 
 .icon-music6:before {
-  content: ""; }
+  content: ""; }
 
 .icon-songs2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-audio2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-music7:before {
-  content: ""; }
+  content: ""; }
 
 .icon-song2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-audio3:before {
-  content: ""; }
+  content: ""; }
 
 .icon-sound2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-note:before {
-  content: ""; }
+  content: ""; }
 
 .icon-phone5:before {
-  content: ""; }
+  content: ""; }
 
 .icon-mobile:before {
-  content: ""; }
+  content: ""; }
 
 .icon-contact2:before {
-  content: ""; }
+  content: ""; }
 
 .icon-telephone:before {
-  content: ""; }
+  content: ""; }
 
 .icon-iphone:before {
-  content: ""; }
-
-.icon-touch:before {
-  content: ""; }
-
-.icon-phone6:before {
-  content: ""; }
-
-.icon-mobile2:before {
-  content: ""; }
-
-.icon-phone7:before {
-  content: ""; }
-
-.icon-cellular-phone:before {
-  content: ""; }
-
-.icon-mobile3:before {
-  content: ""; }
-
-.icon-media-play-outline:before {
   content: ""; }
 
-.icon-play-alt:before {
+.icon-touch:before {
+  content: ""; }
+
+.icon-phone6:before {
+  content: ""; }
+
+.icon-mobile2:before {
+  content: ""; }
+
+.icon-phone7:before {
   content: ""; }
 
-.icon-video:before {
+.icon-cellular-phone:before {
   content: ""; }
 
-.icon-play:before {
+.icon-mobile3:before {
+  content: ""; }
+
+.icon-media-play-outline:before {
   content: ""; }
 
-.icon-play2:before {
+.icon-play-alt:before {
   content: ""; }
 
-.icon-media-control:before {
+.icon-video:before {
   content: ""; }
 
-.icon-video2:before {
-  content: ""; }
-
-.icon-movie:before {
-  content: ""; }
-
-.icon-media-play-outline2:before {
+.icon-play:before {
   content: ""; }
 
-.icon-media-play:before {
+.icon-play2:before {
   content: ""; }
 
-.icon-play-circle-o:before {
+.icon-media-control:before {
+  content: ""; }
+
+.icon-video2:before {
+  content: ""; }
+
+.icon-movie:before {
+  content: ""; }
+
+.icon-media-play-outline2:before {
   content: ""; }
 
-.icon-play-circle2:before {
+.icon-media-play:before {
   content: ""; }
 
-.icon-play-circle3:before {
+.icon-play-circle-o:before {
   content: ""; }
 
-.icon-play3:before {
+.icon-play-circle2:before {
   content: ""; }
 
-.icon-radio2:before {
+.icon-play-circle3:before {
   content: ""; }
 
-.icon-radio3:before {
+.icon-play3:before {
   content: ""; }
 
-.icon-radio6:before {
+.icon-radio2:before {
   content: ""; }
 
-.icon-radio7:before {
+.icon-radio3:before {
   content: ""; }
 
-.icon-megaphone:before {
+.icon-radio6:before {
   content: ""; }
+
+.icon-radio7:before {
+  content: ""; }
+
+.icon-megaphone:before {
+  content: ""; }
 
 .icon-news:before {
-  content: ""; }
+  content: ""; }
 
 .icon-announcements:before {
-  content: ""; }
+  content: ""; }
 
 .icon-advertisement:before {
-  content: ""; }
+  content: ""; }
 
 .icon-megaphone2:before {
-  content: ""; }
-
-.icon-advertise:before {
-  content: ""; }
-
-.icon-notify:before {
-  content: ""; }
-
-.icon-announce:before {
-  content: ""; }
-
-.icon-megaphone3:before {
-  content: ""; }
-
-.icon-advertise2:before {
-  content: ""; }
-
-.icon-notify2:before {
-  content: ""; }
-
-.icon-announce2:before {
-  content: ""; }
-
-.icon-usb2:before {
   content: ""; }
 
-.icon-usb3:before {
+.icon-advertise:before {
+  content: ""; }
+
+.icon-notify:before {
+  content: ""; }
+
+.icon-announce:before {
+  content: ""; }
+
+.icon-megaphone3:before {
   content: ""; }
 
-.icon-usb9:before {
+.icon-advertise2:before {
+  content: ""; }
+
+.icon-notify2:before {
+  content: ""; }
+
+.icon-announce2:before {
+  content: ""; }
+
+.icon-usb2:before {
   content: ""; }
 
-.icon-voice1:before {
+.icon-usb3:before {
   content: ""; }
+
+.icon-usb9:before {
+  content: ""; }
+
+.icon-voice1:before {
+  content: ""; }
 
 .icon-bluetooth4:before {
   content: ""; }
@@ -7056,7 +7076,7 @@ a.slider_scroll_bottom {
   z-index: 2;
   position: absolute;
   bottom: 40px;
-  left: 46%;
+  right: 10%;
   width: 33px;
   height: 33px;
   -webkit-border-radius: 50%;
@@ -7146,6 +7166,28 @@ ol {
   background-color: #2c2c2b;
   border: none; }
 
+.order_button {
+  padding: 7px 15px;
+  margin: 10px auto;
+  border-color: #ff9616;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  outline: none;
+  color: black;
+  background-color: #ff9616;
+  text-transform: uppercase;
+  font: 700 18px/24px "Montserrat", sans-serif; }
+  .order_button:hover {
+    color: lightyellow;
+    -webkit-box-shadow: 0px 0px 10px 1px;
+            box-shadow: 0px 0px 10px 1px; }
+  .order_button:active {
+    -webkit-transition: all 20ms;
+    transition: all 20ms;
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px); }
+
 .site-header {
   position: fixed;
   top: 0;
@@ -7155,7 +7197,7 @@ ol {
   padding: 5px; }
   .site-header.active {
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.7); }
   .site-header .site-branding {
     max-width: 1280px;
     margin: auto; }
@@ -7193,21 +7235,30 @@ footer {
     text-align: center; }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 32, 48, 0.9)), color-stop(rgba(16, 32, 48, 0.9)), to(rgba(16, 32, 48, 0.9))), url(img/bg-hero.jpg) center/cover no-repeat;
-  background: -webkit-linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
-  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/4629944500_1576858587.jpg) center/cover no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/4629944500_1576858587.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/4629944500_1576858587.jpg) center/cover no-repeat;
   background-blend-mode: multiply; }
   .hero .brand_name {
-    max-width: 620px;
-    margin: auto; }
+    position: relative;
+    max-width: 880px;
+    margin: auto;
+    border-bottom: 1px dotted #ff9616; }
     .hero .brand_name img.brand_new {
-      padding: 50px 10px 0 5px;
-      width: 100px; }
+      position: relative;
+      top: 0;
+      left: 50%;
+      width: 180px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
     .hero .brand_name .slogan {
       margin: 0;
       padding: 5px;
-      color: #DEF1B8;
-      font: 400 20px/24px "Montserrat", sans-serif; }
+      color: lightyellow;
+      font: 700 20px/24px "Montserrat", sans-serif;
+      text-transform: uppercase;
+      text-align: center; }
   .hero .hero_main {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7237,13 +7288,14 @@ footer {
       margin: 10px;
       vertical-align: -3px; }
   .hero .call_to_action {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid #ff9616;
+    border: 3px dotted #ff9616;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     padding: 10px;
     text-align: center; }
-    .hero .call_to_action .attention {
+    .hero .call_to_action .attention-1 {
       position: relative;
       top: -22px;
       width: 100px;
@@ -7256,6 +7308,15 @@ footer {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px; }
+    .hero .call_to_action .attention-2 {
+      width: 150px;
+      margin: auto;
+      color: #ff3232;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font: 900 28px/34px "Montserrat", sans-serif;
+      text-shadow: 2px 0px #ff9616; }
     .hero .call_to_action .prices {
       text-align: center;
       margin: 10px 0 10px 0; }
@@ -7267,7 +7328,7 @@ footer {
       .hero .call_to_action .prices .new_price {
         display: block;
         font: 700 32px/28px "Arial";
-        color: #6ef5ff; }
+        color: #fbed50; }
     .hero .call_to_action .discount {
       color: #DEF1B8; }
     .hero .call_to_action .discount_amount {
@@ -7275,7 +7336,7 @@ footer {
       -webkit-border-radius: 20px;
               border-radius: 20px;
       color: #fbed50;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 700; }
     .hero .call_to_action .left_pcs {
       padding: 3px 10px;
@@ -7284,26 +7345,6 @@ footer {
       background-color: lightgrey;
       color: black;
       font-size: 18px; }
-    .hero .call_to_action .order_button {
-      padding: 7px 15px;
-      margin: 10px auto;
-      border-color: #ff9616;
-      -webkit-border-radius: 7px;
-              border-radius: 7px;
-      outline: none;
-      color: black;
-      background-color: #2aca76;
-      text-transform: uppercase;
-      font: 700 18px/24px "Montserrat", sans-serif; }
-      .hero .call_to_action .order_button:hover {
-        color: lightyellow;
-        border-color: black; }
-      .hero .call_to_action .order_button:active {
-        -webkit-transition: all 20ms;
-        transition: all 20ms;
-        -webkit-transform: translateY(2px);
-            -ms-transform: translateY(2px);
-                transform: translateY(2px); }
 
 .brand {
   text-transform: uppercase;
@@ -7319,6 +7360,14 @@ footer {
   #carousel_1 .owl-dots .owl-dot.active span, #carousel_1 .owl-dots .owl-dot:hover span {
     background-color: #ff9616; }
 
+@media screen and (min-width: 1280px) {
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+    .hero .brand_name .slogan {
+      font: 700 24px/30px "Montserrat", sans-serif; } }
+
 .about {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 32, 48, 0.9)), color-stop(rgba(16, 32, 48, 0.9)), to(rgba(16, 32, 48, 0.9))), url(img/bg-hero.jpg) center/cover no-repeat;
   background: -webkit-linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
@@ -7332,20 +7381,63 @@ footer {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 0; }
     .about .about_full_spec li {
       padding: 5px;
+      margin: 20px;
+      width: 290px;
+      text-align: justify;
       font: 400 14px/24px "Arial"; }
-      .about .about_full_spec li:before {
-        display: inline-block;
+      .about .about_full_spec li::before {
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-90%);
+            -ms-transform: translateX(-90%);
+                transform: translateX(-90%);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        display: block;
         width: 50px;
         height: 50px;
         margin: 10px;
         vertical-align: middle;
-        border: 1px solid #ff9616;
+        border: 2px solid #ff9616;
         -webkit-border-radius: 25px;
                 border-radius: 25px;
         background-color: black;
-        color: #ff9616;
+        color: lightyellow;
         text-align: center;
         font: 400 24px/50px 'icomoon'; }
+      .about .about_full_spec li::after {
+        display: block;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        content: ' ';
+        width: 85%;
+        height: 2px;
+        margin: 20px auto 5px auto;
+        background-color: #ff9616; }
+      .about .about_full_spec li:hover::after {
+        width: 100%; }
+      .about .about_full_spec li:hover::before {
+        color: #ff9616;
+        border-color: lightyellow;
+        -webkit-box-shadow: 0px 0px 10px 1px;
+                box-shadow: 0px 0px 10px 1px; }
+      .about .about_full_spec li:nth-child(2)::before {
+        font: 400 32px/46px 'icomoon'; }
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(16, 32, 48, 0.9)), to(rgba(0, 0, 0, 0.9)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(16, 32, 48, 0.9), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(16, 32, 48, 0.9), rgba(0, 0, 0, 0.9));
+    background-blend-mode: multiply; } }

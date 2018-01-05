@@ -4,22 +4,53 @@
   .about_full_spec {
     display: flex;
     justify-content: center;
-
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
     li {
       padding: 5px;
+      margin: 20px;
+      width: 290px;
+      text-align: justify;
       font: 400 14px/24px $main-font;
-      &:before {
-        display: inline-block;
+      &::before {
+        position: relative;
+        left: 50%;
+        transform: translateX(-90%);
+        transition: all 0.3s;
+        display: block;
         width: 50px;
         height: 50px;
         margin: 10px;
         vertical-align: middle;
-        border: 1px solid $brand-color;
+        border: 2px solid $brand-color;
         border-radius: 25px;
         background-color: black;
-        color: $brand-color;
+        color: $main-text-color;
         text-align: center;
         font: 400 24px/50px 'icomoon';
+      }
+      &::after {
+        display: block;
+        transition: all 0.3s;
+        content: ' ';
+        width: 85%;
+        height: 2px;
+        margin: 20px auto 5px auto;
+        background-color: $brand-color;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+        &::before {
+          color: $brand-color;
+          border-color: $main-text-color;
+          box-shadow: 0px 0px 10px 1px;
+        }
+      }
+      &:nth-child(2)::before {
+        font: 400 32px/46px 'icomoon';
       }
     }
   }
@@ -38,6 +69,9 @@
 }
 
 @media screen and ($lg) {
-
+  .about {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(16, 32, 48, 0.9), rgba(0, 0, 0, 0.9));
+    background-blend-mode: multiply;
+  }
 }
 

@@ -48,6 +48,7 @@ gulp.task('scripts', function() {
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         './bower_components/owl.carousel/dist/owl.carousel.min.js',
+        './bower_components/parallax.js/parallax.min.js',
         './wp-content/themes/underscores-child-fm-transmitter/js/*.js'
     ])
         .pipe(concat('libs.min.js'))

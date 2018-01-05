@@ -1,0 +1,31 @@
+{
+  "name": "fm-transmitter",
+  "description": "shops.sytes.net",
+  "main": "gulpfile.js",
+  "authors": [
+    "DmitriyKondaurov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "fm-transmitter"
+  ],
+  "homepage": "https://github.com/DmitriyKondaurov/fm-transmitter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.0",
+    "animate.css": "^3.5.2",
+    "bootstrap-sass": "^3.3.7",
+    "fizzy-ui-utils": "^2.0.4",
+    "ev-emitter": "^1.0.0",
+    "get-size": "^2.0.0",
+    "isotope": "^3.0.2",
+    "owl.carousel": "^2.2.0",
+    "parallax.js": "^1.5.0"
+  }
+}

@@ -19,13 +19,19 @@ get_header(); ?>
             <a href="#" id="nav_down" class="slider_scroll_bottom">
                 <i class="fa fa-angle-down"></i>
             </a>
-            <section id="hero" class="hero">
+            <section id="hero" class="hero parallax-window"
+                     data-parallax="scroll"
+                     data--fix="false"
+                     data-android-fix="false"
+                     data-ios-fix="false"
+                     data-speed="0.4"
+                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.jpg">
                 <div class="wrapper">
                     <div class="brand_name">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.png" alt="Новинка!"
                              class="brand_new">
                         <h1 class="slogan">Многофункциональный bluetooth FM модулятор <span
-                                    class="brand">'BT-800'</span></h1>
+                            class="brand">'BT-800'</span></h1>
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
@@ -55,7 +61,7 @@ get_header(); ?>
                             <li>Dual USB CarCharger 1A/2.1A</li>
                         </ul>
                         <div class="call_to_action">
-                            <div class="attention">Акция!</div>
+                            <div class="attention-2">Акция!</div>
                             <div class="discount">Первым 10-ти покупателям скидка <span
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
@@ -66,32 +72,45 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about parallax-window"
+                     data-parallax="scroll"
+                     data--fix="false"
+                     data-android-fix="false"
+                     data-ios-fix="false"
+                     data-speed="0.3"
+                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-hero.jpg">
                 <div class="wrapper">
-                <ul class="about_full_spec">
-                    <li class="icon-card2">Безпроводная громкая связь в авто (hands free). С помощью Bluetooth
-                        соединения с телефоном и
-                        передачи звука по радио волнам в Fm диапазоне на штатную магнитолу автомобиля.
-                    </li>
-                    <li>Громкая связь в авто (hands free) c AUX входа. С помощью кабельного переходника (выход
-                        наушников 3,5 мм) телефон соединяется с Fm модулятором <span class="brand">'BT-800'</span>
-                        через встроенный AUX вход и передаёт звук по радио волнам в Fm диапазоне на штатную магнитолу
-                        автомобиля.
-                    </li>
-                    <li>Трансляция музыки по радио волнам в Fm диапазоне с встроенного SD/TF card reader на любой
-                        радиоприёмник в радиусе 10 метров.
-                    </li>
-                    <li>Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с выходом
-                        AUX
-                    </li>
-                    <li>Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с
-                        Bluetooth соединением по технологии A2DP
-                    </li>
-                    <li>Голосовое воспроизведение номера входящих звонков (на английском языке)</li>
-                    <li>В комплект поставки входит переходник автомобильной зарядки с двумя выходами USB для умеренной и
-                        быстрой зарядки (1A / 2.1A)
-                    </li>
-                </ul>
+                    <h2 class="title">функции</h2>
+                    <ul class="about_full_spec">
+                        <li class="icon-phone_bluetooth_speaker">Безпроводная громкая связь в авто (hands free). С помощью Bluetooth
+                            соединения с телефоном и передачи звука по радио волнам в Fm диапазоне на штатную магнитолу
+                            автомобиля.
+                        </li>
+                        <li class="icon-aux10">Громкая связь в авто (hands free) c AUX входа. С помощью кабельного
+                            переходника (выход
+                            наушников 3,5 мм) телефон соединяется с Fm модулятором <span class="brand">'BT-800'</span>
+                            через встроенный AUX вход и передаёт звук по радио волнам в Fm диапазоне на штатную
+                            магнитолу
+                            автомобиля.
+                        </li>
+                        <li class="icon-card1">Трансляция музыки по радио волнам в Fm диапазоне с встроенного SD/TF
+                            card reader на любой
+                            радиоприёмник в радиусе 10 метров.
+                        </li>
+                        <li class="icon-aux5">Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с
+                            выходом
+                            AUX
+                        </li>
+                        <li class="icon-bluetooth_connected">Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с
+                            Bluetooth соединением по технологии A2DP
+                        </li>
+                        <li class="icon-voice1">Голосовое воспроизведение номера входящих звонков (на английском языке)</li>
+                        <li class="icon-charg66">В комплект поставки входит переходник автомобильной зарядки с двумя
+                            выходами USB для
+                            умеренной и
+                            быстрой зарядки (1A / 2.1A)
+                        </li>
+                    </ul>
                 </div>
             </section>
 

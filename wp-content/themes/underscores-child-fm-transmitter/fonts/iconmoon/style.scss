@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?80o8la');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?80o8la#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?80o8la') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?80o8la') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?80o8la#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?9tdz60');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?9tdz60#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?9tdz60') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?9tdz60') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?9tdz60#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,6 +49,11 @@
 .icon-aux5 {
   &:before {
     content: $icon-aux5;
+  }
+}
+.icon-aux10 {
+  &:before {
+    content: $icon-aux10;
   }
 }
 .icon-bluetooth2 {
@@ -166,9 +171,9 @@
     content: $icon-card4;
   }
 }
-.icon-card5.gif {
+.icon-card5 {
   &:before {
-    content: $icon-card5.gif;
+    content: $icon-card5;
   }
 }
 .icon-card6 {
@@ -214,6 +219,11 @@
 .icon-charg6 {
   &:before {
     content: $icon-charg6;
+  }
+}
+.icon-charg66 {
+  &:before {
+    content: $icon-charg66;
   }
 }
 .icon-radio {

@@ -1,8 +1,7 @@
 body {
-  color: $main-text-color;
+  color: $sec-text-color;
   font: 400 14px/24px $main-font;
   background: linear-gradient(to right, #000000, rgb(32, 67, 89), #000000);
-
   margin: auto;
 }
 img {
@@ -12,6 +11,19 @@ select, input:not([type=submit]) {
   width: 90%;
   height: 25px;
   text-align: center;
+}
+section {
+  padding: 100px 10px;
+  .title {
+    width: 200px;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted $brand-color;
+    color: $main-text-color;
+    font: 400 24px/24px $sec-font;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 .wrapper  {
   max-width: $wrapper;

@@ -1,18 +1,25 @@
 .hero {
-  background: linear-gradient(rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9),rgba(16, 32, 48, 0.9)),url(img/bg-hero.jpg) center/cover no-repeat ;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/4629944500_1576858587.jpg) center/cover no-repeat ;
   background-blend-mode: multiply;
   .brand_name {
-    max-width: 620px;
+    position: relative;
+    max-width: 880px;
     margin: auto;
+    border-bottom: 1px dotted $brand-color;
     img.brand_new {
-      padding: 50px 10px 0 5px;
-      width: 100px;
+      position: relative;
+      top: 0;
+      left: 50%;
+      width: 180px;
+      transform: translateX(-50%);
     }
     .slogan {
       margin: 0;
       padding: 5px;
-      color: $sec-text-color;
-      font: 400 20px/24px $sec-font;
+      color: $main-text-color;
+      font: 700 20px/24px $sec-font;
+      text-transform: uppercase;
+      text-align: center;
     }
   }
   .hero_main {
@@ -39,13 +46,13 @@
     }
   }
   .call_to_action {
-    //flex-grow: 1;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid $brand-color;
+    border: 3px dotted $brand-color;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    .attention {
+    .attention-1 {
       position: relative;
       top: -22px;
       width: 100px;
@@ -57,6 +64,16 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px;
+    }
+    .attention-2 {
+      width: 150px;
+      margin: auto;
+      color: rgba(255, 50, 50, 1);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font: 900 28px/34px $sec-font;
+      text-shadow: 2px 0px $brand-color;
     }
     .prices {
       text-align: center;
@@ -70,17 +87,18 @@
       .new_price {
         display: block;
         font: 700 32px/28px $main-font;
-        color: $main-color;
+        color: #fbed50;
       }
     }
     .discount {
       color: $sec-text-color;
+      //font-variant: all-petite-caps;
     }
     .discount_amount {
       padding: 10px 3px;
       border-radius: 20px;
       color: #fbed50;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 700;
     }
     .left_pcs {
@@ -90,25 +108,7 @@
       color: black;
       font-size: 18px;
     }
-    .order_button {
-      padding: 7px 15px;
-      margin: 10px auto;
-      border-color: $brand-color;
-      border-radius: 7px;
-      outline: none;
-      color: black;
-      background-color: #2aca76;
-      text-transform: uppercase;
-      font: 700 18px/24px $sec-font;
-      &:hover {
-        color: $main-text-color;
-        border-color: black;
-      }
-      &:active{
-        transition: all 20ms;
-        transform: translateY(2px);
-      }
-    }
+
   }
 }
 .brand {
@@ -136,10 +136,18 @@
 }
 
 @media screen and ($md) {
-
+  .hero {
+  }
 }
 
 @media screen and ($lg) {
-
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    .brand_name {
+      .slogan {
+        font: 700 24px/30px $sec-font;
+      }
+    }
+  }
 }
 
