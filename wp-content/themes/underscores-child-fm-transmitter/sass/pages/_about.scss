@@ -3,14 +3,15 @@
   background-blend-mode: multiply;
   .about_full_spec {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 0;
     li {
       padding: 5px;
-      margin: 20px;
-      width: 290px;
+      margin: 10px;
+      width: 320px;
+      animation-delay: 0.4s;
       text-align: justify;
       font: 400 14px/24px $main-font;
       &::before {

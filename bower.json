@@ -26,6 +26,7 @@
     "get-size": "^2.0.0",
     "isotope": "^3.0.2",
     "owl.carousel": "^2.2.0",
-    "parallax.js": "^1.5.0"
+    "parallax.js": "^1.5.0",
+    "waypoints": "^4.0.1"
   }
 }

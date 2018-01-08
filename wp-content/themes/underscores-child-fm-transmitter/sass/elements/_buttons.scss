@@ -1,16 +1,17 @@
 .order_button {
   padding: 7px 15px;
   margin: 10px auto;
-  border-color: $brand-color;
+  border-color: #894d0f;
   border-radius: 7px;
   outline: none;
   color: black;
-  background-color: $brand-color;
+  background: linear-gradient(#894d0f, rgb(255, 150, 22), #894d0f);
   text-transform: uppercase;
   font: 700 18px/24px $sec-font;
   &:hover {
+    border-color: #894d0f;
     color: $main-text-color;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0px 0px 20px -1px;
   }
   &:active{
     transition: all 20ms;

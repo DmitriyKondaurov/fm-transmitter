@@ -5,8 +5,8 @@
   right: 0;
   height: 40px;
   padding: 5px;
+  z-index: 2;
   &.active {
-    z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
   }
   .site-branding {

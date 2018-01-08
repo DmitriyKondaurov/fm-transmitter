@@ -23,6 +23,7 @@ gulp.task('sass',  function() {
 gulp.task('css-libs', function() {
     return gulp.src([
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',
+        './bower_components/animate.css/animate.min.css',
         './bower_components/owl.carousel/dist/assets/owl.theme.default.css'
     ])
         .pipe(concat('libs-style.css'))
@@ -49,6 +50,7 @@ gulp.task('scripts', function() {
         './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         './bower_components/owl.carousel/dist/owl.carousel.min.js',
         './bower_components/parallax.js/parallax.min.js',
+        './bower_components/waypoints/lib/jquery.waypoints.min.js',
         './wp-content/themes/underscores-child-fm-transmitter/js/*.js'
     ])
         .pipe(concat('libs.min.js'))
