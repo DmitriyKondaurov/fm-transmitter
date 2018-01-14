@@ -1,29 +1,33 @@
 body {
   color: $sec-text-color;
   font: 400 14px/24px $main-font;
-  background: linear-gradient(to right, #000000, rgb(30, 54, 74), #000000);
+  background: linear-gradient(to right, rgb(15, 22, 42), rgb(15, 22, 42), rgb(15, 22, 42));
   margin: auto;
-}
-img {
-  max-width: 100%;
-}
-select, input:not([type=submit]) {
-  width: 90%;
-  height: 25px;
-  text-align: center;
-}
-section {
-  padding: 100px 10px;
-  .title, .widget-title {
-    width: 260px;
-    margin: auto;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px dotted $brand-color;
-    color: $main-text-color;
-    font: 400 24px/24px $sec-font;
-    text-align: center;
-    text-transform: uppercase;
+
+  img {
+    max-width: 100%;
+  }
+  select, input:not([type=submit]) {
+    width: 90%;
+    height: 25px;
+    //text-align: center;
+  }
+  a:hover, a:focus, a:active, a:visited {
+    color: $brand-color;
+  }
+  section:not(#recent-comments-2) {
+    padding: 100px 10px;
+    .title {
+      width: 260px;
+      margin: auto;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $brand-color;
+      color: $main-text-color;
+      font: 400 24px/24px $sec-font;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 }
 .wrapper  {

@@ -117,13 +117,7 @@ get_header(); ?>
                     </ul>
                 </div>
             </section>
-            <section class="explaining parallax-window"
-                     data-parallax="scroll"
-                     data--fix="false"
-                     data-android-fix="false"
-                     data-ios-fix="false"
-                     data-speed="0.4"
-                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/StockSnap_GZV7WBFIP9.jpg">
+            <section class="explaining">
                 <div class="wrapper">
                     <div class="flex_box">
                         <div class="explain_item">
@@ -133,11 +127,15 @@ get_header(); ?>
                                      alt="explain device">
                             </div>
                         </div>
-                        <div class="fresh_comments">
-							<?php //Show fresh comments
-							get_sidebar(); comments_template();?>
-                        </div>
                     </div>
+                </div>
+            </section>
+            <section class="fresh_comments">
+                <div class="wrapper">
+                    <?php //Show fresh comments
+					get_sidebar(); ?>
+                    <div class="add_new_comment"><?php comments_template(); ?></div>
+                    <div class="add_new_comment_button" id="add_new_comment_button">добавить коментарий</div>
                 </div>
             </section>
 			<?php // Show the selected frontpage content.

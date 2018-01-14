@@ -11,9 +11,9 @@ $(document).ready(function() {
     // _________________ANIMATION________________________
 
     $(".brand_new").animated("flash", "fadeOut");
-    $(".slogan").animated("fadeInUp", "fadeInDown");
+    // $(".slogan").animated("fadeInUp", "fadeInDown");
     $(".owl-carousel").animated("zoomIn", "zoomOut");
-    $(".hero_shot_spec").animated("flipInX", "flipOutX");
+    // $(".hero_shot_spec").animated("flipInX", "flipOutX");
     $(".call_to_action").animated("flipInX", "flipOutX");
     $(".about_full_spec li:nth-child(1) p").animated("fadeInUp", "fadeOutUp");
     $(".about_full_spec li:nth-child(2) p").animated("fadeInUp", "fadeOutUp");
@@ -63,4 +63,19 @@ $(document).ready(function () {
             }
         }
     })
+});
+// hide footer
+$(function hide() {
+    if ($(".comment-respond").is(":visible")) {
+        $(".comment-respond").slideUp("slow");
+    }
+})
+//show footer
+$(document).ready(function() {
+    $("#add_new_comment_button").click(function () {
+        $(".comment-respond").slideToggle("slow");
+        // $("html, body").animate({
+        //     scrollDown: 1600
+        // }, 1000);
+    });
 });

@@ -6,7 +6,7 @@
     position: relative;
     max-width: 880px;
     margin: auto;
-    border-bottom: 1px dotted $brand-color;
+    border-bottom: 1px solid $brand-color;
     img.brand_new {
       position: relative;
       top: 0;
@@ -53,7 +53,7 @@
   .call_to_action {
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-    border: 2px dotted $brand-color;
+    border: 1px solid $brand-color;
     border-radius: 10px;
     padding: 10px;
     text-align: center;

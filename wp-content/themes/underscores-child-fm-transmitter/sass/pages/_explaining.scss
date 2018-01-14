@@ -1,5 +1,5 @@
 .explaining {
-  background: linear-gradient(to right, rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/StockSnap_GZV7WBFIP9.jpg) center/cover no-repeat ;
+  background: radial-gradient(rgb(24, 48, 70), black);
   background-blend-mode: multiply;
   .flex_box {
     display: flex;
@@ -31,8 +31,7 @@
 
 @media screen and ($lg) {
   .explaining {
-    background: linear-gradient(to right, rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9));
-    background-blend-mode: multiply;
+
   }
 }
 
