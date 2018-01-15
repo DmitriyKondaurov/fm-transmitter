@@ -1,20 +1,11 @@
-.explaining {
+.compare {
   background: radial-gradient(rgb(24, 48, 70), black);
   background-blend-mode: multiply;
-  .flex_box {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  .exp_img {
-    min-width: 320px;
-    padding: 30px 0;
-    animation-delay: 0.6s;
-  }
-  section.widget.widget_recent_comments {
-    padding: 0;
+  .compare_table, th {
+    text-align: center;
+    td:first-child {
+      text-align: start;
+    }
   }
 }
 //________________________________________________________________________________

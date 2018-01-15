@@ -35,10 +35,14 @@ Version: 1.0
 @import
         'layouts/header',
         'layouts/footer',
+        'layouts/call-to-action',
         'layouts/sidebar';
 
 @import
         'pages/hero',
         'pages/explaining',
         'pages/comments',
+        'pages/video',
+        'pages/ship-payment',
+        'pages/compare',
         'pages/about';

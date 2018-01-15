@@ -1,5 +1,5 @@
 .fresh_comments {
-  background: linear-gradient(rgb(8, 24, 36), rgb(15, 22, 42), rgb(0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(15, 22, 42, 0.5), rgba(0, 0, 0, 0.9)), url(img/background2.jpg) repeat;
   textarea {
     color: #000;
   }
@@ -47,10 +47,10 @@
   .comment-content {
     padding: 10px;
     margin: 20px;
-    background: rgb(30, 54, 74);
+    background: $sec-color;
     border-radius: 10px;
     border: 1px solid $brand-color;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0 0 10px 1px;
     p {
       color: $main-text-color;
     }
@@ -79,7 +79,7 @@
     padding: 0 10px;
     border: 1px solid $brand-color;
     border-bottom: none;
-    background-color:  rgb(30, 54, 74);
+    background-color:  $sec-color;
   }
 }
 //________________________________________________________________________________
@@ -96,5 +96,8 @@
 }
 
 @media screen and ($lg) {
+  .fresh_comments {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(15, 22, 42, 0.5), rgba(0, 0, 0, 0.9)), repeat;
+  }
 }
 

@@ -50,72 +50,7 @@
       }
     }
   }
-  .call_to_action {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid $brand-color;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    animation-delay: 0.8s;
-    .attention-1 {
-      position: relative;
-      top: -22px;
-      width: 100px;
-      margin: auto;
-      border-radius: 20px;
-      border: 1px solid $brand-color;
-      background-color: rgba(255, 50, 50, 1);
-      font-weight: 900;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    .attention-2 {
-      width: 150px;
-      margin: auto;
-      color: rgba(255, 50, 50, 1);
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font: 900 28px/34px $sec-font;
-      text-shadow: 2px 0px $brand-color;
-    }
-    .prices {
-      text-align: center;
-      margin: 10px 0 10px 0;
-      .old_price {
-        display: block;
-        color: #8A2525;
-        font: 700 24px/28px $main-font;
-        text-decoration: line-through;
-      }
-      .new_price {
-        display: block;
-        font: 700 32px/28px $main-font;
-        color: #fbed50;
-      }
-    }
-    .discount {
-      color: $sec-text-color;
-      //font-variant: all-petite-caps;
-    }
-    .discount_amount {
-      padding: 10px 3px;
-      border-radius: 20px;
-      color: #fbed50;
-      font-size: 24px;
-      font-weight: 700;
-    }
-    .left_pcs {
-      padding: 3px 10px;
-      border-radius: 5px;
-      background-color: lightgrey;
-      color: black;
-      font-size: 18px;
-    }
 
-  }
 }
 .brand {
   text-transform: uppercase;

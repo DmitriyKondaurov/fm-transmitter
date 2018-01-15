@@ -74,6 +74,53 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
+            <section class="compare">
+                <div class="container">
+                    <h2 class="title">Преимущества</h2>
+                    <table class="compare_table row">
+                        <tr>
+                            <th>Функции</th>
+                            <th><span class="brand">'BT-800'</span></th>
+                            <th>Другой модулятор</th>
+                        </tr>
+                        <tr>
+                            <td>Безпроводная громкая связь в авто (Bluetooth - Fm)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Громкая связь в авто (AUX - Fm)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Трансляция музыки (Bluetooth - Fm)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Трансляция музыки (SD/TF Card - Fm)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Трансляция музыки (AUX - Fm)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Питание от USB (возможность использования вне автомобиля)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Дополнительный слот USB на 2.1А для питания других приборов</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
             <section class="about parallax-window"
                      data-parallax="scroll"
                      data--fix="false"
@@ -130,7 +177,13 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <section class="fresh_comments">
+            <section class="fresh_comments parallax-window"
+                     data-parallax="scroll"
+                     data--fix="false"
+                     data-android-fix="false"
+                     data-ios-fix="false"
+                     data-speed="0.3"
+                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/background2.jpg">
                 <div class="wrapper">
                     <?php //Show fresh comments
 					get_sidebar(); ?>
@@ -138,6 +191,43 @@ get_header(); ?>
                     <div class="add_new_comment_button" id="add_new_comment_button">добавить коментарий</div>
                 </div>
             </section>
+            <section class="video">
+                <div class="wrapper">
+                    <h2 class="title">видео обзор</h2>
+                    <div class="flex-video flex-video-widescreen mb-beta">
+                        <iframe src="https://www.youtube.com/embed/0a4rrMEOOFA?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen>    </iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="ship_payment">
+                <div class="wrapper">
+                <h2 class="title">доставка и оплата</h2>
+                    <div class="flex_box">
+                        <div>
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-13.jpg"
+                                 alt="Новая почта" class="ship_img">
+                            <ul>
+                                <li><span class="bold">Доставка по Украине</span> Новой Почтой (наложенный
+                                    платеж)
+                                </li>
+                                <li><span class="bold">Время доставки:</span> 1-2 дня</li>
+                                <li><span class="bold">Стоимость доставки по Украине:</span> 35-40 грн</li>
+                                <li><span class="bold">Стоимость наложенного платежа:</span> 30 грн</li>
+                            </ul>
+                        </div>
+                        <div class="call_to_action">
+                            <div class="attention-2">Акция!</div>
+                            <div class="discount">Первым 10-ти покупателям скидка <span
+                                        class="discount_amount">20%</span></div>
+                            <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
+                                        грн</span></div>
+                            <button class="order_button">заказать</button>
+                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 			<?php // Show the selected frontpage content.
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();

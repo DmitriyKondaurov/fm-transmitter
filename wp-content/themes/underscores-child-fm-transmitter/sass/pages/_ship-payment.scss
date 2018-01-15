@@ -1,0 +1,47 @@
+.ship_payment {
+  background: radial-gradient(rgb(85, 85, 85), rgb(0, 0, 0)), url(img/City_Landscape_Background.jpg) center/cover no-repeat;
+  background-blend-mode: multiply;
+  .bold {
+    font-weight: 700;
+  }
+  .flex_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    &>div:first-child {
+      flex-basis: 100%;
+      max-width: 550px;
+      margin: 25px 0;
+    }
+  }
+  .ship_img {
+    float: left;
+    width: 100px;
+    overflow: hidden;
+    padding-top: 5px;
+    margin-right: 20px;
+  }
+  ul {
+    margin: 0;
+    li {
+      padding: 2px;
+    }
+  }
+}
+//________________________________________________________________________________
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+}
+

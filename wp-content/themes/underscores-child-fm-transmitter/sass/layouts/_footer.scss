@@ -1,11 +1,41 @@
 footer.site-footer {
-  padding-top: 100px;
+  padding-top: 10px;
   margin: auto;
   background: rgb(30, 54, 74);
-  .site-info {
-  text-align: center;
+  .site-info, .contacts {
+    text-align: center;
+    &:hover a {
+      color: $main-text-color;
+      text-decoration: none;
+    }
+  }
+  .contacts {
+    border-bottom: 1px solid $brand-color;
+    color: $sec-text-color;
+  }
+  .phone {
+    margin: auto;
+    height: 30px;
+    overflow: hidden;
+    .tel {
+      color: $brand-color;
+      font: 400 12px/18px $main-font;
+      vertical-align: middle;
+    }
+    .viber {
+      border: 1px solid $main-text-color;
+      border-radius: 8px;
+      padding: 1px 2px;
+      background-color: #a16fff;
+      color: $main-text-color;
+    }
+    &:hover .tel {
+      color: $main-text-color;
+      text-decoration: none;
+    }
+  }
 }
-}
+
 @media screen and ($xs) {
   footer {
 
