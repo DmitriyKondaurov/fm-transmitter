@@ -7,14 +7,15 @@ $(document).ready(function() {
             $(".site-header").removeClass("active");
         }
     });
-
+});
     // _________________ANIMATION________________________
-
+    $(window).on("load", function() {
     $(".brand_new").animated("flash", "fadeOut");
     // $(".slogan").animated("fadeInUp", "fadeInDown");
     $(".owl-carousel").animated("zoomIn", "zoomOut");
     // $(".hero_shot_spec").animated("flipInX", "flipOutX");
-    $(".call_to_action").animated("flipInX", "flipOutX");
+    $(".call_to_action_hero").animated("flipInX", "flipOutX");
+    $(".call_to_action_footer").animated("pulse", "zoomOut");
     $(".exp_img").animated("zoomIn", "zoomOut");
     $(".about_full_spec li:nth-child(1) p").animated("fadeInUp", "fadeOutUp");
     $(".about_full_spec li:nth-child(2) p").animated("fadeInUp", "fadeOutUp");
@@ -23,6 +24,7 @@ $(document).ready(function() {
     $(".about_full_spec li:nth-child(5) p").animated("fadeInUp", "fadeOutUp");
     $(".about_full_spec li:nth-child(6) p").animated("fadeInUp", "fadeOutUp");
     $(".about_full_spec li:nth-child(7) p").animated("fadeInUp", "fadeOutUp");
+    $(".about_full_spec li:nth-child(8) p").animated("fadeInUp", "fadeOutUp");
 });
 // __________________Preload __________________________
 $(window).on("load", function() {

@@ -57,7 +57,7 @@ get_header(); ?>
                             <li>AUX line-in</li>
                             <li>Dual USB CarCharger 1A/2.1A</li>
                         </ul>
-                        <div class="call_to_action">
+                        <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>
                             <div class="discount">Первым 10-ти покупателям скидка <span
                                         class="discount_amount">20%</span></div>
@@ -77,7 +77,7 @@ get_header(); ?>
             <section class="compare">
                 <div class="container">
                     <h2 class="title">Преимущества</h2>
-                    <table class="compare_table row">
+                    <table class="compare_table table-bordered">
                         <tr>
                             <th>Функции</th>
                             <th><span class="brand">'BT-800'</span></th>
@@ -85,6 +85,16 @@ get_header(); ?>
                         </tr>
                         <tr>
                             <td>Безпроводная громкая связь в авто (Bluetooth - Fm)</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Технология подавления шумов CVC</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Автоматическое востановление Bluetooth соединения</td>
                             <td>1</td>
                             <td>2</td>
                         </tr>
@@ -104,7 +114,7 @@ get_header(); ?>
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td>Трансляция музыки (AUX - Fm)</td>
+                            <td>Трансляция музыки c любых других устройств (AUX - Fm)</td>
                             <td>1</td>
                             <td>2</td>
                         </tr>
@@ -114,7 +124,7 @@ get_header(); ?>
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td>Дополнительный слот USB на 2.1А для питания других приборов</td>
+                            <td>Дополнительный слот USB на 5V/2.1А для питания или зарядки других устройств</td>
                             <td>1</td>
                             <td>2</td>
                         </tr>
@@ -130,7 +140,7 @@ get_header(); ?>
                      data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-hero.jpg">
                 <div class="wrapper">
                     <h2 class="title">функции</h2>
-                    <ul class="about_full_spec">
+                    <ul id="functions" class="about_full_spec">
                         <li class="icon-phone_bluetooth_speaker">
                             <p>Безпроводная громкая связь в авто (hands free). С помощью Bluetooth соединения с
                                 телефоном и передачи звука по радио волнам в Fm диапазоне на штатную магнитолу
@@ -139,12 +149,15 @@ get_header(); ?>
                         <li class="icon-aux10">
                             <p>Громкая связь в авто (hands free) c AUX входа. С помощью кабельного переходника (выход
                                 наушников 3,5 мм) телефон соединяется с Fm модулятором <span
-                                        class="brand">'BT-800'</span>через встроенный AUX вход и передаёт звук по радио
+                                        class="brand">'BT-800'</span> через встроенный AUX вход и передаёт звук по радио
                                 волнам в Fm диапазоне на штатную магнитолу автомобиля.</p>
                         </li>
                         <li class="icon-card1">
                             <p>Трансляция музыки по радио волнам в Fm диапазоне с встроенного SD/TF card reader на любой
                                 радиоприёмник в радиусе 10 метров.</p>
+                        </li>
+                        <li class="icon-radio">
+                            <p>Подавление шумов во время разговора по телефону с помощью технологии CVC.</p>
                         </li>
                         <li class="icon-aux5">
                             <p>Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с
@@ -215,7 +228,7 @@ get_header(); ?>
                                 <li><span class="bold">Стоимость наложенного платежа:</span> 30 грн</li>
                             </ul>
                         </div>
-                        <div class="call_to_action">
+                        <div class="call_to_action_footer">
                             <div class="attention-2">Акция!</div>
                             <div class="discount">Первым 10-ти покупателям скидка <span
                                         class="discount_amount">20%</span></div>

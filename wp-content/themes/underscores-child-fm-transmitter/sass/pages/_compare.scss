@@ -3,8 +3,19 @@
   background-blend-mode: multiply;
   .compare_table, th {
     text-align: center;
-    td:first-child {
-      text-align: start;
+    th {
+      padding: 5px;
+      text-transform: uppercase;
+      color: $main-text-color;
+      &:first-child {
+        text-align: start;
+      }
+    }
+    td {
+      padding: 5px;
+      &:first-child {
+        text-align: start;
+      }
     }
   }
 }
