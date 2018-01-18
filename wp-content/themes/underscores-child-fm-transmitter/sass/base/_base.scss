@@ -17,7 +17,7 @@ body {
   }
   section {
     padding: 50px 10px;
-    .title {
+    & [class="title"] { //можно просто указать аттрибут без его значений [class]
       width: 280px;
       margin: auto;
       padding-bottom: 10px;

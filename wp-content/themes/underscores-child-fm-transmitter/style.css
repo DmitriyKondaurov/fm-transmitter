@@ -6373,7 +6373,7 @@ body {
     color: #ff9616; }
   body section {
     padding: 50px 10px; }
-    body section .title {
+    body section [class="title"] {
       width: 280px;
       margin: auto;
       padding-bottom: 10px;
@@ -7188,21 +7188,14 @@ ol {
   padding: 0; }
 
 .flexible-middle-width, .crm-webform-iframe {
-  background-color: #1E364A; }
+  background-color: #ffffe1; }
 
 .crm-webform-header-container, .page-theme-transparent .content, .crm-webform-header {
-  background-color: #1E364A;
-  color: #ff9616;
-  text-align: center; }
+  background-color: #ffffe1; }
 
 .crm-webform-header-container {
-  padding: 15px 20px 0 20px; }
-
-.crm-webform-input {
-  height: auto;
-  padding: 0;
-  background-color: #142431;
-  border: none; }
+  padding: 15px 20px 0 20px;
+  text-align: center; }
 
 .crm-webform-label-title-container, .crm-webform-group {
   display: inline-block;
@@ -7216,9 +7209,9 @@ button.crm-webform-submit-button {
           border-radius: 7px;
   outline: none;
   color: black;
-  background: -webkit-gradient(linear, left top, left bottom, from(#894d0f), color-stop(#ff9616), to(#894d0f));
-  background: -webkit-linear-gradient(#894d0f, #ff9616, #894d0f);
-  background: linear-gradient(#894d0f, #ff9616, #894d0f);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa52c), color-stop(#ffc87d), to(#ffa52c));
+  background: -webkit-linear-gradient(#ffa52c, #ffc87d, #ffa52c);
+  background: linear-gradient(#ffa52c, #ffc87d, #ffa52c);
   text-transform: uppercase;
   font: 700 18px/24px 'Montserrat', sans-serif; }
 
@@ -7235,14 +7228,12 @@ button.crm-webform-submit-button {
       -ms-transform: translateY(2px);
           transform: translateY(2px); }
 
-.crm-webform-label {
-  color: #ffffe1; }
-
-.crm-webform-label-content {
-  background-color: transparent; }
+.crm-webform-input {
+  height: 24px;
+  padding: 0;
+  max-width: 175px; }
 
 .crm-webform-wrapper {
-  color: #DEF1B8;
   font-size: 14px; }
 
 .crm-webform-fieldset-footer {
@@ -7250,10 +7241,10 @@ button.crm-webform-submit-button {
 
 .crm-webform-field-string, .crm-webform-field-phone, .crm-webform-field-integer, .crm-webform-field-product {
   height: 35px;
-  background-color: #142431;
+  padding: 0;
+  background-color: #ffffe1;
   margin: 5px;
-  -webkit-border-radius: 7px;
-          border-radius: 7px; }
+  border-bottom: 1px solid #894d0f; }
 
 .crm-webform-fieldset {
   padding: 0; }
@@ -7273,19 +7264,28 @@ button.crm-webform-submit-button {
   padding: 0; }
 
 .crm-webform-field-integer .crm-webform-group {
-  max-width: 20px; }
+  max-width: 50px; }
 
 .crm-webform-field-phone .crm-webform-group {
   margin: 0 0 0 25px;
   max-width: 140px; }
+
+select.crm-webform-input {
+  border: none; }
+
+.crm-webform-field-product .crm-webform-label-content {
+  background-color: transparent; }
 
 select.crm-webform-input option:first-child {
   display: none; }
 
 .crm-webform-input-phone-flag {
   position: absolute;
-  top: -4px;
+  top: -1px;
   left: -25px; }
+
+div[data-bx-form-popup-close] {
+  border: 1px solid #ff9616; }
 
 .order_button, #submit {
   padding: 7px 15px;
@@ -7424,21 +7424,21 @@ footer.site-footer {
     font: 400 14px/18px "Arial";
     vertical-align: middle; } }
 
-.call_to_action_footer {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-.call_to_action_hero, .call_to_action_footer {
+div.call_to_action_hero, div.call_to_action_footer {
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid #ff9616;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   padding: 10px;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   text-align: center;
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s; }
-  .call_to_action_hero .attention-1, .call_to_action_footer .attention-1 {
+          animation-delay: 0.8s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s; }
+  div.call_to_action_hero .attention-1, div.call_to_action_footer .attention-1 {
     position: relative;
     top: -22px;
     width: 100px;
@@ -7451,7 +7451,7 @@ footer.site-footer {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px; }
-  .call_to_action_hero .attention-2, .call_to_action_footer .attention-2 {
+  div.call_to_action_hero .attention-2, div.call_to_action_footer .attention-2 {
     width: 150px;
     margin: auto;
     color: #ff3232;
@@ -7460,28 +7460,28 @@ footer.site-footer {
     letter-spacing: 2px;
     font: 900 28px/34px "Montserrat", sans-serif;
     text-shadow: 2px 0 #ff9616; }
-  .call_to_action_hero .prices, .call_to_action_footer .prices {
+  div.call_to_action_hero .prices, div.call_to_action_footer .prices {
     text-align: center;
     margin: 10px 0 10px 0; }
-    .call_to_action_hero .prices .old_price, .call_to_action_footer .prices .old_price {
+    div.call_to_action_hero .prices .old_price, div.call_to_action_footer .prices .old_price {
       display: block;
       color: #8A2525;
       font: 700 24px/28px "Arial";
       text-decoration: line-through; }
-    .call_to_action_hero .prices .new_price, .call_to_action_footer .prices .new_price {
+    div.call_to_action_hero .prices .new_price, div.call_to_action_footer .prices .new_price {
       display: block;
       font: 700 32px/28px "Arial";
       color: #fbed50; }
-  .call_to_action_hero .discount, .call_to_action_footer .discount {
+  div.call_to_action_hero .discount, div.call_to_action_footer .discount {
     color: #DEF1B8; }
-  .call_to_action_hero .discount_amount, .call_to_action_footer .discount_amount {
+  div.call_to_action_hero .discount_amount, div.call_to_action_footer .discount_amount {
     padding: 10px 3px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
     color: #fbed50;
     font-size: 24px;
     font-weight: 700; }
-  .call_to_action_hero .left_pcs, .call_to_action_footer .left_pcs {
+  div.call_to_action_hero .left_pcs, div.call_to_action_footer .left_pcs {
     padding: 3px 10px;
     -webkit-border-radius: 5px;
             border-radius: 5px;

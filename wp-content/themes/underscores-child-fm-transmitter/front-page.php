@@ -48,6 +48,10 @@ get_header(); ?>
                                       alt="FM
                             модулятор
                         'BT-800'" class="main_img"></div>
+                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/15119394499470.png"
+                                      alt="FM
+                            модулятор
+                        'BT-800'" class="main_img"></div>
                         </div>
                         <ul class="hero_shot_spec">
                             <li>Bluetooth hands free (Car Kit)</li>

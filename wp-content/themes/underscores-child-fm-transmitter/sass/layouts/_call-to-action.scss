@@ -1,14 +1,13 @@
-.call_to_action_footer {
-  animation-iteration-count: infinite;
-}
-.call_to_action_hero, .call_to_action_footer {
+div.call_to_action_hero, div.call_to_action_footer {
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid $brand-color;
   border-radius: 10px;
   padding: 10px;
+  animation-iteration-count: infinite;
   text-align: center;
   animation-delay: 0.8s;
+  animation-duration: 1.5s;
   .attention-1 {
     position: relative;
     top: -22px;
