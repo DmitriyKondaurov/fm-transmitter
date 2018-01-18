@@ -39,9 +39,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
-    //]]></script>
 <script id="bx24_form_button" data-skip-moving="true">
     (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
         (w[b].forms=w[b].forms||[]).push(arguments[0])};
