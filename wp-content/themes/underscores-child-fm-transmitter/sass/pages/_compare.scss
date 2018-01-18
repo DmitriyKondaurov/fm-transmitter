@@ -1,5 +1,5 @@
 .compare {
-  background: radial-gradient(rgb(24, 48, 70), black);
+  background: radial-gradient(rgb(49, 49, 49), black);
   background-blend-mode: multiply;
   .compare_table, th {
     text-align: center;
@@ -16,6 +16,16 @@
       &:first-child {
         text-align: start;
       }
+      &:not(:first-child) {
+        font-size: 24px;
+      }
+    }
+  }
+  .brands_icons {
+    background-color: #fff;
+    .brand_img_icon {
+      width: 85px;
+      max-width: inherit;
     }
   }
 }

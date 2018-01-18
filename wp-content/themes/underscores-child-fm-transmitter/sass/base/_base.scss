@@ -15,8 +15,8 @@ body {
   a:hover, a:focus, a:active, a:visited {
     color: $brand-color;
   }
-  section:not(#recent-comments-2) {
-    padding: 100px 10px;
+  section {
+    padding: 50px 10px;
     .title {
       width: 280px;
       margin: auto;
@@ -28,6 +28,9 @@ body {
       text-align: center;
       text-transform: uppercase;
     }
+  }
+  section#recent-comments-2 {
+    padding: 10px;
   }
 }
 .wrapper  {
@@ -68,9 +71,15 @@ body {
 }
 
 @media screen and ($md) {
-
+ body {
+   section {
+     padding: 100px 10px;
+   }
+ }
 }
 
 @media screen and ($lg) {
-
+  body {
+    font: 400 16px/24px $main-font;
+  }
 }

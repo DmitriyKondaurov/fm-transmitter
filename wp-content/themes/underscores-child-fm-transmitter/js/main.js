@@ -47,7 +47,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 5000,
         items: 1,
         itemElement: 'div',
         stageElement: 'div',

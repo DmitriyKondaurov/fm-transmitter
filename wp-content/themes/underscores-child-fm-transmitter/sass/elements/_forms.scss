@@ -1,25 +1,90 @@
-.wpcf7-form {
-  width: 265px;
-  height: 40px;
-  margin: auto;
-  padding: 5px;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.26);
-  border: 1px solid rgba(121, 120, 118, 0.71);
-  background-color: #2c2c2b;
+.page-template-default>div>div, .flexible-middle-width, .crm-webform-iframe {
+  background-color: #1E364A;
 }
-
-.wpcf7-submit {
-  position: relative;
-  left: 20px;
-  z-index: 2;
-  width: 40px;
-  background-color: transparent;
+.crm-webform-header-container, .page-theme-transparent .content, .crm-webform-header {
+  background-color:  #1E364A;
+  color: rgb(255, 150, 22);
+  text-align: center;
+}
+.crm-webform-header-container {
+  padding: 15px 20px 0 20px;
+}
+.crm-webform-input {
+  height: auto;
+  padding: 0;
+  background-color:  #142431;
+  border: none;
+}
+.crm-webform-label-title-container, .crm-webform-group {
+  display: inline-block;
+  margin: 0 10px;
+}
+button.crm-webform-submit-button {
+  padding: 7px 15px;
+  margin: 30px auto;
+  border: 1px solid #894d0f;
+  border-radius: 7px;
   outline: none;
-  border: none;
-  border-left: 1px solid rgba(224, 224, 222, 0.17);
-  color: #2c2c2b;
+  color: black;
+  background: linear-gradient(#894d0f, rgb(255, 150, 22), #894d0f);
+  text-transform: uppercase;
+  font: 700 18px/24px 'Montserrat', sans-serif;
 }
-.wpcf7-text {
-  background-color: #2c2c2b;
-  border: none;
+.crm-webform-submit-button:hover {
+  border-color: #894d0f;
+  color: #ffffe1;
+  box-shadow: 0 0 10px -1px;
+}
+.crm-webform-submit-button:active {
+  transition: all 20ms;
+  transform: translateY(2px);
+}
+.crm-webform-label {
+  color:  #ffffe1;
+}
+.crm-webform-label-content {
+  background-color: transparent;
+}
+.crm-webform-wrapper {
+  color:  #DEF1B8;
+  font-size: 14px;
+}
+.crm-webform-fieldset-footer {
+  text-align: center;
+}
+.crm-webform-field-string, .crm-webform-field-phone, .crm-webform-field-integer, .crm-webform-field-product  {
+  height: 35px;
+  background-color:  #142431;
+  margin: 5px;
+  border-radius: 7px;
+}
+.crm-webform-fieldset {
+  padding: 0;
+}
+.crm-webform-icon {
+  display: none;
+}
+.crm-webform-label-title-container, .crm-webform-group {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -25%);
+}
+.crm-webform-input.crm-webform-input-phone-padding {
+  max-width: 150px;
+  padding: 0;
+}
+.crm-webform-field-integer .crm-webform-group {
+  max-width: 20px;
+}
+.crm-webform-field-phone .crm-webform-group {
+  margin: 0 0 0 25px;
+  max-width: 140px;
+}
+select.crm-webform-input option:first-child {
+  display: none;
+}
+.crm-webform-input-phone-flag {
+  position: absolute;
+  top: -4px;
+  left: -25px;
 }

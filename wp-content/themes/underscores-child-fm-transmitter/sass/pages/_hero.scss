@@ -1,5 +1,4 @@
 .hero {
-  padding-top: 50px;
   background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/4629944500_1576858587.jpg) center/cover no-repeat ;
   background-blend-mode: multiply;
   .brand_name {
@@ -43,6 +42,7 @@
     li {
       padding: 5px;
       font: 400 14px/24px $main-font;
+      text-transform: uppercase;
       &:before {
         content: url('img/checkbox-icon-red.png');
         margin: 10px;
@@ -73,7 +73,9 @@
 }
 
 @media screen and ($sm) {
-
+  .hero {
+    padding-top: 50px;
+  }
 }
 
 @media screen and ($md) {

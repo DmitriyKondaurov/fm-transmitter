@@ -63,7 +63,7 @@ get_header(); ?>
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
                                     грн</span></div>
-                            <button class="order_button">заказать</button>
+                            <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
                         </div>
                     </div>
@@ -84,49 +84,56 @@ get_header(); ?>
                             <th>Другой модулятор</th>
                         </tr>
                         <tr>
+                            <td></td>
+                            <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
+                            ?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
+                            <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
+                            ?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
+                        </tr>
+                        <tr>
                             <td>Безпроводная громкая связь в авто (Bluetooth - Fm)</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                         <tr>
                             <td>Технология подавления шумов CVC</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                         <tr>
                             <td>Автоматическое востановление Bluetooth соединения</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                         <tr>
                             <td>Громкая связь в авто (AUX - Fm)</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                         <tr>
                             <td>Трансляция музыки (Bluetooth - Fm)</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                         <tr>
                             <td>Трансляция музыки (SD/TF Card - Fm)</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
                         </tr>
                         <tr>
                             <td>Трансляция музыки c любых других устройств (AUX - Fm)</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
                         </tr>
                         <tr>
                             <td>Питание от USB (возможность использования вне автомобиля)</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                         <tr>
                             <td>Дополнительный слот USB на 5V/2.1А для питания или зарядки других устройств</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
                     </table>
                 </div>
@@ -208,7 +215,7 @@ get_header(); ?>
                 <div class="wrapper">
                     <h2 class="title">видео обзор</h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
-                        <iframe src="https://www.youtube.com/embed/0a4rrMEOOFA?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen>    </iframe>
+                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -234,7 +241,7 @@ get_header(); ?>
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
                                         грн</span></div>
-                            <button class="order_button">заказать</button>
+                            <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
                         </div>
                     </div>

@@ -59,7 +59,15 @@
 }
 
 @media screen and ($md) {
-
+  .site-header {
+  .site-title a {
+      vertical-align: 7px;
+      font: 400 14px/18px $main-font;
+    }
+    .phone .tel {
+      font: 400 14px/18px $main-font;
+    }
+  }
 }
 
 @media screen and ($lg) {
