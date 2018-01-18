@@ -65,13 +65,13 @@ $(document).ready(function () {
         }
     })
 });
-// hide footer
+// hide add new comment
 $(function hide() {
     if ($(".comment-respond").is(":visible")) {
         $(".comment-respond").slideUp("slow");
     }
 })
-//show footer
+//show add new comment
 $(document).ready(function() {
     $("#add_new_comment_button").click(function () {
         $(".comment-respond").slideToggle("slow");
