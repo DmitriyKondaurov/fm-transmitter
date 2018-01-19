@@ -67,8 +67,7 @@ get_header(); ?>
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
                                     грн</span></div>
-                            <button class="b24-web-form-popup-btn-8 order_button" onclick="gtag_report_conversion
-                            (url)">заказать</button>
+                            <button class="b24-web-form-popup-btn-8 order_button" onclick="gtag_report_conversion()">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
                         </div>
                     </div>
@@ -246,7 +245,7 @@ get_header(); ?>
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
                                         грн</span></div>
-                            <button class="b24-web-form-popup-btn-8 order_button" onclick="gtag_report_conversion(url)">заказать</button>
+                            <button class="b24-web-form-popup-btn-8 order_button" onclick="gtag_report_conversion()">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
                         </div>
                     </div>

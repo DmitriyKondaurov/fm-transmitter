@@ -68,13 +68,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     var google_conversion_id = 820350295;
     var google_conversion_label = "aB4aCIiox3sQ15qWhwM";
     var google_remarketing_only = false;
+    if (<%= orderId %>) {
+        var google_conversion_order_id = "<%= orderId %>";
+    }
     /* ]]> */
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
 <noscript>
     <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/820350295/?label=aB4aCIiox3sQ15qWhwM&amp;guid=ON&amp;script=0"/>
+        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/820350295/?label=aB4aCIiox3sQ15qWhwM&amp;guid=ON&amp;oid=<%= orderId %>&amp;script=0"/>
     </div>
 </noscript>
 
