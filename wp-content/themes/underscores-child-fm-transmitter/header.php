@@ -32,8 +32,9 @@
         gtag('config', 'AW-820350295');
         gtag('config', 'UA-112738095-1');
     </script>
-    <!-- Event snippet for Оформление заказа conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+    <!-- Event snippet for Оформление заказа ADWords conversion page
+	In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
         function gtag_report_conversion(url) {
             var callback = function () {
