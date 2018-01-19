@@ -219,7 +219,7 @@ get_header(); ?>
                 <div class="wrapper">
                     <h2 class="title">видео обзор</h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
-                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" encrypted-media" allowfullscreen></iframe>
+<!--                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" encrypted-media" allowfullscreen></iframe>-->
                     </div>
                 </div>
             </section>
