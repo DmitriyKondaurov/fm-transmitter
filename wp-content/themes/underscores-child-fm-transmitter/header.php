@@ -22,12 +22,31 @@
     <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112738095-1"></script>
+    <!-- Global site tag (gtag.js) - Google AdWords: 820350295 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-820350295"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
+        gtag('config', 'AW-820350295');
         gtag('config', 'UA-112738095-1');
+    </script>
+    <!-- Event snippet for Оформление заказа conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-820350295/aB4aCIiox3sQ15qWhwM',
+                'event_callback': callback
+            });
+            return false;
+        }
     </script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
