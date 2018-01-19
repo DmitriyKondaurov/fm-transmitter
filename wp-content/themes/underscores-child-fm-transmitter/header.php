@@ -53,7 +53,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="eed527l5bXNigwS0jqU29Qan2hdZLCm2cNF7t5rTuW8" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+    <link rel="alternate" hreflang="ru" href="https://shops.sytes.net/" />
 	<?php wp_head(); ?>
 </head>
 
