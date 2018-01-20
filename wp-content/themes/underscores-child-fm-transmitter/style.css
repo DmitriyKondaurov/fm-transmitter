@@ -7123,7 +7123,7 @@ a.slider_scroll_button {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
-  font: 400 24px/28px 'FontAwesome';
+  font: 400 18px/28px 'FontAwesome';
   color: #ff9616; }
   a.slider_scroll_button:visited, a.slider_scroll_button:focus {
     text-decoration: none; }
@@ -7192,6 +7192,9 @@ ol {
 
 .crm-webform-header-container, .page-theme-transparent .content, .crm-webform-header {
   background-color: #ffffe1; }
+
+.crm-webform-header {
+  margin: 0; }
 
 .crm-webform-header-container {
   padding: 15px 20px 0 20px;
@@ -7286,6 +7289,9 @@ select.crm-webform-input option:first-child {
 
 div[data-bx-form-popup-close] {
   border: 1px solid #ff9616; }
+
+.crm-webform-bottom-logo-container {
+  display: none; }
 
 .order_button, #submit {
   padding: 7px 15px;
