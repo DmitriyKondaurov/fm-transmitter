@@ -27,7 +27,7 @@ a.slider_scroll_button {
   transition: all .2s ease-in;
   transform: translateX(-50%);
   text-align: center;
-  font: 400 24px/28px 'FontAwesome';
+  font: 400 16px/28px 'FontAwesome';
   color: $brand-color;
   &:visited, &:focus {
     text-decoration: none;

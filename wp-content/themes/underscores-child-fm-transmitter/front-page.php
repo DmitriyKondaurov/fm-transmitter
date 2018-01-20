@@ -67,13 +67,15 @@ get_header(); ?>
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
                                     грн</span></div>
-                            <button class="b24-web-form-popup-btn-8 order_button" onclick="return gtag_report_conversion()">заказать</button>
+                            <button class="b24-web-form-popup-btn-8 order_button"
+                                    onclick="return gtag_report_conversion()">заказать
+                            </button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
                         </div>
                     </div>
                     <div class="nav_button">
                         <a href="#" id="nav_down" class="slider_scroll_button">
-                            <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-down glyphicon glyphicon-menu-down"></i>
                         </a>
                     </div>
                 </div>
@@ -90,9 +92,9 @@ get_header(); ?>
                         <tr>
                             <td></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-                            ?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
+								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-                            ?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
+								?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
                         </tr>
                         <tr>
                             <td>Безпроводная громкая связь в авто (Bluetooth - Fm)</td>
@@ -209,7 +211,7 @@ get_header(); ?>
                      data-speed="0.3"
                      data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/background2.jpg">
                 <div class="wrapper">
-                    <?php //Show fresh comments
+					<?php //Show fresh comments
 					get_sidebar(); ?>
                     <div class="add_new_comment"><?php comments_template(); ?></div>
                     <div class="add_new_comment_button" id="add_new_comment_button">добавить коментарий</div>
@@ -219,13 +221,13 @@ get_header(); ?>
                 <div class="wrapper">
                     <h2 class="title">видео обзор</h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
-<!--                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" encrypted-media" allowfullscreen></iframe>-->
+                        <!--                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" encrypted-media" allowfullscreen></iframe>-->
                     </div>
                 </div>
             </section>
             <section class="ship_payment">
                 <div class="wrapper">
-                <h2 class="title">доставка и оплата</h2>
+                    <h2 class="title">доставка и оплата</h2>
                     <div class="flex_box">
                         <div>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-13.jpg"
@@ -245,7 +247,9 @@ get_header(); ?>
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
                                         грн</span></div>
-                            <button class="b24-web-form-popup-btn-8 order_button" onclick="return gtag_report_conversion()">заказать</button>
+                            <button class="b24-web-form-popup-btn-8 order_button"
+                                    onclick="return gtag_report_conversion()">заказать
+                            </button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
                         </div>
                     </div>

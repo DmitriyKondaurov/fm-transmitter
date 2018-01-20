@@ -7,6 +7,9 @@
   background-color: #ffffe1;
   //color: rgb(255, 150, 22);
 }
+.crm-webform-header {
+  margin: 0;
+}
 .crm-webform-header-container {
   padding: 15px 20px 0 20px;
   text-align: center;
@@ -103,4 +106,7 @@ select.crm-webform-input option:first-child {
 }
 div[data-bx-form-popup-close]  {
   border: 1px solid rgb(255, 150, 22);
+}
+.crm-webform-bottom-logo-container {
+  display: none;
 }
