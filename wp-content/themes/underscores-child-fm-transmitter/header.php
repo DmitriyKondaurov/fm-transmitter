@@ -13,41 +13,13 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-P6CGQ3C');</script>
-    <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112738095-1"></script>
-    <!-- Global site tag (gtag.js) - Google AdWords: 820350295 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-820350295"></script>
-
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'AW-820350295');
         gtag('config', 'UA-112738095-1');
-    </script>
-
-    <!-- Event snippet for Оформление заказа ADWords conversion page
-	In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-820350295/aB4aCIiox3sQ15qWhwM',
-                'event_callback': callback
-            });
-            return false;
-        }
     </script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -59,26 +31,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6CGQ3C"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Google Code for &#1054;&#1092;&#1086;&#1088;&#1084;&#1083;&#1077;&#1085;&#1080;&#1077; &#1079;&#1072;&#1082;&#1072;&#1079;&#1072; Conversion Page -->
-<script type="text/javascript">
-    /* <![CDATA[ */
-    var google_conversion_id = 820350295;
-    var google_conversion_label = "aB4aCIiox3sQ15qWhwM";
-    var google_remarketing_only = false;
-    /* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-    <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/820350295/?label=aB4aCIiox3sQ15qWhwM&amp;guid=ON&amp;script=0"/>
-    </div>
-</noscript>
-
 <div class="loader">
     <div class="loader_inner"></div>
 </div>
