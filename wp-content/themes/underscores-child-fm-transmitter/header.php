@@ -26,7 +26,8 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-112738095-1');
+        gtag('config', 'UA-112738095-1'); /*Google Analytics*/
+        gtag('config', 'AW-820350295');  /*Google AdWords*/
     </script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
