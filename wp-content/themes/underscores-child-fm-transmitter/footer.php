@@ -22,17 +22,33 @@
                     <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
                         +380978314414</a>
                 </div>
+                <ul class="social">
+                    <li>
+                        <a class="facebook-icon" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                    </li>
+                    <li>
+                        <a class="facebook-icon" href="https://plus.google.com" target="_blank">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i></i>Google+</a>
+                    </li>
+                    <li>
+                        <a class="facebook-icon" href="https://twitter.com/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>Twitter</a>
+                    </li>
+                </ul>
             </div>
         </div>
 		<div class="site-info">
+
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underscores' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by  %s', 'underscores' ), 'Kondaurov Dmytro' );
+				printf( esc_html__( 'CMS: %s', 'underscores' ), 'WordPress' );
 			?></a>
+
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'CMS: %s', 'underscores' ), 'WordPress' );
+				printf( esc_html__( 'Proudly produced by %s', 'underscores' ), 'Kondaurov Dmytro' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

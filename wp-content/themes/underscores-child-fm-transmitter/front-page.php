@@ -27,8 +27,8 @@ get_header(); ?>
                     <div class="brand_name">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.png" alt="Новинка!"
                              class="brand_new">
-                        <h1 class="slogan">Многофункциональный bluetooth FM модулятор <span
-                                    class="brand">'BT-800'</span></h1>
+                        <h2 class="slogan">Многофункциональный bluetooth FM модулятор <span
+                                    class="brand">'BT-800'</span></h2>
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
@@ -95,7 +95,7 @@ get_header(); ?>
 								?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
                         </tr>
                         <tr>
-                            <td>Безпроводная громкая связь в авто (Bluetooth - Fm)</td>
+                            <td>Беспроводная громкая связь в авто (Bluetooth - Fm)</td>
                             <td><span class="glyphicon glyphicon-ok text-success"></span></td>
                             <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
@@ -153,7 +153,7 @@ get_header(); ?>
                     <h2 class="title">функции</h2>
                     <ul id="functions" class="about_full_spec">
                         <li class="icon-phone_bluetooth_speaker">
-                            <p>Безпроводная громкая связь в авто (hands free). С помощью Bluetooth соединения с
+                            <p>Беспроводная громкая связь в авто (hands free). С помощью Bluetooth соединения с
                                 телефоном и передачи звука по радио волнам в Fm диапазоне на штатную магнитолу
                                 автомобиля.</p>
                         </li>

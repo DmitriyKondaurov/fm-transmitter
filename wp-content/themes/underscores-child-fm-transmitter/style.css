@@ -7395,7 +7395,7 @@ footer.site-footer {
   background: #1e364a; }
   footer.site-footer .site-info, footer.site-footer .contacts {
     text-align: center; }
-    footer.site-footer .site-info:hover a, footer.site-footer .contacts:hover a {
+    footer.site-footer .site-info a:hover, footer.site-footer .contacts a:hover {
       color: #ffffe1;
       text-decoration: none; }
   footer.site-footer .contacts {
@@ -7409,6 +7409,9 @@ footer.site-footer {
       color: #ff9616;
       font: 400 12px/18px "Arial";
       vertical-align: middle; }
+      footer.site-footer .phone .tel:hover {
+        color: #ffffe1;
+        text-decoration: none; }
     footer.site-footer .phone .viber {
       border: 1px solid #ffffe1;
       -webkit-border-radius: 8px;
@@ -7416,9 +7419,28 @@ footer.site-footer {
       padding: 1px 2px;
       background-color: #a16fff;
       color: #ffffe1; }
-    footer.site-footer .phone:hover .tel {
-      color: #ffffe1;
-      text-decoration: none; }
+  footer.site-footer .social {
+    padding: 10px 0;
+    margin: 0; }
+    footer.site-footer .social li {
+      display: inline-block;
+      overflow: hidden;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ff9616;
+      -webkit-border-radius: 5px;
+              border-radius: 5px; }
+      footer.site-footer .social li a {
+        color: #DEF1B8; }
+        footer.site-footer .social li a .fa {
+          padding: 5px;
+          font-size: 16px; }
+      footer.site-footer .social li:hover {
+        border-color: #ff9616; }
+        footer.site-footer .social li:hover .fa {
+          text-decoration: none;
+          color: #ff9616; }
 
 @media screen and (min-width: 992px) {
   footer.site-footer .phone .tel {
