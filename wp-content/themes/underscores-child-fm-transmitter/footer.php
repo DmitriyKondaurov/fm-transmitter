@@ -33,7 +33,7 @@
                     </li>
                     <li>
                         <a class="facebook-icon" href="https://twitter.com/" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>Twitter</a>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
                     </li>
                 </ul>
             </div>
