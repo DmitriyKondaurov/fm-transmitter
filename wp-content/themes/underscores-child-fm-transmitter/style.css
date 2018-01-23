@@ -7171,6 +7171,8 @@ a.slider_scroll_button {
     height: 33px; }
   50% {
     height: 29px; } }
+  a.slider_scroll_button .glyphicon-menu-down {
+    top: 3px; }
 
 @media screen and (min-width: 1280px) {
   a.slider_scroll_button {
@@ -7272,12 +7274,6 @@ button.crm-webform-submit-button {
 .crm-webform-field-phone .crm-webform-group {
   margin: 0 0 0 25px;
   max-width: 140px; }
-
-select.crm-webform-input {
-  border: none; }
-
-.crm-webform-field-product .crm-webform-label-content {
-  background-color: transparent; }
 
 select.crm-webform-input option:first-child {
   display: none; }
