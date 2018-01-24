@@ -80,9 +80,11 @@ get_header(); ?>
                         <tr>
                             <td></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
+								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
+                                                          class="brand_img_icon"></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-								?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" class="brand_img_icon"></td>
+								?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" title="другой FM модулятор"
+                                                          class="brand_img_icon"></td>
                         </tr>
                         <tr>
                             <td>Беспроводная громкая связь в авто (Bluetooth - Fm)</td>
@@ -185,7 +187,8 @@ get_header(); ?>
                             <h2 class="title">спецификация</h2>
                             <div class="exp_img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explain2.png"
-                                     alt="explain device FM модулятор 'BT-800'">
+                                     alt="explain device FM модулятор 'BT-800'" title="Спецификация на FM модулятор
+                                     'BT-800'">
                             </div>
                         </div>
                     </div>
@@ -209,7 +212,9 @@ get_header(); ?>
                 <div class="wrapper">
                     <h2 class="title">видео обзор</h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
-                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" encrypted-media" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/qBJZC9oyyHc?rel=0&modestbranding=1&autohide=1&showinfo=0"
+                                frameborder="0" encrypted-media
+                        " allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
