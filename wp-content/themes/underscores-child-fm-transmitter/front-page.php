@@ -33,25 +33,15 @@ get_header(); ?>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main_img.png"
-                                      alt="FM
-                            модулятор
-                        'BT-800'" class="main_img"></div>
+                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twoside.png"
-                                      alt="FM
-                            модулятор
-                        'BT-800'" class="main_img"></div>
+                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tfcard.png"
-                                      alt="FM
-                            модулятор
-                        'BT-800'" class="main_img"></div>
+                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/charger.png"
-                                      alt="FM
-                            модулятор
-                        'BT-800'" class="main_img"></div>
+                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/15119394499470.png"
-                                      alt="FM
-                            модулятор
-                        'BT-800'" class="main_img"></div>
+                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                         </div>
                         <ul class="hero_shot_spec">
                             <li>Bluetooth hands free (Car Kit)</li>
@@ -195,7 +185,7 @@ get_header(); ?>
                             <h2 class="title">спецификация</h2>
                             <div class="exp_img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explain2.png"
-                                     alt="explain device">
+                                     alt="explain device FM модулятор 'BT-800'">
                             </div>
                         </div>
                     </div>
@@ -229,7 +219,7 @@ get_header(); ?>
                     <div class="flex_box">
                         <div>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-13.jpg"
-                                 alt="Новая почта" class="ship_img">
+                                 alt="Новая пошта" title="'Нова Пошта'" class="ship_img">
                             <ul>
                                 <li><span class="bold">Доставка по Украине</span> Новой Почтой (наложенный
                                     платеж)
