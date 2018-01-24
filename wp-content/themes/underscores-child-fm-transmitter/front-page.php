@@ -73,7 +73,7 @@ get_header(); ?>
                     </div>
                     <div class="nav_button">
                         <a href="#" id="nav_down" class="slider_scroll_button">
-                            <i class="fa fa-angle-down glyphicon glyphicon-menu-down"></i>
+                            <i class="glyphicon glyphicon-menu-down"></i>
                         </a>
                     </div>
                 </div>

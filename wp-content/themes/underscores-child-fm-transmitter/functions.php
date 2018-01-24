@@ -9,9 +9,12 @@ function add_robotstxt($output){
 	$output .= "Disallow: $path/cgi-bin\n";
 	$output .= "Disallow: $path/wp-admin\n";
 	$output .= "Disallow: $path/wp-includes\n";
+	$output .= "Allow: $path/wp-includes/js/\n";
 	$output .= "Disallow: $path/wp-content/plugins\n";
 	$output .= "Disallow: $path/wp-content/cache\n";
 	$output .= "Disallow: $path/wp-content/themes\n";
+	$output .= "Allow: $path/wp-content/themes/underscores-child-fm-transmitter/\n";
+	$output .= "Allow: $path/wp-content/themes/underscores/\n";
 	$output .= "Disallow: *$path/trackback\n";
 	$output .= "Disallow: *$path/feed\n";
 	$output .= "Disallow: */comments\n";
