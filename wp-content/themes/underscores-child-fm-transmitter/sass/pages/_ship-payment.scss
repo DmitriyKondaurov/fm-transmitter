@@ -1,5 +1,5 @@
 .ship_payment {
-  background: radial-gradient(rgb(85, 85, 85), rgb(0, 0, 0)), url(img/City_Landscape_Background.jpg) center/cover no-repeat;
+  background: radial-gradient(rgb(85, 85, 85), rgb(0, 0, 0)), url(img/City_Landscape_Background.jpg) bottom/cover no-repeat;
   background-blend-mode: multiply;
   .bold {
     font-weight: 700;
@@ -18,10 +18,10 @@
   }
   .ship_img {
     float: left;
-    width: 100px;
+    width: 115px;
     overflow: hidden;
     padding-top: 5px;
-    margin-right: 20px;
+    margin: 5px 10px;
   }
   ul {
     margin: 0;

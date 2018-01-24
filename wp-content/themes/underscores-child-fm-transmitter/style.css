@@ -7392,7 +7392,9 @@ div[data-bx-form-popup-close] {
 footer.site-footer {
   padding-top: 10px;
   margin: auto;
-  background: #1e364a; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url(img/background.jpg) repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/background.jpg) repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/background.jpg) repeat; }
   footer.site-footer .site-info, footer.site-footer .contacts {
     text-align: center; }
     footer.site-footer .site-info a:hover, footer.site-footer .contacts a:hover {
@@ -7436,11 +7438,38 @@ footer.site-footer {
         footer.site-footer .social li a .fa {
           padding: 5px;
           font-size: 16px; }
-      footer.site-footer .social li:hover {
-        border-color: #ff9616; }
-        footer.site-footer .social li:hover .fa {
+      footer.site-footer .social li:nth-child(1) .fa {
+        font-size: 16px;
+        padding: 6px; }
+      footer.site-footer .social li:nth-child(1):hover {
+        background-color: #000; }
+        footer.site-footer .social li:nth-child(1):hover .fa {
           text-decoration: none;
-          color: #ff9616; }
+          color: #8b9dc3; }
+      footer.site-footer .social li:nth-child(2) .fa {
+        font-size: 16px;
+        padding: 6px 0; }
+      footer.site-footer .social li:nth-child(2):hover {
+        background-color: #000; }
+        footer.site-footer .social li:nth-child(2):hover .fa {
+          text-decoration: none;
+          color: #d34836; }
+      footer.site-footer .social li:nth-child(3) .fa {
+        font-size: 16px;
+        padding: 6px; }
+      footer.site-footer .social li:nth-child(3):hover {
+        background-color: #000; }
+        footer.site-footer .social li:nth-child(3):hover .fa {
+          text-decoration: none;
+          color: #32506d; }
+      footer.site-footer .social li:nth-child(4) .fa {
+        font-size: 18px;
+        padding: 6px; }
+      footer.site-footer .social li:nth-child(4):hover {
+        background-color: #000; }
+        footer.site-footer .social li:nth-child(4):hover .fa {
+          text-decoration: none;
+          color: #cb2027; }
 
 @media screen and (min-width: 992px) {
   footer.site-footer .phone .tel {
@@ -7731,9 +7760,9 @@ div.call_to_action_hero, div.call_to_action_footer {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(15, 22, 42, 0.5), rgba(0, 0, 0, 0.9)), repeat; } }
 
 .video {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 22, 42, 0.5)), to(rgba(0, 0, 0, 0.1))), url(img/background.jpg) repeat;
-  background: -webkit-linear-gradient(rgba(15, 22, 42, 0.5), rgba(0, 0, 0, 0.1)), url(img/background.jpg) repeat;
-  background: linear-gradient(rgba(15, 22, 42, 0.5), rgba(0, 0, 0, 0.1)), url(img/background.jpg) repeat; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(img/background.jpg) repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background.jpg) repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background.jpg) repeat; }
   .video .flex-video {
     position: relative;
     padding-top: 25px;
@@ -7758,8 +7787,8 @@ div.call_to_action_hero, div.call_to_action_footer {
     height: 100%; }
 
 .ship_payment {
-  background: -webkit-radial-gradient(#555555, black), url(img/City_Landscape_Background.jpg) center/cover no-repeat;
-  background: radial-gradient(#555555, black), url(img/City_Landscape_Background.jpg) center/cover no-repeat;
+  background: -webkit-radial-gradient(#555555, black), url(img/City_Landscape_Background.jpg) bottom/cover no-repeat;
+  background: radial-gradient(#555555, black), url(img/City_Landscape_Background.jpg) bottom/cover no-repeat;
   background-blend-mode: multiply; }
   .ship_payment .bold {
     font-weight: 700;
@@ -7789,10 +7818,10 @@ div.call_to_action_hero, div.call_to_action_footer {
       margin: 25px 0; }
   .ship_payment .ship_img {
     float: left;
-    width: 100px;
+    width: 115px;
     overflow: hidden;
     padding-top: 5px;
-    margin-right: 20px; }
+    margin: 5px 10px; }
   .ship_payment ul {
     margin: 0; }
     .ship_payment ul li {

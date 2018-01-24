@@ -24,16 +24,20 @@
                 </div>
                 <ul class="social">
                     <li>
-                        <a class="facebook-icon" href="https://www.facebook.com/" target="_blank">
+                        <a class="facebook-icon" href="https://www.facebook.com/permalink.php?story_fbid=972668916191446&id=926936384098033" target="_blank">
                             <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
                     </li>
                     <li>
-                        <a class="facebook-icon" href="https://plus.google.com" target="_blank">
+                        <a class="facebook-icon" href="https://plus.google.com/u/1/104593117882070015696/posts/VZiT9sigVke" target="_blank">
                             <i class="fa fa-google-plus" aria-hidden="true"></i></i>Google+</a>
                     </li>
                     <li>
-                        <a class="facebook-icon" href="https://twitter.com/" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+                        <a class="facebook-icon" href="https://kondaurov-blog.tumblr.com/post/170055843893/bluetooth-fm-transmitter-bt-800-%D0%B2-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC" target="_blank">
+                            <i class="fa fa-tumblr" aria-hidden="true"></i>Tumblr</a>
+                    </li>
+                    <li>
+                        <a class="facebook-icon" href="https://www.pinterest.com/invisibilityclear/bluetooth-fm-transmitter-bt-800/" target="_blank">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>Pinterest</a>
                     </li>
                 </ul>
             </div>

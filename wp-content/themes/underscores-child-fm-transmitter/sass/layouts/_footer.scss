@@ -1,7 +1,7 @@
 footer.site-footer {
   padding-top: 10px;
   margin: auto;
-  background: rgb(30, 54, 74);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/background.jpg) repeat;
   .site-info, .contacts {
     text-align: center;
     a:hover  {
@@ -52,11 +52,56 @@ footer.site-footer {
           font-size: 16px;
         }
       }
-      &:hover {
-        border-color: $brand-color;
+      &:nth-child(1) {
         .fa {
-          text-decoration: none;
-          color: $brand-color;
+          font-size: 16px;
+          padding: 6px;
+        }
+        &:hover {
+          background-color: #000;
+          .fa {
+            text-decoration: none;
+            color: #8b9dc3;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .fa {
+          font-size: 16px;
+          padding: 6px 0;
+        }
+        &:hover {
+          background-color: #000;
+          .fa {
+            text-decoration: none;
+            color: #d34836;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .fa {
+          font-size: 16px;
+          padding: 6px;
+        }
+        &:hover {
+          background-color: #000;
+          .fa {
+            text-decoration: none;
+            color: #32506d;
+          }
+        }
+      }
+      &:nth-child(4) {
+        .fa {
+          font-size: 18px;
+          padding: 6px;
+        }
+        &:hover {
+          background-color: #000;
+          .fa {
+            text-decoration: none;
+            color: #cb2027;
+          }
         }
       }
     }
