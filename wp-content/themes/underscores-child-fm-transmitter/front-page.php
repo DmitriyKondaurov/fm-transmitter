@@ -55,7 +55,7 @@ get_header(); ?>
                             <div class="attention-2">Акция!</div>
                             <div class="discount">Первым 10-ти покупателям скидка <span
                                         class="discount_amount">20%</span></div>
-                            <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
+                            <div class="prices"><span class="old_price">620 грн </span> <span class="new_price">496
                                     грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
@@ -238,7 +238,7 @@ get_header(); ?>
                             <div class="attention-2">Акция!</div>
                             <div class="discount">Первым 10-ти покупателям скидка <span
                                         class="discount_amount">20%</span></div>
-                            <div class="prices"><span class="old_price">550 грн </span> <span class="new_price">440
+                            <div class="prices"><span class="old_price">620 грн </span> <span class="new_price">496
                                         грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
