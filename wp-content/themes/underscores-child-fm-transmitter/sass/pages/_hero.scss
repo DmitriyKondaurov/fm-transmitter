@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/4629944500_1576858587.jpg) center/cover no-repeat ;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/4629944500_1576858587.jpg) center/cover no-repeat ;
   background-blend-mode: multiply;
   .brand_name {
     position: relative;
@@ -86,7 +86,7 @@
 
 @media screen and ($lg) {
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     .brand_name {
       .slogan {
         font: 700 24px/30px $sec-font;
