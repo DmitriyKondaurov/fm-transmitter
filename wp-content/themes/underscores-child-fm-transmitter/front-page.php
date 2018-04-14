@@ -262,10 +262,10 @@ get_header(); ?>
 		                        ?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                      class="brand_img_icon">
                                 <div class="plus">+</div>
-                                <img src="<?php echo get_stylesheet_directory_uri();
-		                        ?>/img/444.png" alt="Колпачки с датчиком давления шин" title="Колпачки с датчиком
-	                            давления шин"
-                                     class="brand2_img_icon">
+                                <a href="https://www.olx.ua/obyavlenie/kolpachki-na-kolesa-datchik-indikator-davleniya-shin-IDzhTWC.html"
+                                   class="brand2_img_icon"><img src="<?php echo get_stylesheet_directory_uri();
+		                            ?>/img/444.png" alt="Колпачки с датчиком давления шин" title="Колпачки с датчиком
+	                            давления шин"></a>
                                 <div class="up_sell_discount">-15%</div>
                                 <div class="plus">=</div>
                                 <div class="amount">621грн</div>
