@@ -58,7 +58,22 @@ get_header(); ?>
                             <div class="prices"><span class="old_price">620 грн </span> <span class="new_price">496
                                     грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
+                            <div>По акции осталось: <span class="left_pcs">9</span> шт.</div>
+                            <h4 class="up_sell_title">Вместе дешевле!</h4>
+                            <div class="up_sell">
+                                <img src="<?php echo get_stylesheet_directory_uri();
+	                            ?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
+                                     class="brand_img_icon">
+                                <div class="plus">+</div>
+                                <a href="https://www.olx.ua/obyavlenie/kolpachki-na-kolesa-datchik-indikator-davleniya-shin-IDzhTWC.html"
+                                   class="brand2_img_icon"><img src="<?php echo get_stylesheet_directory_uri();
+	                            ?>/img/444.png" alt="Колпачки с датчиком давления шин" title="Колпачки с датчиком
+	                            давления шин"></a>
+                                <div class="up_sell_discount">-15%</div>
+                                <div class="plus">=</div>
+                                <div class="amount">621грн</div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="nav_button">
@@ -240,7 +255,21 @@ get_header(); ?>
                             <div class="prices"><span class="old_price">620 грн </span> <span class="new_price">496
                                         грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
+                            <div>По акции осталось: <span class="left_pcs">9</span> шт.</div>
+                            <h4 class="up_sell_title">Вместе дешевле!</h4>
+                            <div class="up_sell">
+                                <img src="<?php echo get_stylesheet_directory_uri();
+		                        ?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
+                                     class="brand_img_icon">
+                                <div class="plus">+</div>
+                                <img src="<?php echo get_stylesheet_directory_uri();
+		                        ?>/img/444.png" alt="Колпачки с датчиком давления шин" title="Колпачки с датчиком
+	                            давления шин"
+                                     class="brand2_img_icon">
+                                <div class="up_sell_discount">-15%</div>
+                                <div class="plus">=</div>
+                                <div class="amount">621грн</div>
+                            </div>
                         </div>
                     </div>
                 </div>

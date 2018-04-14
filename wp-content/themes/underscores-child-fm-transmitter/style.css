@@ -7480,7 +7480,7 @@ footer.site-footer {
 div.call_to_action_hero, div.call_to_action_footer {
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid #ff9616;
+  border: 3px solid #ff9616;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   padding: 10px;
@@ -7517,12 +7517,12 @@ div.call_to_action_hero, div.call_to_action_footer {
     text-align: center;
     margin: 10px 0 10px 0; }
     div.call_to_action_hero .prices .old_price, div.call_to_action_footer .prices .old_price {
-      display: block;
+      display: inline-block;
       color: #8A2525;
       font: 700 24px/28px "Arial";
       text-decoration: line-through; }
     div.call_to_action_hero .prices .new_price, div.call_to_action_footer .prices .new_price {
-      display: block;
+      display: inline-block;
       font: 700 32px/28px "Arial";
       color: #fbed50; }
   div.call_to_action_hero .discount, div.call_to_action_footer .discount {
@@ -7541,6 +7541,40 @@ div.call_to_action_hero, div.call_to_action_footer {
     background-color: lightgrey;
     color: black;
     font-size: 18px; }
+  div.call_to_action_hero .up_sell_title, div.call_to_action_footer .up_sell_title {
+    padding-top: 5px;
+    border-top: 2px solid #ff9616;
+    font-weight: 700;
+    color: #6ef5ff; }
+  div.call_to_action_hero .up_sell, div.call_to_action_footer .up_sell {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+    div.call_to_action_hero .up_sell *, div.call_to_action_footer .up_sell * {
+      max-width: 50px;
+      max-height: 50px; }
+    div.call_to_action_hero .up_sell .plus, div.call_to_action_footer .up_sell .plus {
+      margin: 0 5px;
+      font-size: 40px;
+      line-height: 50px; }
+    div.call_to_action_hero .up_sell .amount, div.call_to_action_footer .up_sell .amount {
+      padding: 5px;
+      font-size: 22px;
+      line-height: 41px; }
+    div.call_to_action_hero .up_sell .up_sell_discount, div.call_to_action_footer .up_sell .up_sell_discount {
+      color: #6ef5ff; }
+    div.call_to_action_hero .up_sell .brand2_img_icon, div.call_to_action_footer .up_sell .brand2_img_icon {
+      border: 1px solid #fbed50;
+      -webkit-border-radius: 5px;
+              border-radius: 5px; }
+      div.call_to_action_hero .up_sell .brand2_img_icon img, div.call_to_action_footer .up_sell .brand2_img_icon img {
+        padding: 5px 3px 0 0; }
 
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/4629944500_1576858587.jpg) center/cover no-repeat;
