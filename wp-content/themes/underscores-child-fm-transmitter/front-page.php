@@ -265,9 +265,10 @@ get_header(); ?>
                                 <div class="plus">+</div>
                                 <a href="https://www.olx.ua/obyavlenie/kolpachki-na-kolesa-datchik-indikator-davleniya-shin-IDzhTWC.html"
                                    class="brand2_img_icon"><img src="<?php echo get_stylesheet_directory_uri();
-		                            ?>/img/444.png" alt="Колпачки с датчиком давления шин" title="Колпачки с датчиком
+			                        ?>/img/444.png" alt="Колпачки с датчиком давления шин" title="Колпачки с датчиком
 	                            давления шин"></a>
-                                <div class="up_sell_discount">-15% 125грн</div>
+                                <div class="up_sell_discount">-15% <span class="up_sell_old_price">145грн</span>
+                                    125грн</div>
                                 <div class="plus">=</div>
                                 <div class="amount">621грн</div>
                             </div>
