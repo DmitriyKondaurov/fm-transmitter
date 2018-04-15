@@ -7479,7 +7479,7 @@ footer.site-footer {
 
 div.call_to_action_hero, div.call_to_action_footer {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 3px solid #ff9616;
   -webkit-border-radius: 10px;
           border-radius: 10px;
