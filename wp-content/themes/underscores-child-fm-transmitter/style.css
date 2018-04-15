@@ -7558,26 +7558,30 @@ div.call_to_action_hero, div.call_to_action_footer {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; }
     div.call_to_action_hero .up_sell *, div.call_to_action_footer .up_sell * {
-      max-width: 50px;
-      max-height: 50px; }
+      max-width: 75px;
+      max-height: 70px; }
     div.call_to_action_hero .up_sell .plus, div.call_to_action_footer .up_sell .plus {
       margin: 0 5px;
       font-size: 40px;
-      line-height: 50px; }
+      line-height: 70px; }
     div.call_to_action_hero .up_sell .amount, div.call_to_action_footer .up_sell .amount {
       padding: 5px;
       font-size: 22px;
-      line-height: 41px;
+      line-height: 60px;
       color: #fbed50;
       font-weight: 700; }
     div.call_to_action_hero .up_sell .up_sell_discount, div.call_to_action_footer .up_sell .up_sell_discount {
-      color: #fbed50; }
+      color: #fbed50;
+      font-weight: 700; }
     div.call_to_action_hero .up_sell .brand2_img_icon, div.call_to_action_footer .up_sell .brand2_img_icon {
       border: 1px solid #fbed50;
       -webkit-border-radius: 5px;
               border-radius: 5px; }
       div.call_to_action_hero .up_sell .brand2_img_icon img, div.call_to_action_footer .up_sell .brand2_img_icon img {
         padding: 5px 3px 0 0; }
+    div.call_to_action_hero .up_sell .up_sell_old_price, div.call_to_action_footer .up_sell .up_sell_old_price {
+      color: #b52e2e;
+      text-decoration: line-through; }
 
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/4629944500_1576858587.jpg) center/cover no-repeat;

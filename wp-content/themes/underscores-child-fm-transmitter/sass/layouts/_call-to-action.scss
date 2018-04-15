@@ -76,23 +76,24 @@ div.call_to_action_hero, div.call_to_action_footer {
     display: flex;
     flex-flow: row nowrap;
     *{
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 75px;
+      max-height: 70px;
     }
     .plus {
       margin: 0 5px;
       font-size: 40px;
-      line-height: 50px;
+      line-height: 70px;
     }
     .amount {
       padding: 5px;
       font-size: 22px;
-      line-height: 41px;
+      line-height: 60px;
       color: #fbed50;
       font-weight: 700;
     }
     .up_sell_discount {
       color: #fbed50;
+      font-weight: 700;
     }
     .brand2_img_icon {
       border: 1px solid #fbed50;
@@ -100,6 +101,10 @@ div.call_to_action_hero, div.call_to_action_footer {
       img {
         padding: 5px 3px 0 0;
       }
+    }
+    .up_sell_old_price {
+      color: #b52e2e;
+      text-decoration: line-through;
     }
   }
 }
