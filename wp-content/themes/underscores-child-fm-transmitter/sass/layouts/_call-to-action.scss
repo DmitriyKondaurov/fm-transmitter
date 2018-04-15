@@ -68,8 +68,9 @@ div.call_to_action_hero, div.call_to_action_footer {
   .up_sell_title {
     padding-top: 5px;
     border-top: 2px solid $brand-color;
-    font-weight: 700;
-    color: $main-color;
+    font-weight: 400;
+    color: rgba(255, 50, 50, 1);
+    text-shadow: 1px 0 $brand-color;
   }
   .up_sell {
     display: flex;
@@ -87,9 +88,11 @@ div.call_to_action_hero, div.call_to_action_footer {
       padding: 5px;
       font-size: 22px;
       line-height: 41px;
+      color: #fbed50;
+      font-weight: 700;
     }
     .up_sell_discount {
-      color: $main-color;
+      color: #fbed50;
     }
     .brand2_img_icon {
       border: 1px solid #fbed50;

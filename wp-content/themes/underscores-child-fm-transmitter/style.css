@@ -7544,8 +7544,9 @@ div.call_to_action_hero, div.call_to_action_footer {
   div.call_to_action_hero .up_sell_title, div.call_to_action_footer .up_sell_title {
     padding-top: 5px;
     border-top: 2px solid #ff9616;
-    font-weight: 700;
-    color: #6ef5ff; }
+    font-weight: 400;
+    color: #ff3232;
+    text-shadow: 1px 0 #ff9616; }
   div.call_to_action_hero .up_sell, div.call_to_action_footer .up_sell {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7566,9 +7567,11 @@ div.call_to_action_hero, div.call_to_action_footer {
     div.call_to_action_hero .up_sell .amount, div.call_to_action_footer .up_sell .amount {
       padding: 5px;
       font-size: 22px;
-      line-height: 41px; }
+      line-height: 41px;
+      color: #fbed50;
+      font-weight: 700; }
     div.call_to_action_hero .up_sell .up_sell_discount, div.call_to_action_footer .up_sell .up_sell_discount {
-      color: #6ef5ff; }
+      color: #fbed50; }
     div.call_to_action_hero .up_sell .brand2_img_icon, div.call_to_action_footer .up_sell .brand2_img_icon {
       border: 1px solid #fbed50;
       -webkit-border-radius: 5px;
