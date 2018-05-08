@@ -53,7 +53,7 @@ get_header(); ?>
                         </ul>
                         <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>
-                            <div class="discount">Первым 10-ти покупателям скидка <span
+                            <div class="discount">Распродажа остатков товара !!!<span
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
                                     грн</span></div>
@@ -251,7 +251,7 @@ get_header(); ?>
                         </div>
                         <div class="call_to_action_footer">
                             <div class="attention-2">Акция!</div>
-                            <div class="discount">Первым 10-ти покупателям скидка <span
+                            <div class="discount">Распродажа остатков товара !!!<span
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
                                         грн</span></div>
