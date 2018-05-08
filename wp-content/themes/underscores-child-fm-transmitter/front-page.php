@@ -53,12 +53,12 @@ get_header(); ?>
                         </ul>
                         <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>
-                            <div class="discount">Распродажа остатков товара !!!<span
+                            <div class="discount">Распродажа остатков товара! Скидка - <span
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
                                     грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">9</span> шт.</div>
+                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
 <!--                            <h4 class="up_sell_title">Вместе дешевле!</h4>-->
 <!--                            <div class="up_sell">-->
 <!--                                <img src="--><?php //echo get_stylesheet_directory_uri();
@@ -251,12 +251,12 @@ get_header(); ?>
                         </div>
                         <div class="call_to_action_footer">
                             <div class="attention-2">Акция!</div>
-                            <div class="discount">Распродажа остатков товара !!!<span
+                            <div class="discount">Распродажа остатков товара! Скидка - <span
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
                                         грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">9</span> шт.</div>
+                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
 <!--                            <h4 class="up_sell_title">Вместе дешевле!</h4>-->
 <!--                            <div class="up_sell">-->
 <!--                                <img src="--><?php //echo get_stylesheet_directory_uri();
