@@ -7244,7 +7244,7 @@ button.crm-webform-submit-button {
 .crm-webform-fieldset-footer {
   text-align: center; }
 
-.crm-webform-field-string, .crm-webform-field-phone, .crm-webform-field-integer, .crm-webform-field-product {
+.crm-webform-field-string, .crm-webform-field-phone, .crm-webform-field-integer, .crm-webform-field-address, .crm-webform-field-product {
   height: 35px;
   padding: 0;
   background-color: #ffffe1;
