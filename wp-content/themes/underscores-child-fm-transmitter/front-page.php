@@ -50,6 +50,12 @@ get_header(); ?>
                             <li>Bluetooth(A2DP) music</li>
                             <li>AUX line-in</li>
                             <li>Dual USB CarCharger 1A/2.1A</li>
+                            <?php
+                            //	для отображения звёзд рейтинга плагина WP-PostRatings
+                            if(function_exists('the_ratings')) {
+	                            the_ratings();
+                            }
+                            ?>
                         </ul>
                         <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>

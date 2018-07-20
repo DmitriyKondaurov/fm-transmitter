@@ -56,9 +56,6 @@ function underscores_child_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-//	для отображения звёзд рейтинга плагина WP-PostRatings
-	if(function_exists('the_ratings')) {
-		the_ratings();
-	}
+
 }
 add_action( 'wp_enqueue_scripts', 'underscores_child_scripts' );
