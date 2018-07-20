@@ -7382,6 +7382,10 @@ div[data-bx-form-popup-close] {
       color: #ffffe1;
       text-decoration: none; }
 
+.post-ratings {
+  max-width: 360px;
+  margin: 25px auto; }
+
 @media screen and (min-width: 992px) {
   .site-header .site-title a {
     vertical-align: 7px;
