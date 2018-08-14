@@ -7,7 +7,7 @@ function add_robotstxt($output){
 	$output .= "Disallow: $path/xmlrpc.php\n";
 	$output .= "Disallow: $path/template.html\n";
 	$output .= "Disallow: $path/cgi-bin\n";
-	$output .= "Allow: $path/wp-admin\n";
+	$output .= "Allow: $path/wp-admin/\n";
 //	$output .= "Disallow: $path/wp-includes\n";
 	$output .= "Allow: $path/wp-includes/js/\n";
 //	$output .= "Disallow: $path/wp-content/plugins\n";
