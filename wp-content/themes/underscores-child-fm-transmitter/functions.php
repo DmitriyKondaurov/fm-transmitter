@@ -1,16 +1,16 @@
 <?php
 add_filter('robots_txt', 'add_robotstxt');
 function add_robotstxt($output){
-	$output .= "Allow: $path/wp-content/uploads/\n";
+//	$output .= "Allow: $path/wp-content/uploads/\n";
 	$output .= "Disallow: $path/wp-login.php\n";
 	$output .= "Disallow: $path/wp-register.php\n";
 	$output .= "Disallow: $path/xmlrpc.php\n";
 	$output .= "Disallow: $path/template.html\n";
 	$output .= "Disallow: $path/cgi-bin\n";
-	$output .= "Disallow: $path/wp-admin\n";
-	$output .= "Disallow: $path/wp-includes\n";
+//	$output .= "Disallow: $path/wp-admin\n";
+//	$output .= "Disallow: $path/wp-includes\n";
 	$output .= "Allow: $path/wp-includes/js/\n";
-	$output .= "Disallow: $path/wp-content/plugins\n";
+//	$output .= "Disallow: $path/wp-content/plugins\n";
 	$output .= "Disallow: $path/wp-content/cache\n";
 	$output .= "Disallow: $path/wp-content/themes\n";
 	$output .= "Allow: $path/wp-content/themes/underscores-child-fm-transmitter/\n";
