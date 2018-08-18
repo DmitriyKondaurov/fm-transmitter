@@ -27,8 +27,8 @@ get_header(); ?>
                     <div class="brand_name">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.png" alt="Новинка!"
                              class="brand_new">
-                        <h2 class="slogan">Многофункциональный <span itemprop="name"> Bluetooth FM модулятор <span
-                                    class="brand">'BT-800'</span></span></h2>
+                        <h2 class="slogan">Многофункциональный Bluetooth FM модулятор <span
+                                    class="brand">'BT-800'</span></h2>
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
@@ -40,12 +40,11 @@ get_header(); ?>
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/charger.png"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img itemprop="image" src="<?php echo get_stylesheet_directory_uri();
+                            <div><img src="<?php echo get_stylesheet_directory_uri();
                             ?>/img/15119394499470.png"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                         </div>
-                        <ul itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"
-                            class="hero_shot_spec">
+                        <ul class="hero_shot_spec">
                             <li>Bluetooth hands free (Car Kit)</li>
                             <li>FM transmitter</li>
                             <li>Music from TF card</li>
@@ -59,20 +58,10 @@ get_header(); ?>
 	                            add_filter( 'wp_postratings_schema_itemtype', 'wp_postratings_schema_itemtype' );
 	                            function wp_postratings_schema_itemtype( $itemtype ) {
 		                            return 'itemscope itemtype="http://schema.org/Product"'; /*меняем тему*/
+		                            the_ratings();
 	                            }
-//	                            the_ratings();
                             }
                             ?>
-                            <span itemprop="worstRating" style="display: none;">1</span>
-                            <span itemprop="ratingCount">
-                            <?php if(function_exists('the_ratings')) { echo ($post_ratings_data->ratings_users); }
-                                ?></span>
-                            <span itemprop="ratingValue">
-                            <?php if(function_exists('the_ratings')) { echo ($post_ratings_data->ratings_score); }
-	                            ?></span>
-                            <span itemprop="bestRating">
-                            <?php if(function_exists('the_ratings')) { echo ($post_ratings_data->ratings_average); }
-	                        ?></span>
                         </ul>
                         <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>
