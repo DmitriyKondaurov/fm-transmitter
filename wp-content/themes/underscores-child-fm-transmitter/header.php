@@ -29,14 +29,14 @@
         gtag('config', 'UA-112738095-1'); /*Google Analytics*/
         gtag('config', 'AW-820350295');  /*Google AdWords*/
     </script>
-    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
+    <!-- СТАТИЧЕСКАЯ Разметка JSON-LD, созданная Мастером разметки структурированных данных Google.
     <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
   "@type" : "Product",
   "name" : "bluetooth FM модулятор 'BT-800'",
   "image" : "https://shops.sytes.net/wp-content/themes/underscores-child-fm-transmitter/img/15119394499470.png",
-  "description" : "Громкая связь и музыка в авто, через AUX/Bluetooth соединение с телефоном",
+  "description" : "Громкая связь и музыка в авто, по Bluetooth модулятору с телефона",
   "url" : "https://shops.sytes.net/",
   "brand" : {
     "@type" : "Brand",
@@ -56,12 +56,12 @@
     "ratingCount" : "9"
   }
 }
-</script>
+</script> -->
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Беспроводная громкая связь в авто и трансляция музыки по Bluetooth с помощью
-    технологии A2DP">
+    <meta name="description" content="Громкая связь в авто и трансляция музыки по Bluetooth модулятору с
+    мобильного телефона">
     <meta name="keywords" content="fm modulator,bluetooth fm transmitter,модулятор,best fm transmitter,mp3 transmitter,купить модулятор,купить фм модулятор,fm трансмиттер,fm transmitter for car,модулятор купить,фм трансмиттер,модулятор в машину,fm модулятор с bluetooth,fm transmitter,фм модулятор для телефона,wireless fm transmitter,трансмиттер,bluetooth radio transmitter,fm модулятор bluetooth,transmiter fm,transmitter bluetooth,трансмитер,fm модулятор,фм модулятор,фм модулятор для авто">
     <meta name="google-site-verification" content="eed527l5bXNigwS0jqU29Qan2hdZLCm2cNF7t5rTuW8" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
