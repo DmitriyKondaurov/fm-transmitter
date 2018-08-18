@@ -57,7 +57,17 @@ get_header(); ?>
                             if(function_exists('the_ratings')) {
 	                            the_ratings();
                             }
-                            ?><span itemprop="worstRating" style="display: none;">1</span>
+                            ?>
+                            <span itemprop="worstRating" style="display: none;">1</span>
+                            <span itemprop="ratingCount" <!--style="display: none;"-->>
+                            <?php if(function_exists('the_ratings')) { echo the_ratings($post_ratings_users); }
+                                ?></span>
+                            <span itemprop="ratingValue" <!--style="display: none;"-->>
+                            <?php if(function_exists('the_ratings')) { echo the_ratings($post_ratings_average); }
+	                            ?></span>
+                            <span itemprop="bestRating" <!--style="display: none;"-->>
+                            <?php if(function_exists('the_ratings')) { echo the_ratings($ratings_max); }
+	                        ?></span>
                         </ul>
                         <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>
