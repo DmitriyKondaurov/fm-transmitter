@@ -29,7 +29,7 @@
         gtag('config', 'UA-112738095-1'); /*Google Analytics*/
         gtag('config', 'AW-820350295');  /*Google AdWords*/
     </script>
-    <!-- СТАТИЧЕСКАЯ Разметка JSON-LD, созданная Мастером разметки структурированных данных Google.
+    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google.-->
     <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
@@ -48,15 +48,15 @@
     "price" : "396",
     "priceCurrency" : "грн"
   },
-  "aggregateRating" : {
-    "@type" : "AggregateRating",
-    "ratingValue" : "4,89",
-    "bestRating" : "5",
-    "worstRating" : "1",
-    "ratingCount" : "9"
-  }
+<!--  "aggregateRating" : {-->
+<!--    "@type" : "AggregateRating",-->
+<!--    "ratingValue" : "4,89",-->
+<!--    "bestRating" : "5",-->
+<!--    "worstRating" : "1",-->
+<!--    "ratingCount" : "9"-->
+<!--  }-->
 }
-</script> -->
+</script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
