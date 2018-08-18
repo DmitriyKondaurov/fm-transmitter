@@ -54,12 +54,13 @@ get_header(); ?>
                             <li>Dual USB CarCharger 1A/2.1A</li>
 	                        <?php
 	                        //	для отображения звёзд рейтинга плагина WP-PostRatings
-	                        add_filter( 'wp_postratings_schema_itemtype', 'wp_postratings_schema_itemtype' );
-	                        function wp_postratings_schema_itemtype( $itemtype ) {
-		                        return 'itemscope itemtype="http://schema.org/Product"'; /*меняем тему*/
-	                        }
+
                             if(function_exists('the_ratings')) {
-	                            the_ratings();
+	                            add_filter( 'wp_postratings_schema_itemtype', 'wp_postratings_schema_itemtype' );
+	                            function wp_postratings_schema_itemtype( $itemtype ) {
+		                            return 'itemscope itemtype="http://schema.org/Product"'; /*меняем тему*/
+	                            }
+//	                            the_ratings();
                             }
                             ?>
                             <span itemprop="worstRating" style="display: none;">1</span>

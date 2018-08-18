@@ -57,7 +57,7 @@
   }
 }
 </script>-->
-    <!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
+
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,7 +78,7 @@
 <div class="loader">
     <div class="loader_inner"></div>
 </div>
-<div itemscope itemtype="http://schema.org/Product" id="page" class="site">
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 
 	<header id="masthead" class="site-header">
