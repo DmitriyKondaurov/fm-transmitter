@@ -57,14 +57,15 @@ get_header(); ?>
                             if(function_exists('the_ratings')) {
 	                            the_ratings();
                             }
-                            ?>
+                            ?><span itemprop="worstRating" style="display: none;">1</span>
                         </ul>
                         <div class="call_to_action_hero">
                             <div class="attention-2">Акция!</div>
                             <div class="discount">Распродажа остатков товара! <br>Скидка - <span
                                         class="discount_amount">20%</span></div>
-                            <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
-                                    грн</span></div>
+                            <div class="prices"><span class="old_price">496 грн </span> <span itemprop="offers"
+                                                                                              itemscope itemtype="http://schema.org/Offer" class="new_price"><span itemprop="price">396</span>
+                                    <span itemprop="priceCurrency">грн</span></span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
 <!--                            <h4 class="up_sell_title">Вместе дешевле!</h4>-->
@@ -96,14 +97,16 @@ get_header(); ?>
                 <div class="container">
                     <h2 class="title">Преимущества</h2>
                     <table class="compare_table table-bordered">
+                        <tbody itemprop="brand" itemscope itemtype="http://schema.org/Brand">
                         <tr>
                             <th>Функции</th>
-                            <th><span class="brand">'BT-800'</span></th>
+                            <th><span itemprop="name" class="brand">'BT-800'</span></th>
                             <th>Другой модулятор</th>
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
+                            <td class="brands_icons"><img itemprop="logo" src="<?php echo
+                                get_stylesheet_directory_uri();
 								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                                           class="brand_img_icon"></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
@@ -155,6 +158,7 @@ get_header(); ?>
                             <td><span class="glyphicon glyphicon-ok text-success"></span></td>
                             <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </section>
