@@ -45,14 +45,15 @@
   },
   "offers" : {
     "@type" : "Offer",
-    "price" : "396 грн"
+    "price" : "396",
+    "priceCurrency" : "грн"
   },
   "aggregateRating" : {
     "@type" : "AggregateRating",
     "ratingValue" : "4,89",
     "bestRating" : "5",
     "worstRating" : "1",
-    "ratingCount" : "9 голосов"
+    "ratingCount" : "9"
   }
 }
 </script>
