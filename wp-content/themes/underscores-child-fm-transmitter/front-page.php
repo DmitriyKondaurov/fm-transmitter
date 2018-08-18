@@ -60,13 +60,13 @@ get_header(); ?>
                             ?>
                             <span itemprop="worstRating" style="display: none;">1</span>
                             <span itemprop="ratingCount">
-                            <?php if(function_exists('the_ratings')) { echo $post_ratings_data->ratings_users; }
+                            <?php if(function_exists('the_ratings')) { echo ($post_ratings_data->ratings_users); }
                                 ?></span>
                             <span itemprop="ratingValue">
-                            <?php if(function_exists('the_ratings')) { echo $post_ratings_data->ratings_score; }
+                            <?php if(function_exists('the_ratings')) { echo ($post_ratings_data->ratings_score); }
 	                            ?></span>
                             <span itemprop="bestRating">
-                            <?php if(function_exists('the_ratings')) { echo $post_ratings_data->ratings_average; }
+                            <?php if(function_exists('the_ratings')) { echo ($post_ratings_data->ratings_average); }
 	                        ?></span>
                         </ul>
                         <div class="call_to_action_hero">
