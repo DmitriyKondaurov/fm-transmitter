@@ -29,7 +29,7 @@
         gtag('config', 'UA-112738095-1'); /*Google Analytics*/
         gtag('config', 'AW-820350295');  /*Google AdWords*/
     </script>
-    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google.-->
+    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google.
     <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
@@ -47,16 +47,17 @@
     "@type" : "Offer",
     "price" : "396",
     "priceCurrency" : "грн"
+  },
+  "aggregateRating" : {
+    "@type" : "AggregateRating",
+    "ratingValue" : "4,89",
+    "bestRating" : "5",
+    "worstRating" : "1",
+    "ratingCount" : "9"
   }
-<!--  "aggregateRating" : {-->
-<!--    "@type" : "AggregateRating",-->
-<!--    "ratingValue" : "4,89",-->
-<!--    "bestRating" : "5",-->
-<!--    "worstRating" : "1",-->
-<!--    "ratingCount" : "9"-->
-<!--  }-->
 }
-</script>
+</script>-->
+    <!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,7 +78,7 @@
 <div class="loader">
     <div class="loader_inner"></div>
 </div>
-<div id="page" class="site">
+<div itemscope itemtype="http://schema.org/Product" id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -85,7 +86,8 @@
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo(
+				<h1 class="site-title"><a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+                                          rel="home"><?php bloginfo(
 				        'name' ); ?></a></h1>
 			<?php else : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo(
