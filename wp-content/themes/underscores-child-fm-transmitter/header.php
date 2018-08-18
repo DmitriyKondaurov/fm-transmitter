@@ -36,7 +36,7 @@
   "@type" : "Product",
   "name" : "bluetooth FM модулятор 'BT-800'",
   "image" : "https://shops.sytes.net/wp-content/themes/underscores-child-fm-transmitter/img/15119394499470.png",
-  "description" : "Громкая связь и музыка в авто, через AUX/Bluetooth соединение с телефоном"
+  "description" : "Громкая связь и музыка в авто, через AUX/Bluetooth соединение с телефоном",
   "url" : "https://shops.sytes.net/",
   "brand" : {
     "@type" : "Brand",
