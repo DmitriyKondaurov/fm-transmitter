@@ -47,7 +47,7 @@
     "@type" : "Offer",
     "price" : "396",
     "priceCurrency" : "грн"
-  },
+  }
 <!--  "aggregateRating" : {-->
 <!--    "@type" : "AggregateRating",-->
 <!--    "ratingValue" : "4,89",-->
