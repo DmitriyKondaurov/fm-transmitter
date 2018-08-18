@@ -59,13 +59,13 @@ get_header(); ?>
                             }
                             ?>
                             <span itemprop="worstRating" style="display: none;">1</span>
-                            <span itemprop="ratingCount" <!--style="display: none;"-->>
+                            <span itemprop="ratingCount">
                             <?php if(function_exists('the_ratings')) { echo $post_ratings_users; }
                                 ?></span>
-                            <span itemprop="ratingValue" <!--style="display: none;"-->>
+                            <span itemprop="ratingValue">
                             <?php if(function_exists('the_ratings')) { echo $post_ratings_average; }
 	                            ?></span>
-                            <span itemprop="bestRating" <!--style="display: none;"-->>
+                            <span itemprop="bestRating">
                             <?php if(function_exists('the_ratings')) { echo $ratings_max; }
 	                        ?></span>
                         </ul>
