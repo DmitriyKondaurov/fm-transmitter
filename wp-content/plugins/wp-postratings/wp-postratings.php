@@ -1154,58 +1154,58 @@ function expand_ratings_template($template, $post_data, $post_ratings_data = nul
     }
 
     // Google Rich Snippet
-    $google_structured_data = '';
-    $ratings_options['richsnippet'] = isset( $ratings_options['richsnippet'] ) ? $ratings_options['richsnippet'] : 1;
-    if( $ratings_options['richsnippet'] && is_singular() && $is_main_loop ) {
-        $itemtype = apply_filters( 'wp_postratings_schema_itemtype', 'itemscope itemtype="http://schema.org/Article"' );
-
-        if( empty( $post_excerpt ) ) {
-            $post_excerpt = ratings_post_excerpt( $post_id, $post->post_excerpt, $post->post_content, $post->post_password );
-        }
-        $post_meta = '<meta itemprop="headline" content="' . esc_attr( $post_title ) . '" />';
-        $post_meta .= '<meta itemprop="description" content="' . wp_kses( $post_excerpt, array() ) . '" />';
-        $post_meta .= '<meta itemprop="datePublished" content="' . mysql2date( 'c', $post->post_date, false ) . '" />';
-        $post_meta .= '<meta itemprop="dateModified" content="' . mysql2date( 'c', $post->post_modified, false ) . '" />';
-        $post_meta .= '<meta itemprop="url" content="' . $post_link . '" />';
-        $post_meta .= '<meta itemprop="author" content="' . get_the_author() . '" />';
-        $post_meta .= '<meta itemprop="mainEntityOfPage" content="' . get_permalink() . '" />';
-        // Post Thumbnail
-        if( has_post_thumbnail() ) {
-            $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( null ) );
-        }
-        $thumbnail = apply_filters( 'wp_postratings_post_thumbnail', $thumbnail, $post_id );
-        if( ! empty( $thumbnail ) ) {
-            $post_meta .= '<div style="display: none;" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">';
-            $post_meta .= '<meta itemprop="url" content="' . $thumbnail[0] . '" />';
-            $post_meta .= '<meta itemprop="width" content="' . $thumbnail[1] . '" />';
-            $post_meta .= '<meta itemprop="height" content="' . $thumbnail[2] . '" />';
-            $post_meta .= '</div>';
-        }
+//    $google_structured_data = '';
+//    $ratings_options['richsnippet'] = isset( $ratings_options['richsnippet'] ) ? $ratings_options['richsnippet'] : 1;
+//    if( $ratings_options['richsnippet'] && is_singular() && $is_main_loop ) {
+//        $itemtype = apply_filters( 'wp_postratings_schema_itemtype', 'itemscope itemtype="http://schema.org/Article"' );
+//
+//        if( empty( $post_excerpt ) ) {
+//            $post_excerpt = ratings_post_excerpt( $post_id, $post->post_excerpt, $post->post_content, $post->post_password );
+//        }
+//        $post_meta = '<meta itemprop="headline" content="' . esc_attr( $post_title ) . '" />';
+//        $post_meta .= '<meta itemprop="description" content="' . wp_kses( $post_excerpt, array() ) . '" />';
+//        $post_meta .= '<meta itemprop="datePublished" content="' . mysql2date( 'c', $post->post_date, false ) . '" />';
+//        $post_meta .= '<meta itemprop="dateModified" content="' . mysql2date( 'c', $post->post_modified, false ) . '" />';
+//        $post_meta .= '<meta itemprop="url" content="' . $post_link . '" />';
+//        $post_meta .= '<meta itemprop="author" content="' . get_the_author() . '" />';
+//        $post_meta .= '<meta itemprop="mainEntityOfPage" content="' . get_permalink() . '" />';
+//        // Post Thumbnail
+//        if( has_post_thumbnail() ) {
+//            $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( null ) );
+//        }
+//        $thumbnail = apply_filters( 'wp_postratings_post_thumbnail', $thumbnail, $post_id );
+//        if( ! empty( $thumbnail ) ) {
+//            $post_meta .= '<div style="display: none;" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">';
+//            $post_meta .= '<meta itemprop="url" content="' . $thumbnail[0] . '" />';
+//            $post_meta .= '<meta itemprop="width" content="' . $thumbnail[1] . '" />';
+//            $post_meta .= '<meta itemprop="height" content="' . $thumbnail[2] . '" />';
+//            $post_meta .= '</div>';
+//        }
 
         // Publisher
-        $site_logo = '';
-        if ( function_exists( 'the_custom_logo' ) ) {
-            $custom_logo_id = get_theme_mod( 'custom_logo' );
-            if ( $custom_logo_id ) {
-                $custom_logo = wp_get_attachment_image_src( $custom_logo_id, 'full' );
-                $site_logo = $custom_logo[0];
-            }
-        }
-        if( empty( $site_logo ) ) {
-            if( has_header_image() ) {
-                $header_image = get_header_image();
-                if( ! empty( $header_image ) ) {
-                    $site_logo = $header_image;
-                }
-            }
-        }
-        $site_logo = apply_filters( 'wp_postratings_site_logo', $site_logo );
-        $post_meta .= '<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">';
-        $post_meta .= '<meta itemprop="name" content="' . get_bloginfo( 'name' ) . '" />';
-        $post_meta .= '<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">';
-        $post_meta .= '<meta itemprop="url" content="' . $site_logo . '" />';
-        $post_meta .= '</div>';
-        $post_meta .= '</div>';
+//        $site_logo = '';
+//        if ( function_exists( 'the_custom_logo' ) ) {
+//            $custom_logo_id = get_theme_mod( 'custom_logo' );
+//            if ( $custom_logo_id ) {
+//                $custom_logo = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+//                $site_logo = $custom_logo[0];
+//            }
+//        }
+//        if( empty( $site_logo ) ) {
+//            if( has_header_image() ) {
+//                $header_image = get_header_image();
+//                if( ! empty( $header_image ) ) {
+//                    $site_logo = $header_image;
+//                }
+//            }
+//        }
+//        $site_logo = apply_filters( 'wp_postratings_site_logo', $site_logo );
+//        $post_meta .= '<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">';
+//        $post_meta .= '<meta itemprop="name" content="' . get_bloginfo( 'name' ) . '" />';
+//        $post_meta .= '<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">';
+//        $post_meta .= '<meta itemprop="url" content="' . $site_logo . '" />';
+//        $post_meta .= '</div>';
+//        $post_meta .= '</div>';
 
         $ratings_meta = '';
         if( $post_ratings_average > 0 ) {

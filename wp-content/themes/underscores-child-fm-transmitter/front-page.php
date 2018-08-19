@@ -54,10 +54,6 @@ get_header(); ?>
 	                        <?php
 	                        //	для отображения звёзд рейтинга плагина WP-PostRatings
                             if(function_exists('the_ratings')) {
-	                            add_filter( 'wp_postratings_schema_itemtype', 'wp_postratings_schema_itemtype' );
-	                            function wp_postratings_schema_itemtype( $itemtype ) {
-		                            return 'itemscope itemtype="http://schema.org/Product"';
-	                            }
 	                            the_ratings();
                             }
                             ?>
