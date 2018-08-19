@@ -138,11 +138,11 @@ if ( isset( $_POST['Submit'] ) ) {
 				<td><strong>%RATINGS_IMAGES_VOTE%</strong> - <?php esc_html_e('Display the ratings voting image', 'wp-postratings'); ?></td>
 			</tr>
 			<tr>
-				<td><strong>%RATINGS_AVERAGE%</strong> - <?php esc_html_e('Display the average ratings', 'wp-postratings'); ?></td>
-				<td><strong>%RATINGS_USERS%</strong> - <?php esc_html_e('Display the total number of users rated for the post', 'wp-postratings'); ?></td>
+				<td><strong itemprop="ratingValue">%RATINGS_AVERAGE%</strong> - <?php esc_html_e('Display the average ratings', 'wp-postratings'); ?></td>
+				<td><strong itemprop="ratingCount">%RATINGS_USERS%</strong> - <?php esc_html_e('Display the total number of users rated for the post', 'wp-postratings'); ?></td>
 			</tr>
 			<tr>
-				<td><strong>%RATINGS_MAX%</strong> - <?php esc_html_e('Display the max number of ratings', 'wp-postratings'); ?></td>
+				<td><strong itemprop="bestRating">%RATINGS_MAX%</strong> - <?php esc_html_e('Display the max number of ratings', 'wp-postratings'); ?></td>
 				<td><strong>%RATINGS_PERCENTAGE%</strong> - <?php esc_html_e('Display the ratings percentage', 'wp-postratings'); ?></td>
 			</tr>
 			<tr>
