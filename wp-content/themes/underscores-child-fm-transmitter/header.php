@@ -60,8 +60,7 @@
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Беспроводная громкая связь в авто и трансляция музыки по Bluetooth с помощью
-    технологии A2DP">
+    <meta name="description" content="Громкая связь (hands free) в авто и трансляция музыки на Фм частоту по Bluetooth модулятору с мобильного телефона, планшета, ноутбука.">
     <meta name="keywords" content="fm modulator,bluetooth fm transmitter,модулятор,best fm transmitter,mp3 transmitter,купить модулятор,купить фм модулятор,fm трансмиттер,fm transmitter for car,модулятор купить,фм трансмиттер,модулятор в машину,fm модулятор с bluetooth,fm transmitter,фм модулятор для телефона,wireless fm transmitter,трансмиттер,bluetooth radio transmitter,fm модулятор bluetooth,transmiter fm,transmitter bluetooth,трансмитер,fm модулятор,фм модулятор,фм модулятор для авто">
     <meta name="google-site-verification" content="eed527l5bXNigwS0jqU29Qan2hdZLCm2cNF7t5rTuW8" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
