@@ -10,7 +10,7 @@ function add_robotstxt($output){
 	$output .= "Allow: $path/wp-admin/\n";
 //	$output .= "Disallow: $path/wp-includes\n";
 	$output .= "Allow: $path/wp-includes/js/\n";
-//	$output .= "Disallow: $path/wp-content/plugins\n";
+	$output .= "Allow: $path/wp-content/plugins\n";
 	$output .= "Disallow: $path/wp-content/cache\n";
 	$output .= "Disallow: $path/wp-content/themes\n";
 	$output .= "Allow: $path/wp-content/themes/underscores-child-fm-transmitter/\n";
