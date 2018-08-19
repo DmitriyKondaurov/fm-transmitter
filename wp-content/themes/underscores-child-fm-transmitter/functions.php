@@ -1,7 +1,7 @@
 <?php
 add_filter('robots_txt', 'add_robotstxt');
 function add_robotstxt($output){
-//	$output .= "Allow: $path/wp-content/uploads/\n";
+	$output .= "Allow: $path/wp-content/uploads/\n";
 	$output .= "Disallow: $path/wp-login.php\n";
 	$output .= "Disallow: $path/wp-register.php\n";
 	$output .= "Disallow: $path/xmlrpc.php\n";
