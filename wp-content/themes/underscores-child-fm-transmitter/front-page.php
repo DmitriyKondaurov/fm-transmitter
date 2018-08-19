@@ -45,8 +45,7 @@ get_header(); ?>
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                       class="main_img"><!--микроданные--></div>
                         </div>
-                        <ul itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"
-                            class="hero_shot_spec"><!--микроданные--><span itemprop="worstRating" style="display: none">1</span><!--микроданные-->
+                        <ul class="hero_shot_spec">
                             <li>Bluetooth hands free (Car Kit)</li>
                             <li>FM transmitter</li>
                             <li>Music from TF card</li>

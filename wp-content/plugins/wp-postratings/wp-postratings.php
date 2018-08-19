@@ -1217,7 +1217,7 @@ function expand_ratings_template($template, $post_data, $post_ratings_data = nul
             $ratings_meta .= '</div>';
         }
 
-        $google_structured_data =  apply_filters( 'wp_postratings_google_structured_data', ( empty( $itemtype ) ? $ratings_meta : ( $post_meta . $ratings_meta ) ) );
+        $google_structured_data =  apply_filters( 'wp_postratings_google_structured_data', ( empty( $itemtype ) ? $ratings_meta : ( /*$post_meta .*/ $ratings_meta ) ) );
     }
 
     return apply_filters( 'expand_ratings_template', ( $value . $google_structured_data ) );
