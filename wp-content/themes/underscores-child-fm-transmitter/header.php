@@ -56,6 +56,7 @@
   }
 }
 </script>-->
+    <!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,7 +77,7 @@
 <div class="loader">
     <div class="loader_inner"></div>
 </div>
-<div id="page" class="site">
+<div itemscope itemtype="http://schema.org/Product" id="page" class="site"> <!--микроданные-->
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -84,10 +85,11 @@
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo(
+				<h1 class="site-title"><a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><!--микроданные--><?php bloginfo(
 				        'name' ); ?></a></h1>
 			<?php else : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo(
+				<h1 class="site-title"><a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+                                          rel="home"><!--микроданные--><?php bloginfo(
 				        'name' ); ?> <span
                                 class="brand"> 'BT-800'</span></a></h1>
                 <div class="phone" >

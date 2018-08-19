@@ -27,8 +27,8 @@ get_header(); ?>
                     <div class="brand_name">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.png" alt="Новинка!"
                              class="brand_new">
-                        <h2 class="slogan">Многофункциональный Bluetooth FM модулятор <span
-                                    class="brand">'BT-800'</span></h2>
+                        <h2 class="slogan">Многофункциональный <span itemprop="name">Bluetooth FM модулятор <span
+                                        class="brand">'BT-800'</span></span><!--микроданные--></h2>
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
@@ -40,11 +40,13 @@ get_header(); ?>
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/charger.png"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri();
+                            <div><img itemprop="image" src="<?php echo get_stylesheet_directory_uri();
                             ?>/img/15119394499470.png"
-                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
+                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
+                                      class="main_img"><!--микроданные--></div>
                         </div>
-                        <ul class="hero_shot_spec">
+                        <ul itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"
+                            class="hero_shot_spec"><!--микроданные--><span itemprop="worstRating" style="display: none">1</span><!--микроданные-->
                             <li>Bluetooth hands free (Car Kit)</li>
                             <li>FM transmitter</li>
                             <li>Music from TF card</li>
@@ -62,9 +64,14 @@ get_header(); ?>
                             <div class="attention-2">Акция!</div>
                             <div class="discount">Распродажа остатков товара! <br>Скидка - <span
                                         class="discount_amount">20%</span></div>
-                            <div class="prices"><span class="old_price">496 грн </span> <span itemprop="offers"
-                                                                                              itemscope itemtype="http://schema.org/Offer" class="new_price"><span itemprop="price">396</span>
-                                    <span itemprop="priceCurrency">грн</span></span></div>
+                            <div class="prices"><span class="old_price">496 грн </span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="new_price"><!--микроданные-->
+                                    <span itemprop="price">396</span><!--микроданные-->
+                                    <span itemprop="priceCurrency">грн</span><!--микроданные-->
+                                    <span itemprop="availability" style="display: none">в наличии</span><!--микроданные-->
+                                    <span itemprop="Condition" style="display: none">brand new</span><!--микроданные-->
+                                </span>
+                            </div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
 <!--                            <h4 class="up_sell_title">Вместе дешевле!</h4>-->
@@ -99,12 +106,12 @@ get_header(); ?>
                         <tbody itemprop="brand" itemscope itemtype="http://schema.org/Brand">
                         <tr>
                             <th>Функции</th>
-                            <th><span itemprop="name" class="brand">'BT-800'</span></th>
+                            <th><span itemprop="name" class="brand">'BT-800'</span></th><!--микроданные-->
                             <th>Другой модулятор</th>
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="brands_icons"><img itemprop="logo" src="<?php echo
+                            <td class="brands_icons"><!--микроданные--><img itemprop="logo" src="<?php echo
                                 get_stylesheet_directory_uri();
 								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                                           class="brand_img_icon"></td>
