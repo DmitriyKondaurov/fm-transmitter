@@ -69,6 +69,7 @@ get_header(); ?>
                                     <span itemprop="price">396</span><!--микроданные-->
                                     <span itemprop="priceCurrency">грн</span><!--микроданные-->
                                     <span itemprop="availability" style="display: none">в наличии</span><!--микроданные-->
+                                    <span itemprop="Condition" style="display: none">brand new</span><!--микроданные-->
                                 </span>
                             </div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
