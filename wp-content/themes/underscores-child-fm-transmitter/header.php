@@ -30,33 +30,6 @@
         gtag('config', 'UA-112738095-1'); /*Google Analytics*/
         gtag('config', 'AW-820350295');  /*Google AdWords*/
     </script>
-    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google.
-    <script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Product",
-  "name" : "bluetooth FM модулятор 'BT-800'",
-  "image" : "https://shops.sytes.net/wp-content/themes/underscores-child-fm-transmitter/img/15119394499470.png",
-  "description" : "Громкая связь и музыка в авто, через AUX/Bluetooth соединение с телефоном",
-  "url" : "https://shops.sytes.net/"
-  "brand" : {
-    "@type" : "Brand",
-    "name" : "'BT-800'",
-    "logo" : "https://shops.sytes.net/wp-content/uploads/2017/12/cropped-thumbnail-32x32.png"
-  },
-  "offers" : {
-    "@type" : "Offer",
-    "price" : "396 грн"
-  },
-  "aggregateRating" : {
-    "@type" : "AggregateRating",
-    "ratingValue" : "4,89",
-    "bestRating" : "5",
-    "worstRating" : "1",
-    "ratingCount" : "9 голосов"
-  }
-}
-</script>-->
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
