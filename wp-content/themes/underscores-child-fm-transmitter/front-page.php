@@ -68,9 +68,8 @@ get_header(); ?>
                                     <span itemprop="price">396</span><!--микроданные-->
                                     <span itemprop="priceCurrency">грн</span><!--микроданные-->
                                     <span itemprop="availability" style="display: none">в наличии</span><!--микроданные-->
-                                    <span itemprop="condition" style="display: none">brand new</span><!--микроданные-->
-
                                 </span>
+                                <span itemprop="condition" style="display: none">brand new</span><!--микроданные-->
                             </div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
