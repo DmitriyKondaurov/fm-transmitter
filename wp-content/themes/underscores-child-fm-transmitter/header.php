@@ -11,6 +11,7 @@
 
 ?>
 <!doctype html>
+<!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 <html <?php language_attributes(); ?>>
 <head>
     <!-- Google Tag Manager -->
@@ -56,7 +57,6 @@
   }
 }
 </script>-->
-    <!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
