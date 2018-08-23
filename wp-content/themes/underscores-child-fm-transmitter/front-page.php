@@ -115,7 +115,7 @@ get_header(); ?>
 								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                                           class="brand_img_icon"></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-								?>/img/other-brand-icon.jpeg" alt="FM модулятор 'BT-800'" title="другой FM модулятор"
+								?>/img/other-brand-icon.jpeg" alt="FM модулятор" title="другой FM модулятор"
                                                           class="brand_img_icon"></td>
                         </tr>
                         <tr>
