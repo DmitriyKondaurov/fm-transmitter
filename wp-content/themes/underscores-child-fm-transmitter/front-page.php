@@ -66,8 +66,9 @@ get_header(); ?>
                             <div class="prices"><span class="old_price">496 грн </span>
                                 <span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="new_price"><!--микроданные-->
                                     <span itemprop="price">396</span><!--микроданные-->
-                                    <span itemprop="priceCurrency">грн</span><!--микроданные-->
-                                    <span itemprop="availability" style="display: none">в наличии</span><!--микроданные-->
+                                    <span>грн</span>
+                                    <meta itemprop="priceCurrency" content="UAH" /><!--микроданные-->
+                                    <meta itemprop="availability" content="InStock" /><!--микроданные-->
                                 </span>
                             </div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
