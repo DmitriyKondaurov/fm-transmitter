@@ -38,9 +38,7 @@
     <meta name="google-site-verification" content="eed527l5bXNigwS0jqU29Qan2hdZLCm2cNF7t5rTuW8" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="alternate" hreflang="ru" href="https://shops.sytes.net/" />
-	<?php wp_head();
-	header("Cache-Control: public, max-age=604800");
-	?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
