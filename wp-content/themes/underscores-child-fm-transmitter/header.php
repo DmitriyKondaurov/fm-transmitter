@@ -30,7 +30,7 @@
         gtag('config', 'UA-112738095-1'); /*Google Analytics*/
         gtag('config', 'AW-820350295');  /*Google AdWords*/
     </script>
-    <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+    <meta http-equiv="Cache-Control" content="max-age=604800, public" />
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Громкая связь (hands free) в авто и трансляция музыки на Фм частоту по Bluetooth модулятору с мобильного телефона, планшета, ноутбука.">
