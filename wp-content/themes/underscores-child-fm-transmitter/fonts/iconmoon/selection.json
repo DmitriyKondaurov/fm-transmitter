@@ -279,8 +279,11 @@
       "showMetrics": false,
       "showMetadata": false,
       "showVersion": false,
-      "selector": "class",
-      "classSelector": ".icon"
+      "selector": "",
+      "classSelector": ".icon",
+      "noie8": true,
+      "ie7": false,
+      "includeMetadata": false
     },
     "imagePref": {
       "prefix": "icon-",
@@ -292,11 +295,13 @@
       "name": "icomoon",
       "height": 32,
       "columns": 16,
-      "margin": 16
+      "margin": 16,
+      "minifyJs": false
     },
     "historySize": 50,
     "showCodes": true,
     "gridSize": 16,
-    "showGrid": true
+    "showGrid": true,
+    "showLiga": false
   }
 }
