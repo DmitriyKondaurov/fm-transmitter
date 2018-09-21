@@ -1,0 +1,673 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9tdz60');
+  src:  url('fonts/icomoon.eot?9tdz60#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9tdz60') format('truetype'),
+    url('fonts/icomoon.woff?9tdz60') format('woff'),
+    url('fonts/icomoon.svg?9tdz60#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aux1:before {
+  content: "\e900";
+}
+.icon-aux2:before {
+  content: "\e901";
+}
+.icon-aux3:before {
+  content: "\e902";
+}
+.icon-aux4:before {
+  content: "\e903";
+}
+.icon-aux5:before {
+  content: "\e904";
+}
+.icon-aux10:before {
+  content: "\e905";
+}
+.icon-bluetooth2:before {
+  content: "\e906";
+}
+.icon-bluetooth3:before {
+  content: "\e907";
+}
+.icon-bluetooth-b:before {
+  content: "\e908";
+}
+.icon-bt4:before {
+  content: "\e909";
+}
+.icon-phone:before {
+  content: "\e90a";
+}
+.icon-cellular:before {
+  content: "\e90a";
+}
+.icon-phone2:before {
+  content: "\e90b";
+}
+.icon-contact:before {
+  content: "\e90b";
+}
+.icon-phone-outline:before {
+  content: "\e90c";
+}
+.icon-phone3:before {
+  content: "\e90d";
+}
+.icon-volume-control-phone2:before {
+  content: "\e90e";
+}
+.icon-phone-square:before {
+  content: "\e90f";
+}
+.icon-phone4:before {
+  content: "\e910";
+}
+.icon-phone-call:before {
+  content: "\e911";
+}
+.icon-phone-incoming:before {
+  content: "\e912";
+}
+.icon-phone-outgoing:before {
+  content: "\e913";
+}
+.icon-phone-off:before {
+  content: "\e914";
+}
+.icon-phone-missed:before {
+  content: "\e915";
+}
+.icon-car1:before {
+  content: "\e916";
+  color: #4b4b4b;
+}
+.icon-card1:before {
+  content: "\e917";
+}
+.icon-card2:before {
+  content: "\e918";
+}
+.icon-card3:before {
+  content: "\e919";
+  color: #545454;
+}
+.icon-card4:before {
+  content: "\e91a";
+}
+.icon-card5:before {
+  content: "\e91b";
+}
+.icon-card6:before {
+  content: "\e91c";
+}
+.icon-charg1:before {
+  content: "\e91d";
+  color: #4a4a4a;
+}
+.icon-charg2:before {
+  content: "\e91e";
+  color: #484848;
+}
+.icon-charg3 .path1:before {
+  content: "\e91f";
+  color: rgb(158, 158, 158);
+}
+.icon-charg3 .path2:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(90, 90, 90);
+}
+.icon-charg3 .path3:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(37, 37, 37);
+}
+.icon-charg5:before {
+  content: "\e922";
+}
+.icon-charg6:before {
+  content: "\e923";
+}
+.icon-charg66:before {
+  content: "\e924";
+}
+.icon-radio:before {
+  content: "\e925";
+}
+.icon-radio-tower:before {
+  content: "\e926";
+}
+.icon-mic:before {
+  content: "\e927";
+}
+.icon-microphone2:before {
+  content: "\e927";
+}
+.icon-record:before {
+  content: "\e927";
+}
+.icon-voice:before {
+  content: "\e927";
+}
+.icon-audio:before {
+  content: "\e927";
+}
+.icon-microphone3:before {
+  content: "\e928";
+}
+.icon-microphone4:before {
+  content: "\e929";
+}
+.icon-voice2:before {
+  content: "\e929";
+}
+.icon-record2:before {
+  content: "\e929";
+}
+.icon-microphone5:before {
+  content: "\e92a";
+}
+.icon-record3:before {
+  content: "\e92a";
+}
+.icon-voice3:before {
+  content: "\e92a";
+}
+.icon-microphone6:before {
+  content: "\e92b";
+}
+.icon-record4:before {
+  content: "\e92b";
+}
+.icon-voice4:before {
+  content: "\e92b";
+}
+.icon-microphone7:before {
+  content: "\e92c";
+}
+.icon-record5:before {
+  content: "\e92c";
+}
+.icon-voice5:before {
+  content: "\e92c";
+}
+.icon-music2:before {
+  content: "\e92d";
+}
+.icon-songs:before {
+  content: "\e92d";
+}
+.icon-sound:before {
+  content: "\e92d";
+}
+.icon-music3:before {
+  content: "\e92e";
+}
+.icon-music4:before {
+  content: "\e92f";
+}
+.icon-music5:before {
+  content: "\e930";
+}
+.icon-song:before {
+  content: "\e930";
+}
+.icon-music6:before {
+  content: "\e931";
+}
+.icon-songs2:before {
+  content: "\e931";
+}
+.icon-audio2:before {
+  content: "\e931";
+}
+.icon-music7:before {
+  content: "\e932";
+}
+.icon-song2:before {
+  content: "\e932";
+}
+.icon-audio3:before {
+  content: "\e932";
+}
+.icon-sound2:before {
+  content: "\e932";
+}
+.icon-note:before {
+  content: "\e932";
+}
+.icon-phone5:before {
+  content: "\e933";
+}
+.icon-mobile:before {
+  content: "\e933";
+}
+.icon-contact2:before {
+  content: "\e933";
+}
+.icon-telephone:before {
+  content: "\e933";
+}
+.icon-iphone:before {
+  content: "\e934";
+}
+.icon-touch:before {
+  content: "\e934";
+}
+.icon-phone6:before {
+  content: "\e934";
+}
+.icon-mobile2:before {
+  content: "\e934";
+}
+.icon-phone7:before {
+  content: "\e935";
+}
+.icon-cellular-phone:before {
+  content: "\e935";
+}
+.icon-mobile3:before {
+  content: "\e935";
+}
+.icon-media-play-outline:before {
+  content: "\e936";
+}
+.icon-play-alt:before {
+  content: "\e937";
+}
+.icon-video:before {
+  content: "\e937";
+}
+.icon-play:before {
+  content: "\e938";
+}
+.icon-play2:before {
+  content: "\e939";
+}
+.icon-media-control:before {
+  content: "\e939";
+}
+.icon-video2:before {
+  content: "\e939";
+}
+.icon-movie:before {
+  content: "\e939";
+}
+.icon-media-play-outline2:before {
+  content: "\e93a";
+}
+.icon-media-play:before {
+  content: "\e93b";
+}
+.icon-play-circle-o:before {
+  content: "\e93c";
+}
+.icon-play-circle2:before {
+  content: "\e93d";
+}
+.icon-play-circle3:before {
+  content: "\e93e";
+}
+.icon-play3:before {
+  content: "\e93f";
+}
+.icon-radio2:before {
+  content: "\e940";
+}
+.icon-radio3:before {
+  content: "\e941";
+}
+.icon-radio6:before {
+  content: "\e942";
+}
+.icon-radio7:before {
+  content: "\e943";
+}
+.icon-megaphone:before {
+  content: "\e944";
+}
+.icon-news:before {
+  content: "\e944";
+}
+.icon-announcements:before {
+  content: "\e944";
+}
+.icon-advertisement:before {
+  content: "\e944";
+}
+.icon-megaphone2:before {
+  content: "\e945";
+}
+.icon-advertise:before {
+  content: "\e945";
+}
+.icon-notify:before {
+  content: "\e945";
+}
+.icon-announce:before {
+  content: "\e945";
+}
+.icon-megaphone3:before {
+  content: "\e946";
+}
+.icon-advertise2:before {
+  content: "\e946";
+}
+.icon-notify2:before {
+  content: "\e946";
+}
+.icon-announce2:before {
+  content: "\e946";
+}
+.icon-usb2:before {
+  content: "\e947";
+}
+.icon-usb3:before {
+  content: "\e948";
+}
+.icon-usb9:before {
+  content: "\e94b";
+  color: #4a4a4a;
+}
+.icon-voice1:before {
+  content: "\e94c";
+  color: #4a4a4a;
+}
+.icon-bluetooth4:before {
+  content: "\e1a7";
+}
+.icon-bluetooth_searching:before {
+  content: "\e1aa";
+}
+.icon-bluetooth_connected:before {
+  content: "\e1a8";
+}
+.icon-directions_car:before {
+  content: "\e531";
+}
+.icon-markunread:before {
+  content: "\e159";
+}
+.icon-fiber_new:before {
+  content: "\e05e";
+}
+.icon-label:before {
+  content: "\e892";
+}
+.icon-label_outline:before {
+  content: "\e893";
+}
+.icon-leak_add:before {
+  content: "\e3f8";
+}
+.icon-room:before {
+  content: "\e8b4";
+}
+.icon-mail_outline:before {
+  content: "\e0e1";
+}
+.icon-menu:before {
+  content: "\e5d2";
+}
+.icon-message:before {
+  content: "\e0c9";
+}
+.icon-mic2:before {
+  content: "\e029";
+}
+.icon-mic_none:before {
+  content: "\e02a";
+}
+.icon-phone_bluetooth_speaker:before {
+  content: "\e61b";
+}
+.icon-phone_forwarded:before {
+  content: "\e61c";
+}
+.icon-phone_in_talk:before {
+  content: "\e61d";
+}
+.icon-phone_iphone:before {
+  content: "\e325";
+}
+.icon-phonelink_ring:before {
+  content: "\e0dd";
+}
+.icon-play_arrow:before {
+  content: "\e037";
+}
+.icon-play_circle_filled:before {
+  content: "\e038";
+}
+.icon-play_circle_outline:before {
+  content: "\e039";
+}
+.icon-record_voice_over:before {
+  content: "\e949";
+}
+.icon-ring_volume:before {
+  content: "\e0d1";
+}
+.icon-router:before {
+  content: "\e328";
+}
+.icon-rss_feed:before {
+  content: "\e0e5";
+}
+.icon-sd_storage:before {
+  content: "\e1c2";
+}
+.icon-sentiment_satisfied:before {
+  content: "\e813";
+}
+.icon-settings_bluetooth:before {
+  content: "\e8bb";
+}
+.icon-settings_input_antenna:before {
+  content: "\e8bf";
+}
+.icon-settings_phone:before {
+  content: "\e8c5";
+}
+.icon-settings_remote:before {
+  content: "\e8c7";
+}
+.icon-settings_voice:before {
+  content: "\e8c8";
+}
+.icon-share:before {
+  content: "\e80d";
+}
+.icon-speaker_phone:before {
+  content: "\e0d2";
+}
+.icon-star_border:before {
+  content: "\e83a";
+}
+.icon-star_half:before {
+  content: "\e839";
+}
+.icon-stars:before {
+  content: "\e8d0";
+}
+.icon-tap_and_play:before {
+  content: "\e62b";
+}
+.icon-thumb_down:before {
+  content: "\e8db";
+}
+.icon-thumb_up:before {
+  content: "\e8dc";
+}
+.icon-thumbs_up_down:before {
+  content: "\e8dd";
+}
+.icon-usb4:before {
+  content: "\e1e0";
+}
+.icon-voicemail:before {
+  content: "\e0d9";
+}
+.icon-volume_up:before {
+  content: "\e050";
+}
+.icon-wifi:before {
+  content: "\e63e";
+}
+.icon-wifi_tethering:before {
+  content: "\e1e2";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-thumbs-o-up:before {
+  content: "\f087";
+}
+.icon-thumbs-o-down:before {
+  content: "\f088";
+}
+.icon-facebook3:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-google-plus4:before {
+  content: "\f0d5";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-smile-o:before {
+  content: "\f118";
+}
+.icon-microphone:before {
+  content: "\f130";
+}
+.icon-play-circle:before {
+  content: "\f144";
+}
+.icon-thumbs-up:before {
+  content: "\f164";
+}
+.icon-thumbs-down:before {
+  content: "\f165";
+}
+.icon-youtube-square:before {
+  content: "\f166";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-skype2:before {
+  content: "\f17e";
+}
+.icon-facebook-official:before {
+  content: "\f230";
+}
+.icon-usb:before {
+  content: "\f287";
+}
+.icon-bluetooth:before {
+  content: "\f293";
+}
+.icon-volume-control-phone:before {
+  content: "\f2a0";
+}
+.icon-music:before {
+  content: "\e94a";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-half:before {
+  content: "\e9d8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-smile:before {
+  content: "\e9e1";
+}
+.icon-point-up:before {
+  content: "\ea03";
+}
+.icon-point-right:before {
+  content: "\ea04";
+}
+.icon-point-down:before {
+  content: "\ea05";
+}
+.icon-point-left:before {
+  content: "\ea06";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-checkmark2:before {
+  content: "\ea11";
+}
+.icon-checkbox-checked:before {
+  content: "\ea52";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
+.icon-mail3:before {
+  content: "\ea85";
+}
+.icon-mail4:before {
+  content: "\ea86";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-google-plus2:before {
+  content: "\ea8c";
+}
+.icon-google-plus3:before {
+  content: "\ea8d";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
