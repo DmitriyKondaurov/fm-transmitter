@@ -72,7 +72,7 @@ get_header(); ?>
                                 </span>
                             </div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
+                            <div>По акции осталось: <span class="left_pcs">0</span> шт.</div>
 <!--                            <h4 class="up_sell_title">Вместе дешевле!</h4>-->
 <!--                            <div class="up_sell">-->
 <!--                                <img src="--><?php //echo get_stylesheet_directory_uri();
@@ -273,7 +273,7 @@ get_header(); ?>
                             <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
                                         грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">6</span> шт.</div>
+                            <div>По акции осталось: <span class="left_pcs">0</span> шт.</div>
 <!--                            <h4 class="up_sell_title">Вместе дешевле!</h4>-->
 <!--                            <div class="up_sell">-->
 <!--                                <img src="--><?php //echo get_stylesheet_directory_uri();
