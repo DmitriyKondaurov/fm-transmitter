@@ -15,7 +15,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'underscores-child-fm-transmitter' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'underscores' ),
 			'after'  => '</div>',
 		) );
 		?>
