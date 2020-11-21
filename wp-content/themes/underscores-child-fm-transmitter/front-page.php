@@ -258,7 +258,6 @@ get_header(); ?>
                                         грн</span></div>
                             <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
                             <div>По акции осталось: <span class="left_pcs">0</span> шт.</div>
-                            </div>
                         </div>
                     </div>
                 </div>
