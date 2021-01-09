@@ -22,7 +22,7 @@ get_header(); ?>
                      data-android-fix="false"
                      data-ios-fix="false"
                      data-speed="0.4"
-                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.jpg">
+                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.webp">
                 <div class="wrapper">
                     <div class="brand_name">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.png" alt="Новинка!"

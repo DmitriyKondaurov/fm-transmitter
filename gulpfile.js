@@ -35,7 +35,7 @@ gulp.task('css-libs', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         //     baseDir: './wp-content/themes'
-        proxy: "localhost/html",
+        proxy: "localhost/fm-transmitter",
         // proxy: "https://shops/sytes.net",
         // server: {
         // },
@@ -58,9 +58,9 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./wp-content/themes/underscores-child-fm-transmitter/'));
 });
 
-gulp.task('build', ['sass', 'css-libs', 'scripts'], function () {});
+gulp.task('build', gulp.series('sass', 'css-libs', 'scripts'), function () {});
 
-gulp.task('watch', ['browser-sync', 'build'], function() {
+gulp.task('watch', gulp.series('browser-sync', 'build'), function() {
     gulp.watch('./wp-content/themes/underscores-child-fm-transmitter/sass/**/*.+(scss|sass)', ['sass']);
     gulp.watch('./wp-content/themes/underscores-child-fm-transmitter/**/*.+(php|js)', browserSync.reload);
 });
@@ -87,4 +87,4 @@ gulp.task('img', function() {
 // Default Task
 //////////////////////////////
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('watch'));
