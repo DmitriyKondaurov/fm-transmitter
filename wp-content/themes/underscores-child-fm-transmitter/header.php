@@ -35,14 +35,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Громкая связь (hands free) в авто и трансляция музыки на Фм частоту по Bluetooth модулятору с мобильного телефона, планшета, ноутбука.">
     <meta name="keywords" content="fm modulator,bluetooth fm transmitter,модулятор,best fm transmitter,mp3 transmitter,купить модулятор,купить фм модулятор,fm трансмиттер,fm transmitter for car,модулятор купить,фм трансмиттер,модулятор в машину,fm модулятор с bluetooth,fm transmitter,фм модулятор для телефона,wireless fm transmitter,трансмиттер,bluetooth radio transmitter,fm модулятор bluetooth,transmiter fm,transmitter bluetooth,трансмитер,fm модулятор,фм модулятор,фм модулятор для авто">
-    <meta name="google-site-verification" content="eed527l5bXNigwS0jqU29Qan2hdZLCm2cNF7t5rTuW8" />
+    <meta name="google-site-verification" content="R4t3WEl3e4CRxOLs1ErckrEYWZNSro5lOY1ol0I8BhE" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="alternate" hreflang="ru" href="https://shops.sytes.net/" />
 	<?php wp_head();
 	header("Cache-Control: public, max-age=604800");
 	?>
 </head>
-
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6CGQ3C"
@@ -70,7 +69,7 @@
                     <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
                             +380978314414</a>
                 </div>
-			<?php
+            <?php
 			endif;
 
 			$description = get_bloginfo( 'description', 'display' );
