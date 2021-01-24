@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/DmitriyKondaurov/fm-transmitter#readme",
   "devDependencies": {
+    "bootstrap-sass": "^3.4.1",
     "bower": "^1.8.0",
     "browser-sync": "^2.11.1",
     "del": "^2.2.0",

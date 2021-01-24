@@ -25,23 +25,23 @@ get_header(); ?>
                      data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.webp">
                 <div class="wrapper">
                     <div class="brand_name">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.png" alt="Новинка!"
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.webp" alt="Новинка!"
                              class="brand_new">
                         <h2 class="slogan">Многофункциональный <span itemprop="name">Bluetooth FM модулятор <span
                                         class="brand">'BT-800'</span></span><!--микроданные--></h2>
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main_img.png"
+                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main_img.webp"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twoside.png"
+                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twoside.webp"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tfcard.png"
+                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tfcard.webp"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/charger.png"
+                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/charger.webp"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
                             <div><img itemprop="image" src="<?php echo get_stylesheet_directory_uri();
-                            ?>/img/15119394499470.png"
+                            ?>/img/15119394499470.webp"
                                       alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                       class="main_img"><!--микроданные--></div>
                         </div>
@@ -96,10 +96,10 @@ get_header(); ?>
                             <td></td>
                             <td class="brands_icons"><!--микроданные--><img itemprop="logo" src="<?php echo
                                 get_stylesheet_directory_uri();
-								?>/img/brand-icon.png" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
+								?>/img/brand-icon.webp" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                                           class="brand_img_icon"></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-								?>/img/other-brand-icon.jpeg" alt="FM модулятор" title="другой FM модулятор"
+								?>/img/other-brand-icon.webp" alt="FM модулятор" title="другой FM модулятор"
                                                           class="brand_img_icon"></td>
                         </tr>
                         <tr>
@@ -157,7 +157,7 @@ get_header(); ?>
                      data-android-fix="false"
                      data-ios-fix="false"
                      data-speed="0.3"
-                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-hero.jpg">
+                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-hero.webp">
                 <div class="wrapper">
                     <h2 class="title">функции</h2>
                     <ul id="functions" class="about_full_spec">
@@ -203,7 +203,7 @@ get_header(); ?>
                         <div class="explain_item">
                             <h2 class="title">спецификация</h2>
                             <div class="exp_img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explain2.png"
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explain2.webp"
                                      alt="explain device FM модулятор 'BT-800'" title="Спецификация на FM модулятор
                                      'BT-800'">
                             </div>
@@ -217,7 +217,7 @@ get_header(); ?>
                      data-android-fix="false"
                      data-ios-fix="false"
                      data-speed="0.3"
-                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/background2.jpg">
+                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/background2.webp">
                 <div class="wrapper">
 					<?php //Show fresh comments
 					get_sidebar(); ?>
@@ -239,7 +239,7 @@ get_header(); ?>
                     <h2 class="title">доставка и оплата</h2>
                     <div class="flex_box">
                         <div>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-13.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-13.webp"
                                  alt="Новая пошта" title="'Нова Пошта'" class="ship_img">
                             <ul>
                                 <li><span class="bold">Доставка по Украине</span> Новой Почтой (наложенный

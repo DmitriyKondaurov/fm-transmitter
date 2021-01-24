@@ -168,3 +168,6 @@ wp-content/plugins/hello.php
 .gulp-scss-cache/
 .gulp-sass-cache/
 dist
+*.sql
+*.sql.gz
+error-logs.txt
