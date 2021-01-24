@@ -59,15 +59,5 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script id="bx24_form_button" data-skip-moving="true">
-    (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
-        (w[b].forms=w[b].forms||[]).push(arguments[0])};
-        if(w[b]['forms']) return;
-        var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
-        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-    })(window,document,'https://kondashop.bitrix24.ua/bitrix/js/crm/form_loader.js','b24form');
-
-    b24form({"id":"8","lang":"ru","sec":"9l9llj","type":"button","click":""});
-</script>
 </body>
 </html>
