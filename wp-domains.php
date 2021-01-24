@@ -10,8 +10,8 @@ define("WP_DOMAINS_INITIALIZED", 1);
 $domains_enabled = array(
 	"www.shops.sytes.net/",
 	"shops.sytes.net/",
-	"localhost/fm-transmitter/",
-	"www.localhost/fm-transmitter/"
+	"localhost/",
+	"www.localhost/"
 );
 
 
@@ -48,9 +48,9 @@ ob_start(function($data) use ($domains_enabled, $https) {
 	{
 		if ($current_host == $domain) continue;
 		$replace["http://$domain/"] = "$scheme://$current_host/";
-		$replace["https://$domain"] = "$scheme://$current_host/";
+		$replace["https://$domain/"] = "$scheme://$current_host/";
 		$replace["//$domain/"] = "//$current_host/";
-		$replace["//$domain"] = "//$current_host/";
+		$replace["//$domain"] = "//$current_host";
 	}
 	return str_replace(array_keys($replace), array_values($replace), $data);
 });
