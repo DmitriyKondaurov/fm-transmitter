@@ -48,9 +48,9 @@ ob_start(function($data) use ($domains_enabled, $https) {
 	{
 		if ($current_host == $domain) continue;
 		$replace["http://$domain/"] = "$scheme://$current_host/";
-		$replace["https://$domain"] = "$scheme://$current_host";
+		$replace["https://$domain"] = "$scheme://$current_host/";
 		$replace["//$domain/"] = "//$current_host/";
-		$replace["//$domain"] = "//$current_host";
+		$replace["//$domain"] = "//$current_host/";
 	}
 	return str_replace(array_keys($replace), array_values($replace), $data);
 });
