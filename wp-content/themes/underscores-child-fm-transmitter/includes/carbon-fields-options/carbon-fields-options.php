@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-Container::make( 'theme_options', 'Настройки сайта' )
-         ->add_tab( 'Общие настройки',[
+Container::make( 'theme_options', 'Site Settings' )
+         ->add_tab( 'main settings',[
 	         Field::make( 'image', 'site_logo', 'Logo' ),
          ] );

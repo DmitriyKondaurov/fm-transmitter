@@ -1,4 +1,15 @@
 <?php
+//______________________CARBON-FIELDS_____________________________________________
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+function crb_attach_theme_options() {
+	require_once( 'includes/carbon-fields-options/carbon-fields-options.php' );
+}
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+	require_once( 'includes/carbon-fields/vendor/autoload.php' );
+	\Carbon_Fields\Carbon_Fields::boot();
+}
 
 function underscores_child_scripts() {
 
@@ -13,8 +24,8 @@ function underscores_child_scripts() {
 		array(), '1.0.0.0', false );
 
 	//___________________________________________    Google Font    ____________________________________________
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic', array(), '1.0.0.0',
-		false );
+//	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic', array(), '1.0.0.0',
+//		false );
 
 	//___________________________________________    FONT AWESOME    ____________________________________________
 	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/b41b6eacb2.js', array(), '1.0.0.0',
@@ -43,15 +54,5 @@ function wp_postratings_site_logo( $url ) {
 	return 'https://shops.sytes.net/wp-content/uploads/2017/12/cropped-thumbnail_71_71-1-e1532036247409.png';
 }
 
-//______________________CARBON-FIELDS_____________________________________________
-add_action( 'after_setup_theme', 'crb_load' );
-function crb_load() {
-	require_once( 'includes/carbon-fields/vendor/autoload.php' );
-	\Carbon_Fields\Carbon_Fields::boot();
-}
 
-add_action( 'carbon_fields_register_fields', 'register_carbon_fields' );
-function register_carbon_fields() {
-	require_once( 'includes/carbon-fields-options/carbon-fields-options.php' );
-}
 //________________________________________________________________________________________

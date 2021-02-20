@@ -1,6 +1,4 @@
 <?php
-require_once(__DIR__ . "/wp-domains.php");
-
 /**
  * Bootstrap file for setting the ABSPATH constant
  * and loading the wp-config.php file. The wp-config.php
