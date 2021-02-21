@@ -6166,7 +6166,7 @@ body {
       margin-bottom: 20px;
       border-bottom: 1px solid #ff9616;
       color: #ffffe1;
-      font: 400 24px/24px "Montserrat", sans-serif;
+      font: 400 24px/24px "Arial", sans-serif;
       text-align: center;
       text-transform: uppercase; }
   body section#recent-comments-2 {
@@ -6459,7 +6459,7 @@ div[data-bx-form-popup-close] {
   color: black;
   background: linear-gradient(#894d0f, #ff9616, #894d0f);
   text-transform: uppercase;
-  font: 700 18px/24px "Montserrat", sans-serif; }
+  font: 700 18px/24px "Arial", sans-serif; }
   .order_button:hover, #submit:hover {
     border-color: #894d0f;
     color: #ffffe1;
@@ -6517,6 +6517,8 @@ div[data-bx-form-popup-close] {
       text-transform: capitalize;
       word-spacing: 2px;
       color: #DEF1B8; }
+  .site-header .logo {
+    margin: 0 10px 0 0; }
   .site-header .phone {
     float: right;
     margin: auto;
@@ -6663,7 +6665,7 @@ div.call_to_action_hero, div.call_to_action_footer {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font: 900 28px/34px "Montserrat", sans-serif;
+    font: 900 28px/34px "Arial", sans-serif;
     text-shadow: 2px 0 #ff9616; }
   div.call_to_action_hero .prices, div.call_to_action_footer .prices {
     text-align: center;
@@ -6751,7 +6753,7 @@ div.call_to_action_hero, div.call_to_action_footer {
       margin: 0;
       padding: 5px;
       color: #ffffe1;
-      font: 700 20px/24px "Montserrat", sans-serif;
+      font: 700 20px/24px "Arial", sans-serif;
       text-transform: uppercase;
       text-align: center;
       -webkit-animation-delay: 1s;
@@ -6790,7 +6792,7 @@ div.call_to_action_hero, div.call_to_action_footer {
 .brand {
   text-transform: uppercase;
   color: #ff9616;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Arial", sans-serif; }
 
 .title_new_brand {
   text-align: center; }
@@ -6813,7 +6815,7 @@ div.call_to_action_hero, div.call_to_action_footer {
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
     .hero .brand_name .slogan {
-      font: 700 24px/30px "Montserrat", sans-serif; } }
+      font: 700 24px/30px "Arial", sans-serif; } }
 
 .explaining {
   background: radial-gradient(#183046, black);
@@ -6851,7 +6853,7 @@ div.call_to_action_hero, div.call_to_action_footer {
     margin-bottom: 20px;
     border-bottom: 1px solid #ff9616;
     color: #ffffe1;
-    font: 400 24px/24px "Montserrat", sans-serif;
+    font: 400 24px/24px "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase; }
   .fresh_comments #recentcomments {

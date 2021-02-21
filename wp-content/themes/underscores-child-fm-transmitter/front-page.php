@@ -46,6 +46,7 @@ get_header(); ?>
                                       class="main_img"><!--микроданные--></div>
                         </div>
                         <ul class="hero_shot_spec">
+
                             <li>Bluetooth hands free (Car Kit)</li>
                             <li>FM transmitter</li>
                             <li>Music from TF card</li>
