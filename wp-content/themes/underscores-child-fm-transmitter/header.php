@@ -78,11 +78,11 @@
                     <img class="logo"
                          src="<?php echo wp_get_attachment_image_url( carbon_get_theme_option( 'site_logo' ), array(
 							     28, 28)) ?>" alt="logo" height="28" width="28"><?php
-							             carbon_get_theme_option( 'site_logo_text' ) ?>
-                    <span class="brand"> <?php carbon_get_theme_option( 'text_brand' )?></span></a></h1>
+	                echo carbon_get_theme_option( 'site_logo_text' ) ?>
+                    <span class="brand"> <?php echo carbon_get_theme_option( 'text_brand' )?></span></a></h1>
             <div class="phone">
                 <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
-	                <?php carbon_get_theme_option( 'viber_phone' )?></a>
+	                <?php echo carbon_get_theme_option( 'viber_phone' )?></a>
             </div>
 
         </div><!-- .site-branding -->
