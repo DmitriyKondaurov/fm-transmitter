@@ -1,29 +1,26 @@
-var gulp            = require('gulp'),
-    sass            = require('gulp-sass'),
-    concat          = require('gulp-concat'),
-    uglify          = require('gulp-uglify'),
-    cssnano         = require('gulp-cssnano'),
-    rename          = require('gulp-rename'),
-    browserSync     = require('browser-sync'),
-    del             = require('del'),
-    // postcss         = require('gulp-postcss'),
-    // sourcemaps      = require('gulp-sourcemaps'),
-    imagemin        = require('gulp-imagemin'),
-    pngquant        = require('imagemin-pngquant'),
-    cache           = require('gulp-cache'),
-    autoprefixer    = require('gulp-autoprefixer');
+const   { watch, series, src, dest, parallel}   = require('gulp'),
+        sass                                    = require('gulp-sass'),
+        concat                                  = require('gulp-concat'),
+        uglify                                  = require('gulp-uglify'),
+        cssnano                                 = require('gulp-cssnano'),
+        rename                                  = require('gulp-rename'),
+        browserSync                             = require('browser-sync'),
+        del                                     = require('del'),
+        imagemin                                = require('gulp-imagemin'),
+        pngquant                                = require('imagemin-pngquant'),
+        cache                                   = require('gulp-cache'),
+        autoprefixer                            = require('gulp-autoprefixer');
 
-// const { series } = require('gulp');
-
-gulp.task('sass',  function() {
-    return gulp.src('./wp-content/themes/underscores-child-fm-transmitter/sass/*.+(scss|sass)')
+function sassTask() {
+    return src('./wp-content/themes/underscores-child-fm-transmitter/sass/*.+(scss|sass)')
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))
-        .pipe(gulp.dest('./wp-content/themes/underscores-child-fm-transmitter'))
+        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter'))
         .pipe(browserSync.reload({stream: true}))
-});
-gulp.task('css-libs', function() {
-    return gulp.src([
+}
+
+function cssLibsTask() {
+    return src([
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',
         './bower_components/animate.css/animate.min.css',
         './bower_components/owl.carousel/dist/assets/owl.theme.default.css'
@@ -31,23 +28,28 @@ gulp.task('css-libs', function() {
         .pipe(concat('libs-style.css'))
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./wp-content/themes/underscores-child-fm-transmitter'));
-});
+        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter'));
+}
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
+function browserSyncTask() {
+    return  browserSync.init({
             // baseDir: './wp-content/themes',
-        proxy: "localhost/fm-transmitter",
-        // proxy: "https://shops/sytes.net",
-        // server: {
+        // proxy: "localhost/fm-transmitter",
+        proxy: "localhost",
+        // server:
         // },
         // browser: ["google chrome"],
         notify: false
     });
-});
+}
 
-gulp.task('scripts', function() {
-    return gulp.src([
+function browserSyncReloadTask(cb) {
+    browserSync.reload();
+    cb();
+}
+
+function scriptsTask() {
+    return src([
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         './bower_components/owl.carousel/dist/owl.carousel.min.js',
@@ -57,36 +59,49 @@ gulp.task('scripts', function() {
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./wp-content/themes/underscores-child-fm-transmitter/'));
-});
+        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter/'))
+        .pipe(browserSync.reload({stream: true}))
 
-gulp.task('build', gulp.series('sass', 'css-libs', 'scripts'), function () {});
+}
 
-gulp.task('watch', gulp.series('build', 'browser-sync'), function() {
-    gulp.series(gulp.watch('./wp-content/themes/underscores-child-fm-transmitter/sass/**/*.+(scss|sass)', 'sass'));
-    gulp.series(gulp.watch('./wp-content/themes/underscores-child-fm-transmitter/**/*.+(php|js)'), browserSync.reload);
-});
+function buildTask(cb) {
+   series(sassTask, cssLibsTask, scriptsTask);
+   cb();
+}
+
+function watchTask() {
+    watch('wp-content/themes/underscores-child-fm-transmitter/sass/**/*.+(scss|sass)', sassTask);
+    watch('wp-content/themes/underscores-child-fm-transmitter/**/*.+php', browserSyncReloadTask);
+    watch(['wp-content/themes/underscores-child-fm-transmitter/**/*.+js',
+        '!./wp-content/themes/underscores-child-fm-transmitter/libs.min.js'], scriptsTask);
+}
+
+
 //перед watch, build надо сделать clean папки dist
-gulp.task('clean', function () {
-    return del.sync('./wp-content/themes/underscores-child-fm-transmitter/dist');
-});
+function clean(cb) {
+    del.sync('./wp-content/themes/underscores-child-fm-transmitter/dist');
+    cb();
+}
+
 // отчистка кеша
-gulp.task('clear', function () {
-    return cache.clearAll();
-});
+function clear(cb) {
+    cache.clearAll();
+    cb();
+}
+
 // зжатие картинок
-gulp.task('img', function() {
-    return gulp.src('./wp-content/themes/underscores-child-fm-transmitter/img/**/*')
+exports.img = function() {
+    return src('./wp-content/themes/underscores-child-fm-transmitter/img/**/*')
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             une: [pngquant()]
         })))
-        .pipe(gulp.dest('./wp-content/themes/underscores-child-fm-transmitter/image_min'));
-});
+        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter/image_min'));
+};
 //////////////////////////////
 // Default Task
 //////////////////////////////
 
-gulp.task('default', gulp.series('watch'));
+exports.default = series(clean, clear, buildTask, parallel(browserSyncTask, watchTask) );
