@@ -1,5 +1,7 @@
 <?php
 //______________________CARBON-FIELDS_____________________________________________
+use function Sodium\add;
+
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
 	require_once( 'includes/carbon-fields-options/carbon-fields-options.php' );
@@ -54,5 +56,12 @@ function wp_postratings_site_logo( $url ) {
 	return 'https://shops.sytes.net/wp-content/uploads/2017/12/cropped-thumbnail_71_71-1-e1532036247409.png';
 }
 
-
+add_action('init', 'create_global_variable');
+function create_global_variable() {
+	global $custom_global_variable;
+	$custom_global_variable = [
+		'phone' => carbon_get_theme_option('viber_phone'),
+		'brand_name' => carbon_get_theme_option('brand_name'),
+	];
+}
 //________________________________________________________________________________________

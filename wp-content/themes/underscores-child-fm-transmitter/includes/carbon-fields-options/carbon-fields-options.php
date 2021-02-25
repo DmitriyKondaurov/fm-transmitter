@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-Container::make( 'theme_options', 'Site Settings' )
+Container::make( 'theme_options', 'Custom Settings' )
 	->add_tab( 'General options', [
 		Field::make( 'text', 'brand_name', 'Brand_name' ),
 		Field::make( 'color', 'brand_color', __( 'Background Color' ) ),

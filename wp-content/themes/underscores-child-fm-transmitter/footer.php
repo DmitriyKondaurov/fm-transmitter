@@ -20,7 +20,7 @@
                 <span>ул. Благовесная 379 отд. №8</span><br>
                 <div class="phone" >
                     <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
-                        +380978314414</a>
+	                    <?php echo $GLOBALS['custom_global_variable']['phone']?></a>
                 </div>
                 <ul class="social">
                     <li>
