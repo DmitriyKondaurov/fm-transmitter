@@ -62,6 +62,16 @@ function create_global_variable() {
 	$custom_global_variable = [
 		'phone' => carbon_get_theme_option('viber_phone'),
 		'brand_name' => carbon_get_theme_option('brand_name'),
+		'site_logo' => carbon_get_theme_option('site_logo'),
+		'hero_sticker' => carbon_get_theme_option('hero_sticker'),
+		'hero_banner' => carbon_get_theme_option('hero_banner'),
+		'brand_color' => carbon_get_theme_option('brand_color'),
+		'site_logo_text' => carbon_get_theme_option('site_logo_text'),
+		'fb_url' => carbon_get_theme_option('fb_url'),
+		'inst_url' => carbon_get_theme_option('inst_url'),
+		'vk_url' => carbon_get_theme_option('vk_url'),
+		'youtube_url' => carbon_get_theme_option('youtube_url'),
+		'address' => carbon_get_theme_option('address'),
 	];
 }
 //________________________________________________________________________________________

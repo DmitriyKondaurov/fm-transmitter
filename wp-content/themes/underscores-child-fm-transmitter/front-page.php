@@ -25,10 +25,10 @@ get_header(); ?>
                      data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.webp">
                 <div class="wrapper">
                     <div class="brand_name">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-site.webp" alt="Новинка!"
+                        <img src="<?php echo wp_get_attachment_image_url( $GLOBALS['custom_global_variable']['hero_sticker']) ?>" alt="Новинка!"
                              class="brand_new">
                         <h2 class="slogan">Многофункциональный <span itemprop="name">Bluetooth FM модулятор<span
-                                        class="brand">'BT-800'</span></span><!--микроданные--></h2>
+                                        class="brand">'BT-800'</span><?php echo wp_get_attachment_image_url( $GLOBALS['custom_global_variable']['hero_sticker']) ?></span><!--микроданные--></h2>
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">

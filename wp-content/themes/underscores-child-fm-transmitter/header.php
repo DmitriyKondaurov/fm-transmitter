@@ -76,9 +76,9 @@
             <h1 class="site-title">
                 <a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img class="logo"
-                         src="<?php echo wp_get_attachment_image_url( carbon_get_theme_option( 'site_logo' ), array(
+                         src="<?php echo wp_get_attachment_image_url( $GLOBALS['custom_global_variable']['site_logo'], array(
 							     28, 28)) ?>" alt="logo" height="28" width="28"><?php
-	                echo carbon_get_theme_option( 'site_logo_text' ) ?>
+	                echo $GLOBALS['custom_global_variable']['site_logo_text'] ?>
                     <span class="brand"> <?php echo $GLOBALS['custom_global_variable']['brand_name']?></span></a></h1>
             <div class="phone">
                 <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>

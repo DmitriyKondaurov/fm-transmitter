@@ -5,3 +5,10 @@
 
 # END WordPress
 
+
+# BEGIN ShortPixelWebp
+# Директивы (строки) между `BEGIN ShortPixelWebp` и `END ShortPixelWebp`
+# созданы автоматически и подлежат изменению только через фильтры WordPress.
+# Сделанные вручную изменения между этими маркерами будут перезаписаны.
+
+# END ShortPixelWebp

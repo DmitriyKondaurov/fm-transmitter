@@ -16,29 +16,36 @@
 	<footer id="colophon" class="site-footer">
         <div class="container contacts">
             <div class="row">
-                <span>Черкассы | Новая Почта</span><br>
-                <span>ул. Благовесная 379 отд. №8</span><br>
+                <span><?php echo $GLOBALS['custom_global_variable']['address']?></span><br>
                 <div class="phone" >
                     <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
 	                    <?php echo $GLOBALS['custom_global_variable']['phone']?></a>
                 </div>
                 <ul class="social">
+                <?php if ($GLOBALS['custom_global_variable']['fb_url']):?>
                     <li>
-                        <a class="facebook-icon" href="https://www.facebook.com/permalink.php?story_fbid=972668916191446&id=926936384098033" target="_blank">
+                        <a class="facebook-icon" href="<?php echo $GLOBALS['custom_global_variable']['fb_url']?>" target="_blank">
                             <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
                     </li>
+                <?php endif; ?>
+                <?php if ($GLOBALS['custom_global_variable']['inst_url']):?>
                     <li>
-                        <a class="facebook-icon" href="https://plus.google.com/u/1/104593117882070015696/posts/VZiT9sigVke" target="_blank">
-                            <i class="fa fa-google-plus" aria-hidden="true"></i></i>Google+</a>
+                        <a class="facebook-icon" href="<?php echo $GLOBALS['custom_global_variable']['inst_url']?>" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></i>Instagram</a>
                     </li>
+                <?php endif; ?>
+                <?php if ($GLOBALS['custom_global_variable']['vk_url']):?>
                     <li>
-                        <a class="facebook-icon" href="https://kondaurov-blog.tumblr.com/post/170055843893/bluetooth-fm-transmitter-bt-800-%D0%B2-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC" target="_blank">
-                            <i class="fa fa-tumblr" aria-hidden="true"></i>Tumblr</a>
+                        <a class="facebook-icon" href="<?php echo $GLOBALS['custom_global_variable']['vk_url']?>" target="_blank">
+                            <i class="fa fa-vk" aria-hidden="true"></i>Vkontakte</a>
                     </li>
+                <?php endif; ?>
+                <?php if ($GLOBALS['custom_global_variable']['youtube_url']):?>
                     <li>
-                        <a class="facebook-icon" href="https://www.pinterest.com/invisibilityclear/bluetooth-fm-transmitter-bt-800/" target="_blank">
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>Pinterest</a>
+                        <a class="facebook-icon" href="<?php echo $GLOBALS['custom_global_variable']['youtube_url']?>" target="_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>YouTube</a>
                     </li>
+                <?php endif; ?>
                 </ul>
             </div>
         </div>
@@ -47,6 +54,7 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underscores' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'CMS: %s', 'underscores' ), 'WordPress' );
+
 			?></a>
 
 			<span class="sep"> | </span>
