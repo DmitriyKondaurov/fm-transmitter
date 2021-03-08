@@ -74,4 +74,30 @@ function create_global_variable() {
 		'address' => carbon_get_theme_option('address'),
 	];
 }
+
+add_action( 'admin_menu', function() {
+	global $current_user;
+	global $submenu;
+	$current_user = wp_get_current_user();
+	$user_name = $current_user->user_login;
+
+	//check condition for the user means show menu for this user
+	if(is_admin() &&  $user_name != 'USERNAME') {
+		//We need this because the submenu's link (key from the array too) will always be generated with the current SERVER_URI in mind.
+		$customizer_url = add_query_arg( 'return', urlencode( remove_query_arg( wp_removable_query_args(),
+			wp_unslash( $_SERVER['REQUEST_URI'] ) ) ), 'customize.php' );
+		remove_submenu_page( 'themes.php', $customizer_url );
+		remove_submenu_page( 'themes.php', 'theme-editor.php' );
+//		remove customize preview
+		if ( isset( $submenu[ 'themes.php' ] ) ) {
+			foreach ( $submenu[ 'themes.php' ] as $index => $menu_item ) {
+				foreach ($menu_item as $value) {
+					if (strpos($value,'customize') !== false) {
+						unset( $submenu[ 'themes.php' ][ $index ] );
+					}
+				}
+			}
+		}
+	}
+}, 999 );
 //________________________________________________________________________________________
