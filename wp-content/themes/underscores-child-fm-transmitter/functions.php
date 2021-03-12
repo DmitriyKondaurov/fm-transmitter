@@ -5,6 +5,7 @@ use function Sodium\add;
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
 	require_once( 'includes/carbon-fields-options/carbon-fields-options.php' );
+	require_once( 'includes/carbon-fields-options/carbon-fields-post-meta.php' );
 }
 
 add_action( 'after_setup_theme', 'crb_load' );
