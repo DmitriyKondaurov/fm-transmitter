@@ -18,12 +18,6 @@ Container::make( 'theme_options', 'Custom Settings' )
 		Field::make( 'text', 'site_logo_text', 'Logo-text' ),
 	] )
 
-	->add_tab( 'Site Hero', [
-		Field::make( 'text', 'hero_banner', 'Hero Banner' ),
-		Field::make( 'image', 'hero_sticker', 'Hero sticker "brand new"'),
-
-	] )
-
 	->add_tab( 'Contacts', [
 		Field::make( 'text', 'address', 'Address contact' ),
 		Field::make( 'text', 'viber_phone', 'Viber-contact' )

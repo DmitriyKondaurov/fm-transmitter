@@ -93,8 +93,6 @@ get_header(); ?>
             </section>
             <section class="compare">
                 <div class="container">
-                    <?php
-                    echo count( get_post_gallery_images( 2 ), COUNT_NORMAL); ?>
                     <h2 class="title">Преимущества</h2>
                     <table class="compare_table table-bordered">
                         <tbody itemprop="brand" itemscope itemtype="http://schema.org/Brand">
