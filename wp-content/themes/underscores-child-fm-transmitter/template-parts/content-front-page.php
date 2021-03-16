@@ -19,6 +19,5 @@
 			'after'  => '</div>',
 		) );
 		?>
-        TESTTTTTT
 	</div><!-- .entry-content -->
 

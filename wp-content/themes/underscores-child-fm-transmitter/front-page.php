@@ -12,7 +12,11 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header();
+$page_id = get_the_id();
+$current_post = get_post($page_id)->post_content;
+$current_post_content = apply_filters('the_content', $current_post);
+?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -25,64 +29,40 @@ get_header(); ?>
                      data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.webp">
                 <div class="wrapper">
                     <div class="brand_name">
-                        <?php if ($GLOBALS['custom_global_variable']['hero_sticker']):?>
-                        <img src="<?php echo wp_get_original_image_url($GLOBALS['custom_global_variable']['hero_sticker']) ?>"
-                             class="brand_new" alt="">
-                        <?php endif; ?>
+						<?php if ( carbon_get_post_meta( $page_id, 'hero_sticker' ) ): ?>
+                            <img src="<?php echo wp_get_original_image_url( carbon_get_post_meta( $page_id, 'hero_sticker' ) ) ?>"
+                                 class="brand_new" alt="">
+						<?php endif; ?>
                         <h2 class="slogan">
                             <span itemprop="name"><!--микроданные-->
-                                <?php echo $GLOBALS['custom_global_variable']['hero_banner'] ?>
+                                <?php echo carbon_get_post_meta( $page_id, 'hero_banner' ) ?>
                                 <span class="brand">
                                     <?php echo $GLOBALS['custom_global_variable']['brand_name'] ?>
                                 </span>
                             </span>
                         </h2>
+
                     </div>
                     <div class="hero_main">
                         <div id="carousel_1" class="owl-carousel owl-theme">
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/main_img.webp"
-                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twoside.webp"
-                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tfcard.webp"
-                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/charger.webp"
-                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'" class="main_img"></div>
-                            <div><img itemprop="image" src="<?php echo get_stylesheet_directory_uri();
-                            ?>/img/15119394499470.webp"
-                                      alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
-                                      class="main_img"><!--микроданные--></div>
+							<?php
+							$slides = carbon_get_post_meta( $page_id, 'hero_gallery' );
+							if ( $slides ) {
+								foreach ( $slides as $slide ) {?>
+                                        <div><img src="<?php echo wp_get_original_image_url( $slide ); ?>"
+                                                  alt="FM модулятор 'BT-800'"
+                                                  title="FM модулятор 'BT-800'"
+                                                  class="main_img">
+                                        </div>
+                                    <?php
+								}
+	                        }
+							?>
                         </div>
-                        <ul class="hero_shot_spec">
-
-                            <li>Bluetooth hands free (Car Kit)</li>
-                            <li>FM transmitter</li>
-                            <li>Music from TF card</li>
-                            <li>Bluetooth(A2DP) music</li>
-                            <li>AUX line-in</li>
-                            <li>Dual USB CarCharger 1A/2.1A</li>
-	                        <?php
-	                        //	для отображения звёзд рейтинга плагина WP-PostRatings
-                            if(function_exists('the_ratings')) {
-	                            the_ratings();
-                            }
-                            ?>
-                        </ul>
-                        <div class="call_to_action_hero">
-                            <div class="attention-2">Акция!</div>
-                            <div class="discount">Распродажа остатков товара! <br>Скидка - <span
-                                        class="discount_amount">20%</span></div>
-                            <div class="prices"><span class="old_price">496 грн </span>
-                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="new_price"><!--микроданные-->
-                                    <span itemprop="price">396</span><!--микроданные-->
-                                    <span>грн</span>
-                                    <meta itemprop="priceCurrency" content="UAH" /><!--микроданные-->
-                                    <meta itemprop="availability" content="InStock" /><!--микроданные-->
-                                </span>
-                            </div>
-                            <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">0</span> шт.</div>
-                        </div>
+                        <?php
+                        echo wpautop( carbon_get_the_post_meta( 'hero_shot_spec' ) );
+                        get_sidebar( 'call_to_action' );
+                        ?>
                     </div>
                     <div class="nav_button">
                         <a href="#" id="nav_down" class="slider_scroll_button">
@@ -104,9 +84,9 @@ get_header(); ?>
                         <tr>
                             <td></td>
                             <td class="brands_icons"><!--микроданные--><img itemprop="logo" src="<?php echo
-                                get_stylesheet_directory_uri();
+								get_stylesheet_directory_uri();
 								?>/img/brand-icon.webp" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
-                                                          class="brand_img_icon"></td>
+                                                                            class="brand_img_icon"></td>
                             <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
 								?>/img/other-brand-icon.webp" alt="FM модулятор" title="другой FM модулятор"
                                                           class="brand_img_icon"></td>
@@ -238,8 +218,9 @@ get_header(); ?>
                 <div class="wrapper">
                     <h2 class="title">видео обзор</h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
-                        <iframe id="video-iframe" src="https://www.youtube.com/embed/FhFirDFZhDU?rel=0&modestbranding=1&autohide=1&showinfo=0"
-                                frameborder="0" allowfullscreen loading="lazy"> </iframe>
+                        <iframe id="video-iframe"
+                                src="https://www.youtube.com/embed/FhFirDFZhDU?rel=0&modestbranding=1&autohide=1&showinfo=0"
+                                frameborder="0" allowfullscreen loading="lazy"></iframe>
                     </div>
                 </div>
             </section>
@@ -259,8 +240,9 @@ get_header(); ?>
                                 <li><span class="bold">Стоимость наложенного платежа:</span> 30 грн</li>
                             </ul>
                         </div>
-                        <div class="call_to_action_footer">
-                            <div class="attention-2">Акция!</div>
+                        <?php get_sidebar( 'call_to_action' );?>
+                        <div class="call_to_action">
+                            <h3 class="attention-2">Акция!</h3>
                             <div class="discount">Распродажа остатков товара!<br> Скидка - <span
                                         class="discount_amount">20%</span></div>
                             <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-Container::make( 'theme_options', 'Custom Settings' )
+Container::make( 'theme_options', 'Site settings' )
 	->add_tab( 'General options', [
 		Field::make( 'text', 'brand_name', 'Brand_name' ),
 		Field::make( 'color', 'brand_color', __( 'Background Color' ) ),
@@ -31,5 +31,9 @@ Container::make( 'theme_options', 'Custom Settings' )
 		     ->set_attribute( 'type', 'url' ),
 		Field::make( 'text', 'youtube_url', 'YouTube link' )
 		     ->set_attribute( 'type', 'url' ),
+	] )
+	->add_tab( 'Scripts', [
+		Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script' ) ),
+		Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script' ) ),
 	] )
 ;

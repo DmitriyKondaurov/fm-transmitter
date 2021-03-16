@@ -6,6 +6,21 @@ add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
 	require_once( 'includes/carbon-fields-options/carbon-fields-options.php' );
 	require_once( 'includes/carbon-fields-options/carbon-fields-post-meta.php' );
+	require_once( 'includes/carbon-fields-options/carbon-fields-widgets.php' );
+}
+
+add_action( 'widgets_init', 'load_widgets' );
+add_action( 'widgets_init', 'underscores_child_widgets_init' );
+function underscores_child_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Call to action banner', 'underscores_child' ),
+		'id'            => 'call_to_action',
+		'before_widget' => '<div id="%1$s" class="call_to_action %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="attention-2">',
+		'after_title'   => '</h3>',
+	) );
+
 }
 
 add_action( 'after_setup_theme', 'crb_load' );
@@ -64,8 +79,6 @@ function create_global_variable() {
 		'phone' => carbon_get_theme_option('viber_phone'),
 		'brand_name' => carbon_get_theme_option('brand_name'),
 		'site_logo' => carbon_get_theme_option('site_logo'),
-		'hero_sticker' => carbon_get_theme_option('hero_sticker'),
-		'hero_banner' => carbon_get_theme_option('hero_banner'),
 		'brand_color' => carbon_get_theme_option('brand_color'),
 		'site_logo_text' => carbon_get_theme_option('site_logo_text'),
 		'fb_url' => carbon_get_theme_option('fb_url'),

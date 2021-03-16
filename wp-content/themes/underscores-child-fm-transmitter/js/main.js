@@ -14,8 +14,7 @@ $(document).ready(function() {
     // $(".slogan").animated("fadeInUp", "fadeInDown");
     $(".owl-carousel").animated("zoomIn", "zoomOut");
     // $(".hero_shot_spec").animated("flipInX", "flipOutX");
-    $(".call_to_action_hero").animated("pulse", "zoomOut");
-    $(".call_to_action_footer").animated("pulse", "zoomOut");
+    $(".call_to_action").animated("pulse", "zoomOut");
     $(".exp_img").animated("zoomIn", "zoomOut");
     $(".about_full_spec li:nth-child(1) p").animated("fadeInUp", "fadeOutUp");
     $(".about_full_spec li:nth-child(2) p").animated("fadeInUp", "fadeOutUp");

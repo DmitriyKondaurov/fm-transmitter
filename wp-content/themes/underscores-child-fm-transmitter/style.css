@@ -6633,7 +6633,7 @@ footer.site-footer {
     font: 400 14px/18px "Arial";
     vertical-align: middle; } }
 
-div.call_to_action_hero, div.call_to_action_footer {
+div.call_to_action {
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
   border: 3px solid #ff9616;
@@ -6646,7 +6646,7 @@ div.call_to_action_hero, div.call_to_action_footer {
           animation-delay: 0.8s;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s; }
-  div.call_to_action_hero .attention-1, div.call_to_action_footer .attention-1 {
+  div.call_to_action .attention-1 {
     position: relative;
     top: -22px;
     width: 100px;
@@ -6658,7 +6658,7 @@ div.call_to_action_hero, div.call_to_action_footer {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px; }
-  div.call_to_action_hero .attention-2, div.call_to_action_footer .attention-2 {
+  div.call_to_action .attention-2 {
     width: 150px;
     margin: auto;
     color: #ff3232;
@@ -6667,67 +6667,67 @@ div.call_to_action_hero, div.call_to_action_footer {
     letter-spacing: 2px;
     font: 900 28px/34px "Arial", sans-serif;
     text-shadow: 2px 0 #ff9616; }
-  div.call_to_action_hero .prices, div.call_to_action_footer .prices {
+  div.call_to_action .prices {
     text-align: center;
     margin: 10px 0 10px 0; }
-    div.call_to_action_hero .prices .old_price, div.call_to_action_footer .prices .old_price {
+    div.call_to_action .prices .old_price {
       display: inline-block;
       color: #8A2525;
       font: 700 24px/28px "Arial";
       text-decoration: line-through; }
-    div.call_to_action_hero .prices .new_price, div.call_to_action_footer .prices .new_price {
+    div.call_to_action .prices .new_price {
       display: inline-block;
       font: 700 32px/28px "Arial";
       color: #fbed50; }
-  div.call_to_action_hero .discount, div.call_to_action_footer .discount {
+  div.call_to_action .discount {
     color: #DEF1B8; }
-  div.call_to_action_hero .discount_amount, div.call_to_action_footer .discount_amount {
+  div.call_to_action .discount_amount {
     padding: 10px 3px;
     border-radius: 20px;
     color: #fbed50;
     font-size: 24px;
     font-weight: 700; }
-  div.call_to_action_hero .left_pcs, div.call_to_action_footer .left_pcs {
+  div.call_to_action .left_pcs {
     padding: 3px 10px;
     border-radius: 5px;
     background-color: lightgrey;
     color: black;
     font-size: 18px; }
-  div.call_to_action_hero .up_sell_title, div.call_to_action_footer .up_sell_title {
+  div.call_to_action .up_sell_title {
     padding-top: 5px;
     border-top: 2px solid #ff9616;
     font-weight: 400;
     color: #ff3232;
     text-shadow: 1px 0 #ff9616; }
-  div.call_to_action_hero .up_sell, div.call_to_action_footer .up_sell {
+  div.call_to_action .up_sell {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; }
-    div.call_to_action_hero .up_sell *, div.call_to_action_footer .up_sell * {
+    div.call_to_action .up_sell * {
       max-width: 75px;
       max-height: 70px; }
-    div.call_to_action_hero .up_sell .plus, div.call_to_action_footer .up_sell .plus {
+    div.call_to_action .up_sell .plus {
       margin: 0 5px;
       font-size: 40px;
       line-height: 70px; }
-    div.call_to_action_hero .up_sell .amount, div.call_to_action_footer .up_sell .amount {
+    div.call_to_action .up_sell .amount {
       padding: 5px;
       font-size: 22px;
       line-height: 60px;
       color: #fbed50;
       font-weight: 700; }
-    div.call_to_action_hero .up_sell .up_sell_discount, div.call_to_action_footer .up_sell .up_sell_discount {
+    div.call_to_action .up_sell .up_sell_discount {
       color: #fbed50;
       font-weight: 700; }
-    div.call_to_action_hero .up_sell .brand2_img_icon, div.call_to_action_footer .up_sell .brand2_img_icon {
+    div.call_to_action .up_sell .brand2_img_icon {
       border: 1px solid #fbed50;
       border-radius: 5px; }
-      div.call_to_action_hero .up_sell .brand2_img_icon img, div.call_to_action_footer .up_sell .brand2_img_icon img {
+      div.call_to_action .up_sell .brand2_img_icon img {
         padding: 5px 3px 0 0; }
-    div.call_to_action_hero .up_sell .up_sell_old_price, div.call_to_action_footer .up_sell .up_sell_old_price {
+    div.call_to_action .up_sell .up_sell_old_price {
       color: #b52e2e;
       text-decoration: line-through; }
 
