@@ -9,9 +9,11 @@ function crb_attach_theme_options() {
 	require_once( 'includes/carbon-fields-options/carbon-fields-widgets.php' );
 }
 
+add_action( 'widgets_init', 'underscores_child_sidebar_init' );
 add_action( 'widgets_init', 'load_widgets' );
-add_action( 'widgets_init', 'underscores_child_widgets_init' );
-function underscores_child_widgets_init() {
+
+//регестрируем место под виджеты
+function underscores_child_sidebar_init() {
 	register_sidebar( array(
 		'name'          => __( 'Call to action banner', 'underscores_child' ),
 		'id'            => 'call_to_action',
@@ -30,7 +32,7 @@ function crb_load() {
 }
 
 function underscores_child_scripts() {
-
+	$version = '0.0.0.0';
 	//________________switch off some default WP style____________________________________________
 	wp_dequeue_style('wp-block-library');
 	wp_deregister_script('wp-embed');
@@ -39,18 +41,18 @@ function underscores_child_scripts() {
 
 	//_____________________________________________ CUSTOM STYLES libs __________________________________________________
 	wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/libs-style.min.css',
-		array(), '1.0.0.0', false );
+		array(), $version, false );
 
 	//___________________________________________    Google Font    ____________________________________________
 //	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic', array(), '1.0.0.0',
 //		false );
 
 	//___________________________________________    FONT AWESOME    ____________________________________________
-	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/b41b6eacb2.js', array(), '1.0.0.0',
+	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/b41b6eacb2.js', array(), $version,
 		false );
 
 	//_______________________________________ CUSTOM  JS PLUGINS libs__________________________________________________
-	wp_enqueue_script( 'custom-libs-plugins-js', get_stylesheet_directory_uri() . '/libs.min.js', array(), '1.0.0.0',
+	wp_enqueue_script( 'custom-libs-plugins-js', get_stylesheet_directory_uri() . '/libs.min.js', array(), $version,
 		false );
 	//-----------------------------------------------------------------------------------------------------------------
 

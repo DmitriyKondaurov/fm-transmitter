@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 use Carbon_Fields\Widget;
 use Carbon_Fields\Field;
 
-class ThemeWidgetExample extends Widget {
+class CallToActionWidget extends Widget {
 	// Register widget function. Must have the same name as the class
 	function __construct() {
 		$this->setup( 'custom_widget_call_to_action', 'Call to action',
@@ -28,7 +28,7 @@ class ThemeWidgetExample extends Widget {
 				Field::make( 'text', 'current_price', 'Current price' )->set_width( 15 )
 				                                                       ->set_attribute( 'type', 'number' ),
 				Field::make( 'text', 'items_left_text', 'Items left text' )->set_width( 60 ),
-				Field::make( 'text', 'items_left_amount', 'Amount' )->set_width( 5 )
+				Field::make( 'text', 'items_left_amount', 'amount' )->set_width( 5 )
 				                                                    ->set_attribute( 'type', 'number' ),
 				Field::make( 'text', 'items_left_pieces', 'pcs' )->set_width( 5 ),
 				Field::make( 'text', 'order_button', 'Order button text' )->set_width( 50 ),
@@ -53,5 +53,5 @@ class ThemeWidgetExample extends Widget {
 }
 
 function load_widgets() {
-	register_widget( 'ThemeWidgetExample' );
+	register_widget( 'CallToActionWidget' );
 }
