@@ -88,6 +88,7 @@ function create_global_variable() {
 		'vk_url' => carbon_get_theme_option('vk_url'),
 		'youtube_url' => carbon_get_theme_option('youtube_url'),
 		'address' => carbon_get_theme_option('address'),
+		'my_brand_icon' => carbon_get_post_meta(2, 'my_brand_icon'),
 	];
 }
 

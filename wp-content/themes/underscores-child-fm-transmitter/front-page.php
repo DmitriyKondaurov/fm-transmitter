@@ -78,64 +78,51 @@ $current_post_content = apply_filters('the_content', $current_post);
                         <tbody itemprop="brand" itemscope itemtype="http://schema.org/Brand">
                         <tr>
                             <th>Функции</th>
-                            <th><span itemprop="name" class="brand">'BT-800'</span></th><!--микроданные-->
-                            <th>Другой модулятор</th>
+                            <th><span itemprop="name" class="brand">
+                                    <?php echo $GLOBALS['custom_global_variable']['brand_name'] ?></span>
+                            </th><!--микроданные-->
+                            <th>Другой</th>
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="brands_icons"><!--микроданные--><img itemprop="logo" src="<?php echo
-								get_stylesheet_directory_uri();
-								?>/img/brand-icon.webp" alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
-                                                                            class="brand_img_icon"></td>
-                            <td class="brands_icons"><img src="<?php echo get_stylesheet_directory_uri();
-								?>/img/other-brand-icon.webp" alt="FM модулятор" title="другой FM модулятор"
-                                                          class="brand_img_icon"></td>
+                            <td class="brands_icons"><!--микроданные-->
+	                            <?php if ( carbon_get_post_meta( $page_id, 'my_brand_icon' ) ): ?>
+                                    <img itemprop="logo" src="<?php echo wp_get_original_image_url(
+                                            carbon_get_post_meta( $page_id, 'my_brand_icon' ) ) ?>"
+                                         alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
+                                         class="brand_img_icon">
+	                            <?php endif; ?>
+                            </td>
+                            <td class="brands_icons">
+	                            <?php if ( carbon_get_post_meta( $page_id, 'other_brand_icon' ) ): ?>
+                                    <img src="<?php echo wp_get_original_image_url(
+			                            carbon_get_post_meta( $page_id, 'other_brand_icon' ) ) ?>"
+                                         alt="FM модулятор" title="другой FM модулятор"
+                                         class="brand_img_icon">
+	                            <?php endif; ?>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>Беспроводная громкая связь в авто (Bluetooth - Fm)</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Технология подавления шумов CVC</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Автоматическое востановление Bluetooth соединения</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Громкая связь в авто (AUX - Fm)</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Трансляция музыки (Bluetooth - Fm)</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Трансляция музыки (SD/TF Card - Fm)</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Трансляция музыки c любых других устройств (AUX - Fm)</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Питание от USB (возможность использования вне автомобиля)</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Дополнительный слот USB на 5V/2.1А для питания или зарядки других устройств</td>
-                            <td><span class="glyphicon glyphicon-ok text-success"></span></td>
-                            <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
-                        </tr>
+                        <?php
+                        $advantages = carbon_get_post_meta( $page_id, 'crb_advantages' );
+                        if ( $advantages ) {
+	                        foreach ( $advantages as $advantage ) {?>
+                                <tr>
+                                    <td><?php echo $advantage['advantage']?></td>
+		                            <?php if ( $advantage['my_product']): ?>
+                                    <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                                    <?php else: ?>
+                                    <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
+		                            <?php endif; ?>
+                                    <?php if ( $advantage['other_product']): ?>
+                                    <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                                    <?php else: ?>
+                                    <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
+                                    <?php endif; ?>
+                                </tr>
+		                        <?php
+	                        }
+                        }
+                        ?>
                         </tbody>
                     </table>
                 </div>
