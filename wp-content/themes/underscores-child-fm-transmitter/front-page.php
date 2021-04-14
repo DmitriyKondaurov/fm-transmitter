@@ -56,13 +56,11 @@ $current_post_content = apply_filters('the_content', $current_post);
                                         </div>
                                     <?php
 								}
-	                        }
-							?>
+	                        }?>
                         </div>
                         <?php
                         echo wpautop( carbon_get_the_post_meta( 'hero_shot_spec' ) );
-                        get_sidebar( 'call_to_action' );
-                        ?>
+                        get_sidebar( 'header' );?>
                     </div>
                     <div class="nav_button">
                         <a href="#" id="nav_down" class="slider_scroll_button">
@@ -121,8 +119,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                                 </tr>
 		                        <?php
 	                        }
-                        }
-                        ?>
+                        }?>
                         </tbody>
                     </table>
                 </div>
@@ -137,39 +134,15 @@ $current_post_content = apply_filters('the_content', $current_post);
                 <div class="wrapper">
                     <h2 class="title">функции</h2>
                     <ul id="functions" class="about_full_spec">
-                        <li class="icon-phone_bluetooth_speaker">
-                            <p>Беспроводная громкая связь в авто (hands free). С помощью Bluetooth соединения с
-                                телефоном и передачи звука по радио волнам в Fm диапазоне на штатную магнитолу
-                                автомобиля.</p>
-                        </li>
-                        <li class="icon-aux10">
-                            <p>Громкая связь в авто (hands free) c AUX входа. С помощью кабельного переходника (выход
-                                наушников 3,5 мм) телефон соединяется с Fm модулятором <span
-                                        class="brand">'BT-800'</span> через встроенный AUX вход и передаёт звук по радио
-                                волнам в Fm диапазоне на штатную магнитолу автомобиля.</p>
-                        </li>
-                        <li class="icon-card1">
-                            <p>Трансляция музыки по радио волнам в Fm диапазоне с встроенного SD/TF card reader на любой
-                                радиоприёмник в радиусе 10 метров.</p>
-                        </li>
-                        <li class="icon-radio">
-                            <p>Подавление шумов во время разговора по телефону с помощью технологии CVC.</p>
-                        </li>
-                        <li class="icon-aux5">
-                            <p>Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с
-                                выходом AUX</p>
-                        </li>
-                        <li class="icon-bluetooth_connected">
-                            <p>Трансляция музыки по радио волнам в Fm диапазоне с любого устройства воспроизведения с
-                                Bluetooth соединением по технологии A2DP</p>
-                        </li>
-                        <li class="icon-voice1">
-                            <p>Голосовое воспроизведение номера входящих звонков (на английском языке)</p>
-                        </li>
-                        <li class="icon-charg66">
-                            <p>В комплект поставки входит переходник автомобильной зарядки с двумя выходами USB для
-                                умеренной и быстрой зарядки (1A / 2.1A)</p>
-                        </li>
+	                    <?php
+	                    $crb_functions = carbon_get_post_meta( $page_id, 'crb_functions' );
+	                    if ( $crb_functions ):
+		                    foreach ( $crb_functions as $crb_function ) {?>
+                        <li class="<?php echo $crb_function['choose_icon'] ?>">
+                                   <p><?php echo $crb_function['function_description'] ?></p>
+                            <?php
+		                    }
+                        endif; ?>
                     </ul>
                 </div>
             </section>
@@ -206,7 +179,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                     <h2 class="title">видео обзор</h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
                         <iframe id="video-iframe"
-                                src="https://www.youtube.com/embed/FhFirDFZhDU?rel=0&modestbranding=1&autohide=1&showinfo=0"
+                                src="<?php echo carbon_get_post_meta( $page_id, 'link_overview' ) ?>"
                                 frameborder="0" allowfullscreen loading="lazy"></iframe>
                     </div>
                 </div>
@@ -216,27 +189,9 @@ $current_post_content = apply_filters('the_content', $current_post);
                     <h2 class="title">доставка и оплата</h2>
                     <div class="flex_box">
                         <div>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-13.webp"
-                                 alt="Новая пошта" title="'Нова Пошта'" class="ship_img">
-                            <ul>
-                                <li><span class="bold">Доставка по Украине</span> Новой Почтой (наложенный
-                                    платеж)
-                                </li>
-                                <li><span class="bold">Время доставки:</span> 1-2 дня</li>
-                                <li><span class="bold">Стоимость доставки по Украине:</span> 35-40 грн</li>
-                                <li><span class="bold">Стоимость наложенного платежа:</span> 30 грн</li>
-                            </ul>
+	                        <?php echo wpautop( carbon_get_the_post_meta( 'shipment_info' ) );?>
                         </div>
-                        <?php get_sidebar( 'call_to_action' );?>
-                        <div class="call_to_action">
-                            <h3 class="attention-2">Акция!</h3>
-                            <div class="discount">Распродажа остатков товара!<br> Скидка - <span
-                                        class="discount_amount">20%</span></div>
-                            <div class="prices"><span class="old_price">496 грн </span> <span class="new_price">396
-                                        грн</span></div>
-                            <button class="b24-web-form-popup-btn-8 order_button">заказать</button>
-                            <div>По акции осталось: <span class="left_pcs">0</span> шт.</div>
-                        </div>
+	                        <?php get_sidebar( 'footer' );?>
                     </div>
                 </div>
             </section>

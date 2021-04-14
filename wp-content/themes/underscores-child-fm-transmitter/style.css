@@ -6209,8 +6209,8 @@ body {
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/iconmoon/fonts/icomoon.eot?n3n8uf");
-  src: url("fonts/iconmoon/fonts/icomoon.eot?n3n8uf#iefix") format("embedded-opentype"), url("fonts/iconmoon/fonts/icomoon.ttf?n3n8uf") format("truetype"), url("fonts/iconmoon/fonts/icomoon.woff?n3n8uf") format("woff"), url("fonts/iconmoon/fonts/icomoon.svg?n3n8uf#icomoon") format("svg");
+  src: url("fonts/iconmoon/fonts/icomoon.eot?k0yto");
+  src: url("fonts/iconmoon/fonts/icomoon.eot?k0yto#iefix") format("embedded-opentype"), url("fonts/iconmoon/fonts/icomoon.ttf?k0yto") format("truetype"), url("fonts/iconmoon/fonts/icomoon.woff?k0yto") format("woff"), url("fonts/iconmoon/fonts/icomoon.svg?k0yto#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -6249,6 +6249,90 @@ body {
 
 .icon-aux5:before {
   content: ""; }
+
+.icon-camera:before {
+  content: ""; }
+
+.icon-headphones:before {
+  content: ""; }
+
+.icon-music:before {
+  content: ""; }
+
+.icon-mic:before {
+  content: ""; }
+
+.icon-cart:before {
+  content: ""; }
+
+.icon-credit-card:before {
+  content: ""; }
+
+.icon-location:before {
+  content: ""; }
+
+.icon-wrench:before {
+  content: ""; }
+
+.icon-cog:before {
+  content: ""; }
+
+.icon-cogs:before {
+  content: ""; }
+
+.icon-fire:before {
+  content: ""; }
+
+.icon-power:before {
+  content: ""; }
+
+.icon-checkmark2:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-instagram:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
+
+.icon-youtube:before {
+  content: ""; }
+
+.icon-dropbox:before {
+  content: ""; }
+
+.icon-cloud:before {
+  content: ""; }
+
+.icon-github:before {
+  content: ""; }
+
+.icon-wordpress:before {
+  content: ""; }
+
+.icon-apple:before {
+  content: ""; }
+
+.icon-android:before {
+  content: ""; }
+
+.icon-windows:before {
+  content: ""; }
+
+.icon-linkedin:before {
+  content: ""; }
+
+.icon-pinterest:before {
+  content: ""; }
+
+.icon-chrome:before {
+  content: ""; }
+
+.icon-git:before {
+  content: ""; }
 
 .nav_button {
   position: initial;

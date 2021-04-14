@@ -15,17 +15,17 @@ class CallToActionWidget extends Widget {
 			array(
 				Field::make( 'text', 'title', 'Title' )->set_classes( 'attention-2' ),
 				Field::make( 'textarea', 'content', 'Content' ),
-				Field::make( 'text', 'discount_amount', 'Discount amount' )->set_width( 15 ),
-				Field::make( 'select', 'price_currency', 'Price currency' )->set_width( 15 )->add_options( array(
+				Field::make( 'text', 'discount_amount', 'Discount amount' )->set_width( 14 ),
+				Field::make( 'select', 'price_currency', 'Price currency' )->set_width( 14 )->add_options( array(
 					'eur' => __( 'EUR' ),
 					'usd' => __( 'USD' ),
 					'pln' => __( 'PLN' ),
 					'грн' => __( 'UAH' ),
 					'руб' => __( 'RUB' ),
 				) ),
-				Field::make( 'text', 'old_price', 'Old price (cross out)' )->set_width( 15 )
+				Field::make( 'text', 'old_price', 'Old price (cross)' )->set_width( 14 )
 				                                                           ->set_attribute( 'type', 'number' ),
-				Field::make( 'text', 'current_price', 'Current price' )->set_width( 15 )
+				Field::make( 'text', 'current_price', 'Current price' )->set_width( 14 )
 				                                                       ->set_attribute( 'type', 'number' ),
 				Field::make( 'text', 'items_left_text', 'Items left text' )->set_width( 60 ),
 				Field::make( 'text', 'items_left_amount', 'amount' )->set_width( 5 )

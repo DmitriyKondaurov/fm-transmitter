@@ -9,14 +9,27 @@ function crb_attach_theme_options() {
 	require_once( 'includes/carbon-fields-options/carbon-fields-widgets.php' );
 }
 
-add_action( 'widgets_init', 'underscores_child_sidebar_init' );
+add_action( 'widgets_init', 'underscores_child_header_sidebar_init' );
+add_action( 'widgets_init', 'underscores_child_footer_sidebar_init' );
 add_action( 'widgets_init', 'load_widgets' );
 
 //регестрируем место под виджеты
-function underscores_child_sidebar_init() {
+function underscores_child_header_sidebar_init() {
 	register_sidebar( array(
-		'name'          => __( 'Call to action banner', 'underscores_child' ),
-		'id'            => 'call_to_action',
+		'name'          => 'Header banner',
+		'id'            => 'header_banner',
+		'before_widget' => '<div id="%1$s" class="call_to_action %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="attention-2">',
+		'after_title'   => '</h3>',
+	) );
+
+}
+
+function underscores_child_footer_sidebar_init() {
+	register_sidebar( array(
+		'name'          => 'Footer banner',
+		'id'            => 'footer_banner',
 		'before_widget' => '<div id="%1$s" class="call_to_action %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="attention-2">',

@@ -7,11 +7,11 @@
  * @package underscores
  */
 
-if ( ! is_active_sidebar( 'call_to_action' ) ) {
+if ( ! is_active_sidebar( 'footer_banner' ) ) {
 	return;
 }
 ?>
-<div id="sidebar-modulator" class="call_to_action">
-	<?php dynamic_sidebar( 'call_to_action' ); ?>
+<div id="footer_banner" class="call_to_action">
+	<?php dynamic_sidebar( 'footer_banner' ); ?>
 </div>
 
