@@ -71,15 +71,15 @@ $current_post_content = apply_filters('the_content', $current_post);
             </section>
             <section class="compare">
                 <div class="container">
-                    <h2 class="title">Преимущества</h2>
+                    <h2 class="title"><?php echo carbon_get_post_meta( $page_id, 'sec_advantages' ) ?></h2>
                     <table class="compare_table table-bordered">
                         <tbody itemprop="brand" itemscope itemtype="http://schema.org/Brand">
                         <tr>
-                            <th>Функции</th>
+                            <th><?php echo carbon_get_post_meta( $page_id, 'sec_advantages' ) ?></th>
                             <th><span itemprop="name" class="brand">
                                     <?php echo $GLOBALS['custom_global_variable']['brand_name'] ?></span>
                             </th><!--микроданные-->
-                            <th>Другой</th>
+                            <th>Other</th>
                         </tr>
                         <tr>
                             <td></td>
@@ -132,7 +132,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                      data-speed="0.3"
                      data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-hero.webp">
                 <div class="wrapper">
-                    <h2 class="title">функции</h2>
+                    <h2 class="title"><?php echo carbon_get_post_meta( $page_id, 'sec_functions' ) ?></h2>
                     <ul id="functions" class="about_full_spec">
 	                    <?php
 	                    $crb_functions = carbon_get_post_meta( $page_id, 'crb_functions' );
@@ -150,9 +150,10 @@ $current_post_content = apply_filters('the_content', $current_post);
                 <div class="wrapper">
                     <div class="flex_box">
                         <div class="explain_item">
-                            <h2 class="title">спецификация</h2>
+                            <h2 class="title"><?php echo carbon_get_post_meta( $page_id, 'sec_specification' ) ?></h2>
                             <div class="exp_img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explain2.webp"
+                                <img src="<?php echo wp_get_original_image_url(
+	                                carbon_get_post_meta( $page_id, 'spec_image' ) ) ?>"
                                      alt="explain device FM модулятор 'BT-800'" title="Спецификация на FM модулятор
                                      'BT-800'">
                             </div>
@@ -176,7 +177,7 @@ $current_post_content = apply_filters('the_content', $current_post);
             </section>
             <section class="video">
                 <div class="wrapper">
-                    <h2 class="title">видео обзор</h2>
+                    <h2 class="title"><?php echo carbon_get_post_meta( $page_id, 'sec_screencast' ) ?></h2>
                     <div class="flex-video flex-video-widescreen mb-beta">
                         <iframe id="video-iframe"
                                 src="<?php echo carbon_get_post_meta( $page_id, 'link_overview' ) ?>"
@@ -186,7 +187,7 @@ $current_post_content = apply_filters('the_content', $current_post);
             </section>
             <section class="ship_payment">
                 <div class="wrapper">
-                    <h2 class="title">доставка и оплата</h2>
+                    <h2 class="title"><?php echo carbon_get_post_meta( $page_id, 'sec_shipment' ) ?></h2>
                     <div class="flex_box">
                         <div>
 	                        <?php echo wpautop( carbon_get_the_post_meta( 'shipment_info' ) );?>

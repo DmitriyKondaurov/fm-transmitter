@@ -12,6 +12,12 @@ Container::make( 'post_meta', 'HERO' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
+	         //	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
+//	              ->set_options( array(
+//		              'mountain' => 'https://source.unsplash.com/X1UTzW8e7Q4/800x600',
+//		              'temple' => 'https://source.unsplash.com/ioJVccFmWxE/800x600',
+//		              'road' => 'https://source.unsplash.com/5c8fczgvar0/800x600',
+//	              ) )
 	         Field::make( 'text', 'hero_banner', 'Hero Banner' )->set_width( 50 ),
 	         Field::make( 'image', 'hero_sticker', 'Hero sticker "brand new"' )->set_width( 50 ),
 	         Field::make( 'media_gallery', 'hero_gallery', 'Brand gallery (slider)' ),
@@ -22,6 +28,7 @@ Container::make( 'post_meta', 'ADVANTAGES' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
+	         Field::make( 'text', 'sec_advantages', 'Section caption' ),
 	         Field::make( 'image', 'my_brand_icon' )->set_width( 50 ),
 	         Field::make( 'image', 'other_brand_icon' )->set_width( 50 ),
 	         Field::make( 'complex', 'crb_advantages', 'List of advantages (max 10)' )
@@ -50,6 +57,13 @@ Container::make( 'post_meta', 'FUNCTIONS' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
+	         Field::make( 'text', 'sec_functions', 'Section caption' ),
+//	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
+//	              ->set_options( array(
+//		              'mountain' => 'https://source.unsplash.com/X1UTzW8e7Q4/800x600',
+//		              'temple' => 'https://source.unsplash.com/ioJVccFmWxE/800x600',
+//		              'road' => 'https://source.unsplash.com/5c8fczgvar0/800x600',
+//	              ) )
 	         Field::make( 'complex', 'crb_functions', 'List of support functions (max 10)' )
 	              ->set_collapsed( false )
 	              ->add_fields( 'crb_function', array(
@@ -103,6 +117,7 @@ Container::make( 'post_meta', 'SPECIFICATION' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
+	         Field::make( 'text', 'sec_specification', 'Section caption' ),
 	         Field::make( 'image', 'spec_image' ),
          ) );
 
@@ -110,18 +125,15 @@ Container::make( 'post_meta', 'VIDEO OVERVIEW' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
+	         Field::make( 'text', 'sec_screencast', 'Section caption' ),
 	         Field::make( 'text', 'link_overview', 'Add youtube link of overview your product here...' ),
-//	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
-//	              ->set_options( array(
-//		              'mountain' => 'https://source.unsplash.com/X1UTzW8e7Q4/800x600',
-//		              'temple' => 'https://source.unsplash.com/ioJVccFmWxE/800x600',
-//		              'road' => 'https://source.unsplash.com/5c8fczgvar0/800x600',
-//	              ) )
+//
          ) );
 Container::make( 'post_meta', 'SHIPMENT INFO' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
+	         Field::make( 'text', 'sec_shipment', 'Section caption' ),
 	         Field::make( 'rich_text', 'shipment_info', ''),
 //	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
 //	              ->set_options( array(
