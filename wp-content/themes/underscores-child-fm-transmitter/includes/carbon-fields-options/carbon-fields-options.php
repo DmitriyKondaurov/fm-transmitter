@@ -36,4 +36,14 @@ Container::make( 'theme_options', 'Site settings' )
 		Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script' ) ),
 		Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script' ) ),
 	] )
+	->add_tab( 'Meta', [
+		Field::make( 'text', 'cache_control')
+		     ->set_attribute( 'type', 'number' ),
+		Field::make( 'text', 'description')
+		     ->set_attribute( 'type', 'text' ),
+		Field::make( 'text', 'keywords')
+		     ->set_attribute( 'type', 'text' ),
+		Field::make( 'text', 'domain')
+		     ->set_attribute( 'type', 'url' ),
+	] )
 ;

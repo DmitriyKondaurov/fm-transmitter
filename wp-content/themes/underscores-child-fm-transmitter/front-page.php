@@ -84,17 +84,17 @@ $current_post_content = apply_filters('the_content', $current_post);
                         <tr>
                             <td></td>
                             <td class="brands_icons"><!--микроданные-->
-	                            <?php if ( carbon_get_post_meta( $page_id, 'my_brand_icon' ) ): ?>
+	                            <?php if ( $GLOBALS['custom_global_variable']['my_brand_icon'] ): ?>
                                     <img itemprop="logo" src="<?php echo wp_get_original_image_url(
-                                            carbon_get_post_meta( $page_id, 'my_brand_icon' ) ) ?>"
+	                                    $GLOBALS['custom_global_variable']['my_brand_icon'] ) ?>"
                                          alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
                                          class="brand_img_icon">
 	                            <?php endif; ?>
                             </td>
                             <td class="brands_icons">
-	                            <?php if ( carbon_get_post_meta( $page_id, 'other_brand_icon' ) ): ?>
+	                            <?php if ( $GLOBALS['custom_global_variable']['other_brand_icon'] ): ?>
                                     <img src="<?php echo wp_get_original_image_url(
-			                            carbon_get_post_meta( $page_id, 'other_brand_icon' ) ) ?>"
+	                                    $GLOBALS['custom_global_variable']['other_brand_icon'] ) ?>"
                                          alt="FM модулятор" title="другой FM модулятор"
                                          class="brand_img_icon">
 	                            <?php endif; ?>

@@ -14,25 +14,20 @@
 <!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 <html <?php language_attributes(); ?>>
 <head>
-    <meta http-equiv="Cache-Control" content="max-age=31536000, public"/>
+    <meta http-equiv="Cache-Control" content="max-age=<?php echo $GLOBALS['custom_global_variable']['cache_control']?>, public"/>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Громкая связь (hands free) в авто и трансляция музыки на Фм частоту по Bluetooth модулятору с мобильного телефона, планшета, ноутбука.">
+          content="<?php echo $GLOBALS['custom_global_variable']['description']?>">
     <meta name="keywords"
-          content="fm modulator,bluetooth fm transmitter,модулятор,best fm transmitter,mp3 transmitter,купить модулятор,купить фм модулятор,fm трансмиттер,fm transmitter for car,модулятор купить,фм трансмиттер,модулятор в машину,fm модулятор с bluetooth,fm transmitter,фм модулятор для телефона,wireless fm transmitter,трансмиттер,bluetooth radio transmitter,fm модулятор bluetooth,transmiter fm,transmitter bluetooth,трансмитер,fm модулятор,фм модулятор,фм модулятор для авто">
-    <meta name="google-site-verification" content="R4t3WEl3e4CRxOLs1ErckrEYWZNSro5lOY1ol0I8BhE"/>
+          content="<?php echo $GLOBALS['custom_global_variable']['keywords']?>">
+
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="alternate" hreflang="ru" href="https://shops.sytes.net/"/>
+    <link rel="alternate" hreflang="ru" href="<?php echo $GLOBALS['custom_global_variable']['domain']?>"/>
 	<?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6CGQ3C"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <div class="loader">
     <div class="loader_inner"></div>
 </div>

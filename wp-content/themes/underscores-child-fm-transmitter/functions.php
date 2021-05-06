@@ -101,7 +101,12 @@ function create_global_variable() {
 		'vk_url' => carbon_get_theme_option('vk_url'),
 		'youtube_url' => carbon_get_theme_option('youtube_url'),
 		'address' => carbon_get_theme_option('address'),
+		'cache_control' => carbon_get_theme_option('cache_control'),
+		'description' => carbon_get_theme_option('description'),
+		'keywords' => carbon_get_theme_option('keywords'),
+		'domain' => carbon_get_theme_option('domain'),
 		'my_brand_icon' => carbon_get_post_meta(2, 'my_brand_icon'),
+		'other_brand_icon' => carbon_get_post_meta(2, 'other_brand_icon'),
 	];
 }
 
