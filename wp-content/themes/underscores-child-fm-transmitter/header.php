@@ -14,34 +14,6 @@
 <!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 <html <?php language_attributes(); ?>>
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-P6CGQ3C');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112738095-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-112738095-1'); /*Google Analytics*/
-        gtag('config', 'AW-820350295');  /*Google AdWords*/
-    </script>
     <meta http-equiv="Cache-Control" content="max-age=31536000, public"/>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,9 +24,7 @@
     <meta name="google-site-verification" content="R4t3WEl3e4CRxOLs1ErckrEYWZNSro5lOY1ol0I8BhE"/>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="alternate" hreflang="ru" href="https://shops.sytes.net/"/>
-	<?php wp_head();
-	header( "Cache-Control: public, max-age=604800" );
-	?>
+	<?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->

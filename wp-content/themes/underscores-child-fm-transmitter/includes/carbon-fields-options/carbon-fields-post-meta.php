@@ -12,16 +12,11 @@ Container::make( 'post_meta', 'HERO' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
-	         //	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
-//	              ->set_options( array(
-//		              'mountain' => 'https://source.unsplash.com/X1UTzW8e7Q4/800x600',
-//		              'temple' => 'https://source.unsplash.com/ioJVccFmWxE/800x600',
-//		              'road' => 'https://source.unsplash.com/5c8fczgvar0/800x600',
-//	              ) )
 	         Field::make( 'text', 'hero_banner', 'Hero Banner' )->set_width( 50 ),
 	         Field::make( 'image', 'hero_sticker', 'Hero sticker "brand new"' )->set_width( 50 ),
 	         Field::make( 'media_gallery', 'hero_gallery', 'Brand gallery (slider)' ),
 	         Field::make( 'rich_text', 'hero_shot_spec', 'Shot specification' )->set_classes( 'hero_shot_spec' ),
+	         Field::make( 'image', 'hero_bg', 'Hero background' ),
 	         Field::make( 'separator', 'crb_separator', 'Call to action form is widget, you can find it in sidebars menu' )
          ) );
 Container::make( 'post_meta', 'ADVANTAGES' )
@@ -47,7 +42,6 @@ Container::make( 'post_meta', 'ADVANTAGES' )
 				                   true  => 'yes',
 				                   false => 'no',
 			                   ) )
-
 		              )
 	              )
 	              ->set_max( 10 )
@@ -58,12 +52,7 @@ Container::make( 'post_meta', 'FUNCTIONS' )
          ->where( 'post_id', '=', 2 )
          ->add_fields( array(
 	         Field::make( 'text', 'sec_functions', 'Section caption' ),
-//	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
-//	              ->set_options( array(
-//		              'mountain' => 'https://source.unsplash.com/X1UTzW8e7Q4/800x600',
-//		              'temple' => 'https://source.unsplash.com/ioJVccFmWxE/800x600',
-//		              'road' => 'https://source.unsplash.com/5c8fczgvar0/800x600',
-//	              ) )
+	         Field::make( 'image', 'sec_functions_bg', 'Section functions background' ),
 	         Field::make( 'complex', 'crb_functions', 'List of support functions (max 10)' )
 	              ->set_collapsed( false )
 	              ->add_fields( 'crb_function', array(
@@ -135,10 +124,4 @@ Container::make( 'post_meta', 'SHIPMENT INFO' )
          ->add_fields( array(
 	         Field::make( 'text', 'sec_shipment', 'Section caption' ),
 	         Field::make( 'rich_text', 'shipment_info', ''),
-//	         Field::make( 'radio_image', 'crb_background_image', __( 'Choose Background Image' ) )
-//	              ->set_options( array(
-//		              'mountain' => 'https://source.unsplash.com/X1UTzW8e7Q4/800x600',
-//		              'temple' => 'https://source.unsplash.com/ioJVccFmWxE/800x600',
-//		              'road' => 'https://source.unsplash.com/5c8fczgvar0/800x600',
-//	              ) )
          ) );

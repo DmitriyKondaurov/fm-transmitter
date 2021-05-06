@@ -26,7 +26,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                      data-android-fix="false"
                      data-ios-fix="false"
                      data-speed="0.4"
-                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4629944500_1576858587.webp">
+                     data-image-src="<?php echo wp_get_original_image_url( carbon_get_post_meta( $page_id, 'hero_bg' ) ) ?>">
                 <div class="wrapper">
                     <div class="brand_name">
 						<?php if ( carbon_get_post_meta( $page_id, 'hero_sticker' ) ): ?>
@@ -130,7 +130,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                      data-android-fix="false"
                      data-ios-fix="false"
                      data-speed="0.3"
-                     data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/img/bg-hero.webp">
+                     data-image-src="<?php echo wp_get_original_image_url( carbon_get_post_meta( $page_id, 'sec_functions_bg' ) ) ?>">
                 <div class="wrapper">
                     <h2 class="title"><?php echo carbon_get_post_meta( $page_id, 'sec_functions' ) ?></h2>
                     <ul id="functions" class="about_full_spec">
