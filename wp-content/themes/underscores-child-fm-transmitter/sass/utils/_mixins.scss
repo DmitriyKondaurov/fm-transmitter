@@ -7,7 +7,7 @@
   line-height: $height;
 }
 
-@mixin text($color: $sec-text-color, $align: left, $decoration: none, $indent: 0, $transform: none) {
+@mixin text($color: var(--sec-text-color, $sec-text-color), $align: left, $decoration: none, $indent: 0, $transform: none) {
   text: {
     align: $align;
     decoration: $decoration;

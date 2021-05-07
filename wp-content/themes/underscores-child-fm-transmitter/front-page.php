@@ -61,6 +61,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                         <?php
                         echo wpautop( carbon_get_the_post_meta( 'hero_shot_spec' ) );
                         get_sidebar( 'header' );?>
+
                     </div>
                     <div class="nav_button">
                         <a href="#" id="nav_down" class="slider_scroll_button">

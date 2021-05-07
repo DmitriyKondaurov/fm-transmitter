@@ -23,7 +23,7 @@
       font: 400 12px/18px $main-font;
       text-transform: capitalize;
       word-spacing: 2px;
-      color: $sec-text-color;
+      color: var(--sec-text-color, $sec-text-color);
     }
   }
 
@@ -38,18 +38,18 @@
     overflow: hidden;
     .tel {
       font: 400 12px/18px $main-font;
-      color: $brand-color;
+      color: var(--brand-color, $brand-color);
       vertical-align: middle;
     }
     .viber {
-      border: 1px solid $main-text-color;
+      border: 1px solid var(--main-text-color, $main-text-color);
       border-radius: 8px;
       padding: 1px 2px;
       background-color: #a16fff;
-      color: $main-text-color;
+      color: var(--main-text-color, $main-text-color);
     }
     &:hover .tel {
-      color: $main-text-color;
+      color: var(--main-text-color, $main-text-color);
       text-decoration: none;
     }
   }

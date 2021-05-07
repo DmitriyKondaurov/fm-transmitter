@@ -26,6 +26,13 @@
     <link rel="alternate" hreflang="ru" href="<?php echo $GLOBALS['custom_global_variable']['domain']?>"/>
 	<?php wp_head();?>
 </head>
+<style>
+    :root {
+        --brand-color: <?php echo carbon_get_theme_option('brand_color')?>;
+        --main-text-color: <?php echo carbon_get_theme_option('main-text-color')?>;
+        --sec-text-color: <?php echo carbon_get_theme_option('sec-text-color')?>;
+    }
+</style>
 <body <?php body_class(); ?>>
 
 <div class="loader">

@@ -1,7 +1,7 @@
 div.call_to_action {
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 3px solid $brand-color;
+  border: 3px solid var(--brand-color, $brand-color);
   border-radius: 10px;
   padding: 10px;
   animation-iteration-count: infinite;
@@ -14,7 +14,7 @@ div.call_to_action {
     width: 100px;
     margin: auto;
     border-radius: 20px;
-    border: 1px solid $brand-color;
+    border: 1px solid var(--brand-color, $brand-color);
     background-color: rgba(255, 50, 50, 1);
     font-weight: 900;
     text-align: center;
@@ -29,7 +29,7 @@ div.call_to_action {
     text-transform: uppercase;
     letter-spacing: 2px;
     font: 900 28px/34px $sec-font;
-    text-shadow: 2px 0 $brand-color;
+    text-shadow: 2px 0 var(--brand-color, $brand-color);
   }
   .prices {
     text-align: center;
@@ -47,7 +47,7 @@ div.call_to_action {
     }
   }
   .discount {
-    color: $sec-text-color;
+    color: var(--sec-text-color, $sec-text-color);
     //font-variant: all-petite-caps;
   }
   .discount_amount {
@@ -67,10 +67,10 @@ div.call_to_action {
   }
   .up_sell_title {
     padding-top: 5px;
-    border-top: 2px solid $brand-color;
+    border-top: 2px solid var(--brand-color, $brand-color);
     font-weight: 400;
     color: rgba(255, 50, 50, 1);
-    text-shadow: 1px 0 $brand-color;
+    text-shadow: 1px 0 var(--brand-color, $brand-color);
   }
   .up_sell {
     display: flex;

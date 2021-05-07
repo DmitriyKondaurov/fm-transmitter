@@ -11,6 +11,8 @@ Container::make( 'theme_options', 'Site settings' )
 	->add_tab( 'General options', [
 		Field::make( 'text', 'brand_name', 'Brand_name' ),
 		Field::make( 'color', 'brand_color', __( 'Background Color' ) ),
+		Field::make( 'color', 'main-text-color', __( 'Text Color' ) ),
+		Field::make( 'color', 'sec-text-color', __( 'Text Color' ) ),
 	] )
 
 	->add_tab( 'Logo', [
@@ -35,6 +37,7 @@ Container::make( 'theme_options', 'Site settings' )
 	->add_tab( 'Scripts', [
 		Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script' ) ),
 		Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script' ) ),
+		Field::make( 'gravity_form', 'crb_gravity_form', __( 'Select a Gravity Form' ) )
 	] )
 	->add_tab( 'Meta', [
 		Field::make( 'text', 'cache_control')

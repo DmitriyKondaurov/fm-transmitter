@@ -5741,6 +5741,11 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+:root {
+  --brand-color: $brand-color;
+  --main-text-color: $main-text-color;
+  --sec-text-color: $sec-text-color; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -6146,7 +6151,7 @@ template {
   display: none; }
 
 body {
-  color: #DEF1B8;
+  color: var(--sec-text-color, #DEF1B8);
   font: 400 14px/24px "Arial";
   background: linear-gradient(to right, #0f162a, #0f162a, #0f162a);
   margin: auto; }
@@ -6156,7 +6161,7 @@ body {
     width: 90%;
     height: 25px; }
   body a:hover, body a:focus, body a:active, body a:visited {
-    color: #ff9616; }
+    color: var(--brand-color, #FF9616); }
   body section {
     padding: 50px 10px; }
     body section [class="title"] {
@@ -6164,8 +6169,8 @@ body {
       margin: auto;
       padding-bottom: 10px;
       margin-bottom: 20px;
-      border-bottom: 1px solid #ff9616;
-      color: #ffffe1;
+      border-bottom: 1px solid var(--brand-color, #FF9616);
+      color: var(--main-text-color, #FFFFE1);
       font: 400 24px/24px "Arial", sans-serif;
       text-align: center;
       text-transform: uppercase; }
@@ -6366,7 +6371,7 @@ a.slider_scroll_button {
   width: 33px;
   height: 33px;
   border-radius: 50%;
-  border: 2px solid #ff9616;
+  border: 2px solid var(--brand-color, #FF9616);
   -webkit-animation: bounce 2s infinite 3s;
           animation: bounce 2s infinite 3s;
   transition: all .2s ease-in;
@@ -6375,12 +6380,12 @@ a.slider_scroll_button {
           transform: translateX(-50%);
   text-align: center;
   font: 400 18px/28px 'FontAwesome';
-  color: #ff9616; }
+  color: var(--brand-color, #FF9616); }
   a.slider_scroll_button:visited, a.slider_scroll_button:focus {
     text-decoration: none; }
   a.slider_scroll_button:hover {
     text-decoration: none;
-    color: #ffffe1;
+    color: var(--main-text-color, #FFFFE1);
     box-shadow: 0px 0px 10px 1px;
     cursor: pointer; }
 
@@ -6546,7 +6551,7 @@ div[data-bx-form-popup-close] {
   font: 700 18px/24px "Arial", sans-serif; }
   .order_button:hover, #submit:hover {
     border-color: #894d0f;
-    color: #ffffe1;
+    color: var(--main-text-color, #FFFFE1);
     box-shadow: 0 0 20px -1px; }
   .order_button:active, #submit:active {
     transition: all 20ms;
@@ -6559,10 +6564,10 @@ div[data-bx-form-popup-close] {
   top: -2px;
   width: 340px;
   margin: auto;
-  border: 1px solid #ff9616;
+  border: 1px solid var(--brand-color, #FF9616);
   border-radius: 0 0 20px 20px;
   text-align: center;
-  color: #ff9616;
+  color: var(--brand-color, #FF9616);
   background-color: #1e364a;
   font: 400 18px/40px "Arial";
   cursor: pointer; }
@@ -6573,7 +6578,7 @@ div[data-bx-form-popup-close] {
     content: '\2193';
     padding: 0 20px; }
   .add_new_comment_button:hover {
-    color: #ffffe1;
+    color: var(--main-text-color, #FFFFE1);
     cursor: pointer;
     text-shadow: 0 0 3px #fff; }
 
@@ -6600,7 +6605,7 @@ div[data-bx-form-popup-close] {
       font: 400 12px/18px "Arial";
       text-transform: capitalize;
       word-spacing: 2px;
-      color: #DEF1B8; }
+      color: var(--sec-text-color, #DEF1B8); }
   .site-header .logo {
     margin: 0 10px 0 0; }
   .site-header .phone {
@@ -6610,16 +6615,16 @@ div[data-bx-form-popup-close] {
     overflow: hidden; }
     .site-header .phone .tel {
       font: 400 12px/18px "Arial";
-      color: #ff9616;
+      color: var(--brand-color, #FF9616);
       vertical-align: middle; }
     .site-header .phone .viber {
-      border: 1px solid #ffffe1;
+      border: 1px solid var(--main-text-color, #FFFFE1);
       border-radius: 8px;
       padding: 1px 2px;
       background-color: #a16fff;
-      color: #ffffe1; }
+      color: var(--main-text-color, #FFFFE1); }
     .site-header .phone:hover .tel {
-      color: #ffffe1;
+      color: var(--main-text-color, #FFFFE1);
       text-decoration: none; }
 
 .post-ratings {
@@ -6640,28 +6645,28 @@ footer.site-footer {
   footer.site-footer .site-info, footer.site-footer .contacts {
     text-align: center; }
     footer.site-footer .site-info a:hover, footer.site-footer .contacts a:hover {
-      color: #ffffe1;
+      color: var(--main-text-color, #FFFFE1);
       text-decoration: none; }
   footer.site-footer .contacts {
-    border-bottom: 1px solid #ff9616;
-    color: #DEF1B8; }
+    border-bottom: 1px solid var(--brand-color, #FF9616);
+    color: var(--sec-text-color, #DEF1B8); }
   footer.site-footer .phone {
     margin: auto;
     height: 30px;
     overflow: hidden; }
     footer.site-footer .phone .tel {
-      color: #ff9616;
+      color: var(--brand-color, #FF9616);
       font: 400 12px/18px "Arial";
       vertical-align: middle; }
       footer.site-footer .phone .tel:hover {
-        color: #ffffe1;
+        color: var(--main-text-color, #FFFFE1);
         text-decoration: none; }
     footer.site-footer .phone .viber {
-      border: 1px solid #ffffe1;
+      border: 1px solid var(--main-text-color, #FFFFE1);
       border-radius: 8px;
       padding: 1px 2px;
       background-color: #a16fff;
-      color: #ffffe1; }
+      color: var(--main-text-color, #FFFFE1); }
   footer.site-footer .social {
     padding: 10px 0;
     margin: 0; }
@@ -6671,10 +6676,10 @@ footer.site-footer {
       padding: 0;
       width: 30px;
       height: 30px;
-      border: 1px solid #ff9616;
+      border: 1px solid var(--brand-color, #FF9616);
       border-radius: 5px; }
       footer.site-footer .social li a {
-        color: #DEF1B8; }
+        color: var(--sec-text-color, #DEF1B8); }
         footer.site-footer .social li a .fa {
           padding: 5px;
           font-size: 16px; }
@@ -6713,14 +6718,14 @@ footer.site-footer {
 
 @media screen and (min-width: 992px) {
   footer.site-footer .phone .tel {
-    color: #ff9616;
+    color: var(--brand-color, #FF9616);
     font: 400 14px/18px "Arial";
     vertical-align: middle; } }
 
 div.call_to_action {
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 3px solid #ff9616;
+  border: 3px solid var(--brand-color, #FF9616);
   border-radius: 10px;
   padding: 10px;
   -webkit-animation-iteration-count: infinite;
@@ -6736,7 +6741,7 @@ div.call_to_action {
     width: 100px;
     margin: auto;
     border-radius: 20px;
-    border: 1px solid #ff9616;
+    border: 1px solid var(--brand-color, #FF9616);
     background-color: #ff3232;
     font-weight: 900;
     text-align: center;
@@ -6750,7 +6755,7 @@ div.call_to_action {
     text-transform: uppercase;
     letter-spacing: 2px;
     font: 900 28px/34px "Arial", sans-serif;
-    text-shadow: 2px 0 #ff9616; }
+    text-shadow: 2px 0 var(--brand-color, #FF9616); }
   div.call_to_action .prices {
     text-align: center;
     margin: 10px 0 10px 0; }
@@ -6764,7 +6769,7 @@ div.call_to_action {
       font: 700 32px/28px "Arial";
       color: #fbed50; }
   div.call_to_action .discount {
-    color: #DEF1B8; }
+    color: var(--sec-text-color, #DEF1B8); }
   div.call_to_action .discount_amount {
     padding: 10px 3px;
     border-radius: 20px;
@@ -6779,10 +6784,10 @@ div.call_to_action {
     font-size: 18px; }
   div.call_to_action .up_sell_title {
     padding-top: 5px;
-    border-top: 2px solid #ff9616;
+    border-top: 2px solid var(--brand-color, #FF9616);
     font-weight: 400;
     color: #ff3232;
-    text-shadow: 1px 0 #ff9616; }
+    text-shadow: 1px 0 var(--brand-color, #FF9616); }
   div.call_to_action .up_sell {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6822,7 +6827,7 @@ div.call_to_action {
     position: relative;
     max-width: 880px;
     margin: auto;
-    border-bottom: 1px solid #ff9616; }
+    border-bottom: 1px solid var(--brand-color, #FF9616); }
     .hero .brand_name img.brand_new {
       position: relative;
       top: 0;
@@ -6836,7 +6841,7 @@ div.call_to_action {
     .hero .brand_name .slogan {
       margin: 0;
       padding: 5px;
-      color: #ffffe1;
+      color: var(--main-text-color, #FFFFE1);
       font: 700 20px/24px "Arial", sans-serif;
       text-transform: uppercase;
       text-align: center;
@@ -6875,7 +6880,7 @@ div.call_to_action {
 
 .brand {
   text-transform: uppercase;
-  color: #ff9616;
+  color: var(--brand-color, #FF9616);
   font-family: "Arial", sans-serif; }
 
 .title_new_brand {
@@ -6885,7 +6890,7 @@ div.call_to_action {
   width: 300px;
   vertical-align: bottom; }
   #carousel_1 .owl-dots .owl-dot.active span, #carousel_1 .owl-dots .owl-dot:hover span {
-    background-color: #ff9616; }
+    background-color: var(--brand-color, #FF9616); }
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -6935,8 +6940,8 @@ div.call_to_action {
     margin: auto;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ff9616;
-    color: #ffffe1;
+    border-bottom: 1px solid, var(--brand-color, #FF9616);
+    color: var(--main-text-color, #FFFFE1);
     font: 400 24px/24px "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase; }
@@ -6974,19 +6979,19 @@ div.call_to_action {
   .fresh_comments .comment-content {
     padding: 10px;
     margin: 20px;
-    background: #1e364a;
+    background: #1E364A;
     border-radius: 10px;
-    border: 1px solid #ff9616;
+    border: 1px solid var(--brand-color, #FF9616);
     box-shadow: 0 0 10px 1px; }
     .fresh_comments .comment-content p {
-      color: #ffffe1; }
+      color: var(--main-text-color, #FFFFE1); }
   .fresh_comments .comment-metadata {
     padding: 10px 0; }
   .fresh_comments .comment-meta {
     float: left;
     padding: 10px;
     margin: 20px;
-    border-right: 1px solid #ff9616; }
+    border-right: 1px solid var(--brand-color, #FF9616); }
   .fresh_comments .comment-form-author, .fresh_comments .comment-form-email, .fresh_comments .comment-form-url {
     max-width: 250px; }
   .fresh_comments .form-submit {
@@ -7000,9 +7005,9 @@ div.call_to_action {
     max-width: 340px;
     margin: auto;
     padding: 0 10px;
-    border: 1px solid #ff9616;
+    border: 1px solid var(--brand-color, #FF9616);
     border-bottom: none;
-    background-color: #1e364a; }
+    background-color: #1E364A; }
 
 @media screen and (min-width: 1280px) {
   .fresh_comments {
@@ -7038,7 +7043,7 @@ div.call_to_action {
   background-blend-mode: multiply; }
   .ship_payment .bold {
     font-weight: 700;
-    color: #ffffe1; }
+    color: var(--main-text-color, #FFFFE1); }
   .ship_payment .flex_box {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7077,7 +7082,7 @@ div.call_to_action {
     .compare .compare_table th, .compare th th {
       padding: 5px;
       text-transform: uppercase;
-      color: #ffffe1; }
+      color: var(--main-text-color, #FFFFE1); }
       .compare .compare_table th:first-child, .compare th th:first-child {
         text-align: start; }
     .compare .compare_table td, .compare th td {
@@ -7129,10 +7134,10 @@ div.call_to_action {
         height: 50px;
         margin: 10px;
         vertical-align: middle;
-        border: 2px solid #ff9616;
+        border: 2px solid var(--brand-color, #FF9616);
         border-radius: 25px;
         background-color: black;
-        color: #ffffe1;
+        color: var(--main-text-color, #FFFFE1);
         text-align: center;
         font: 400 24px/50px 'icomoon'; }
       .about .about_full_spec li::after {
@@ -7142,12 +7147,12 @@ div.call_to_action {
         width: 85%;
         height: 2px;
         margin: 20px auto 5px auto;
-        background-color: #ff9616; }
+        background-color: var(--brand-color, #FF9616); }
       .about .about_full_spec li:hover::after {
         width: 100%; }
       .about .about_full_spec li:hover::before {
-        color: #ff9616;
-        border-color: #ffffe1;
+        color: var(--brand-color, #FF9616);
+        border-color: var(--main-text-color, #FFFFE1);
         box-shadow: 0px 0px 10px 1px; }
       .about .about_full_spec li:nth-child(2)::before {
         font: 400 32px/46px 'icomoon'; }

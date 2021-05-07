@@ -6,7 +6,7 @@
     th {
       padding: 5px;
       text-transform: uppercase;
-      color: $main-text-color;
+      color: var(--main-text-color, $main-text-color);
       &:first-child {
         text-align: start;
       }

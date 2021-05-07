@@ -24,10 +24,10 @@
         height: 50px;
         margin: 10px;
         vertical-align: middle;
-        border: 2px solid $brand-color;
+        border: 2px solid var(--brand-color, $brand-color);
         border-radius: 25px;
         background-color: black;
-        color: $main-text-color;
+        color: var(--main-text-color, $main-text-color);
         text-align: center;
         font: 400 24px/50px 'icomoon';
       }
@@ -38,15 +38,15 @@
         width: 85%;
         height: 2px;
         margin: 20px auto 5px auto;
-        background-color: $brand-color;
+        background-color: var(--brand-color, $brand-color);
       }
       &:hover {
         &::after {
           width: 100%;
         }
         &::before {
-          color: $brand-color;
-          border-color: $main-text-color;
+          color: var(--brand-color, $brand-color);
+          border-color: var(--main-text-color, $main-text-color);
           box-shadow: 0px 0px 10px 1px;
         }
       }

@@ -5,33 +5,33 @@ footer.site-footer {
   .site-info, .contacts {
     text-align: center;
     a:hover  {
-      color: $main-text-color;
+      color: var(--main-text-color, $main-text-color);
       text-decoration: none;
     }
   }
   .contacts {
-    border-bottom: 1px solid $brand-color;
-    color: $sec-text-color;
+    border-bottom: 1px solid var(--brand-color, $brand-color);
+    color: var(--sec-text-color, $sec-text-color);
   }
   .phone {
     margin: auto;
     height: 30px;
     overflow: hidden;
     .tel {
-      color: $brand-color;
+      color: var(--brand-color, $brand-color);
       font: 400 12px/18px $main-font;
       vertical-align: middle;
       &:hover {
-        color: $main-text-color;
+        color: var(--main-text-color, $main-text-color);
         text-decoration: none;
       }
     }
     .viber {
-      border: 1px solid $main-text-color;
+      border: 1px solid var(--main-text-color, $main-text-color);
       border-radius: 8px;
       padding: 1px 2px;
       background-color: #a16fff;
-      color: $main-text-color;
+      color: var(--main-text-color, $main-text-color);
     }
   }
   .social {
@@ -43,10 +43,10 @@ footer.site-footer {
       padding: 0;
       width: 30px;
       height: 30px;
-      border: 1px solid $brand-color;
+      border: 1px solid var(--brand-color, $brand-color);
       border-radius: 5px;
       a {
-        color: $sec-text-color;
+        color: var(--sec-text-color, $sec-text-color);
         .fa {
           padding: 5px;
           font-size: 16px;
@@ -121,7 +121,7 @@ footer.site-footer {
 
 @media screen and ($md) {
   footer.site-footer .phone .tel {
-    color: $brand-color;
+    color: var(--brand-color, $brand-color);
     font: 400 14px/18px $main-font;
     vertical-align: middle;
   }

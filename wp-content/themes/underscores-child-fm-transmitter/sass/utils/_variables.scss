@@ -3,15 +3,16 @@ $sm: "min-width: 768px";
 $md: "min-width: 992px";
 $lg: "min-width: 1280px";
 $wrapper: 1280px;
-$main-color: #6ef5ff;
-$sec-color: rgb(30, 54, 74);
-$brand-color: rgb(255, 150, 22);
-$main-text-color: #ffffe1;
+$main-color: #6EF5FF;
+$sec-color: #1E364A;
+$brand-color: #FF9616;
+$main-text-color: #FFFFE1;
 $sec-text-color: #DEF1B8;
 $main-font: 'Arial';
 $sec-font: 'Arial', sans-serif;
 
-//icons---------------------------------------
-
-
-//-----------------------------------------------
+:root {
+  --brand-color: $brand-color;
+  --main-text-color: $main-text-color;
+  --sec-text-color: $sec-text-color;
+}

@@ -1,5 +1,5 @@
 body {
-  color: $sec-text-color;
+  color: var(--sec-text-color, $sec-text-color);
   font: 400 14px/24px $main-font;
   background: linear-gradient(to right, rgb(15, 22, 42), rgb(15, 22, 42), rgb(15, 22, 42));
   margin: auto;
@@ -13,7 +13,7 @@ body {
     //text-align: center;
   }
   a:hover, a:focus, a:active, a:visited {
-    color: $brand-color;
+    color: var(--brand-color, $brand-color);
   }
   section {
     padding: 50px 10px;
@@ -22,8 +22,8 @@ body {
       margin: auto;
       padding-bottom: 10px;
       margin-bottom: 20px;
-      border-bottom: 1px solid $brand-color;
-      color: $main-text-color;
+      border-bottom: 1px solid var(--brand-color, $brand-color);
+      color: var(--main-text-color, $main-text-color);
       font: 400 24px/24px $sec-font;
       text-align: center;
       text-transform: uppercase;

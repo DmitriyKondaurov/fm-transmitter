@@ -10,7 +10,7 @@
   font: 700 18px/24px $sec-font;
   &:hover {
     border-color: #894d0f;
-    color: $main-text-color;
+    color: var(--main-text-color, $main-text-color);
     box-shadow: 0 0 20px -1px;
   }
   &:active{
@@ -23,10 +23,10 @@
   top: -2px;
   width: 340px;
   margin: auto ;
-  border: 1px solid $brand-color;
+  border: 1px solid var(--brand-color, $brand-color);
   border-radius: 0 0 20px 20px;
   text-align: center;
-  color: $brand-color;
+  color: var(--brand-color, $brand-color);
   background-color:  rgb(30, 54, 74);
   font: 400 18px/40px $main-font;
   cursor: pointer;
@@ -39,7 +39,7 @@
     padding: 0 20px;
   }
   &:hover {
-    color: $main-text-color;
+    color: var(--main-text-color, $main-text-color);
     cursor: pointer;
     text-shadow: 0 0 3px #fff;
   }
