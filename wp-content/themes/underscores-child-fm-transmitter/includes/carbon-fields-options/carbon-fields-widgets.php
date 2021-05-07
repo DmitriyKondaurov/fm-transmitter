@@ -10,7 +10,7 @@ use Carbon_Fields\Field;
 class CallToActionWidget extends Widget {
 	// Register widget function. Must have the same name as the class
 	function __construct() {
-		$this->setup( 'custom_widget_call_to_action', 'Call to action',
+		$this->setup( 'custom_widget_call_to_action', 'Call to action form',
 			'Block with call to action button',
 			array(
 				Field::make( 'text', 'title', 'Title' )->set_classes( 'attention-2' ),

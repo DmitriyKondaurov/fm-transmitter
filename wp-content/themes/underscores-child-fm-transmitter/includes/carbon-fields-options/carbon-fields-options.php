@@ -37,7 +37,6 @@ Container::make( 'theme_options', 'Site settings' )
 	->add_tab( 'Scripts', [
 		Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script' ) ),
 		Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script' ) ),
-		Field::make( 'gravity_form', 'crb_gravity_form', __( 'Select a Gravity Form' ) )
 	] )
 	->add_tab( 'Meta', [
 		Field::make( 'text', 'cache_control')
@@ -48,5 +47,8 @@ Container::make( 'theme_options', 'Site settings' )
 		     ->set_attribute( 'type', 'text' ),
 		Field::make( 'text', 'domain')
 		     ->set_attribute( 'type', 'url' ),
+	] )
+	->add_tab( 'Gravity Form', [
+		Field::make( 'gravity_form', 'crb_gravity_form', __( 'Select a Gravity Form' ) )
 	] )
 ;
