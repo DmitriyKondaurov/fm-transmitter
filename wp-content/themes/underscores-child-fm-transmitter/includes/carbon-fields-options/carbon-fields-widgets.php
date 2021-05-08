@@ -16,7 +16,8 @@ class CallToActionWidget extends Widget {
 				Field::make( 'text', 'title', 'Title' )->set_classes( 'attention-2' ),
 				Field::make( 'textarea', 'content', 'Content' ),
 				Field::make( 'text', 'discount_amount', 'Discount amount' )->set_width( 14 ),
-				Field::make( 'select', 'price_currency', 'Price currency' )->set_width( 14 )->add_options( array(
+				Field::make( 'select', 'price_currency', 'Price currency' )->set_width( 14 )->add_options(
+					array(
 					'eur' => __( 'EUR' ),
 					'usd' => __( 'USD' ),
 					'pln' => __( 'PLN' ),

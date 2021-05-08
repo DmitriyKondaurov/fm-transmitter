@@ -173,7 +173,7 @@ $current_post_content = apply_filters('the_content', $current_post);
 					<?php //Show fresh comments
 					get_sidebar(); ?>
                     <div class="add_new_comment"><?php comments_template(); ?></div>
-                    <div class="add_new_comment_button" id="add_new_comment_button">добавить коментарий</div>
+                    <div class="add_new_comment_button" id="add_new_comment_button">Add new comment</div>
                 </div>
             </section>
             <section class="video">

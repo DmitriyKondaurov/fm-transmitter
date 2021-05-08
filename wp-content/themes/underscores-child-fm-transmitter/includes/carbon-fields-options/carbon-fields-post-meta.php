@@ -17,7 +17,7 @@ Container::make( 'post_meta', 'HERO' )
 	         Field::make( 'media_gallery', 'hero_gallery', 'Brand gallery (slider)' ),
 	         Field::make( 'rich_text', 'hero_shot_spec', 'Shot specification' )->set_classes( 'hero_shot_spec' ),
 	         Field::make( 'image', 'hero_bg', 'Hero background' ),
-	         Field::make( 'separator', 'crb_separator', 'Call to action form is widget, you can find it in sidebars menu' )
+	         Field::make( 'separator', 'crb_separator', 'Call to action form is widget, you can find it in sidebars menu' ),
          ) );
 Container::make( 'post_meta', 'ADVANTAGES' )
          ->where( 'post_type', '=', 'page' )
@@ -41,7 +41,7 @@ Container::make( 'post_meta', 'ADVANTAGES' )
 			                   ->set_options( array(
 				                   true  => 'yes',
 				                   false => 'no',
-			                   ) )
+			                   ) ),
 		              )
 	              )
 	              ->set_max( 10 )
