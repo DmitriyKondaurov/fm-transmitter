@@ -12,10 +12,10 @@ const   { watch, series, src, dest, parallel}   = require('gulp'),
         autoprefixer                            = require('gulp-autoprefixer');
 
 function sassTask() {
-    return src('./wp-content/themes/underscores-child-fm-transmitter/sass/*.+(scss|sass)')
+    return src('./wp-content/themes/landing-page/sass/*.+(scss|sass)')
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))
-        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter'))
+        .pipe(dest('./wp-content/themes/landing-page'))
         .pipe(browserSync.stream());
 }
 
@@ -28,7 +28,7 @@ function cssLibsTask() {
         .pipe(concat('libs-style.css'))
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
-        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter'));
+        .pipe(dest('./wp-content/themes/landing-page'));
 }
 
 function browserSyncTask() {
@@ -55,24 +55,24 @@ function scriptsTask() {
         './bower_components/owl.carousel/dist/owl.carousel.min.js',
         './bower_components/parallax.js/parallax.min.js',
         './bower_components/waypoints/lib/jquery.waypoints.min.js',
-        './wp-content/themes/underscores-child-fm-transmitter/js/*.js'
+        './wp-content/themes/landing-page/js/*.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
-        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter/'))
+        .pipe(dest('./wp-content/themes/landing-page/'))
 }
 
 function watchTask() {
-    watch('wp-content/themes/underscores-child-fm-transmitter/sass/**/*.+(scss|sass)', sassTask);
-    watch('wp-content/themes/underscores-child-fm-transmitter/**/*.+php').on('change', browserSync.reload);
-    watch(['wp-content/themes/underscores-child-fm-transmitter/**/*.+js',
-        '!./wp-content/themes/underscores-child-fm-transmitter/libs.min.js'], series(scriptsTask, browserSyncReloadTask));
+    watch('wp-content/themes/landing-page/sass/**/*.+(scss|sass)', sassTask);
+    watch('wp-content/themes/landing-page/**/*.+php').on('change', browserSync.reload);
+    watch(['wp-content/themes/landing-page/**/*.+js',
+        '!./wp-content/themes/landing-page/libs.min.js'], series(scriptsTask, browserSyncReloadTask));
 }
 
 
 //перед watch, build надо сделать clean папки dist
 function clean(cb) {
-    del.sync('./wp-content/themes/underscores-child-fm-transmitter/dist');
+    del.sync('./wp-content/themes/landing-page/dist');
     cb();
 }
 
@@ -84,14 +84,14 @@ function clear(cb) {
 
 // зжатие картинок
 exports.img = function() {
-    return src('./wp-content/themes/underscores-child-fm-transmitter/img/**/*')
+    return src('./wp-content/themes/landing-page/img/**/*')
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             une: [pngquant()]
         })))
-        .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter/image_min'));
+        .pipe(dest('./wp-content/themes/landing-page/image_min'));
 };
 //////////////////////////////
 // Default Task

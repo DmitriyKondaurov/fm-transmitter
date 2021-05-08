@@ -18,7 +18,7 @@
             <div class="row">
                 <span><?php echo $GLOBALS['custom_global_variable']['address']?></span><br>
                 <div class="phone" >
-                    <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
+                    <a href="viber://add?number=<?php echo $GLOBALS['custom_global_variable']['phone']?>" class="tel"><span class="viber">Viber:</span>
 	                    <?php echo $GLOBALS['custom_global_variable']['phone']?></a>
                 </div>
                 <ul class="social">

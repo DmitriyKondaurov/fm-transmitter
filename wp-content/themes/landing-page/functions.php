@@ -84,7 +84,7 @@ add_action( 'wp_enqueue_scripts', 'underscores_child_scripts' );
 //add site logo image For Google Rich Snippets
 add_filter( 'wp_postratings_site_logo', 'wp_postratings_site_logo' );
 function wp_postratings_site_logo( $url ) {
-	return 'https://shops.sytes.net/wp-content/uploads/2017/12/cropped-thumbnail_71_71-1-e1532036247409.png';
+	return get_theme_root_uri().'/landing-page/img/brand-icon.png';
 }
 
 add_action('init', 'create_global_variable');
