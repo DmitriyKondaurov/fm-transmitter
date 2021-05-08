@@ -5742,9 +5742,9 @@ button.close {
     display: none !important; } }
 
 :root {
-  --brand-color: $brand-color;
-  --main-text-color: $main-text-color;
-  --sec-text-color: $sec-text-color; }
+  --brand-color: #FF9616;
+  --main-text-color: #FFFFE1;
+  --sec-text-color: #DEF1B8; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -6819,6 +6819,9 @@ div.call_to_action {
     div.call_to_action .up_sell .up_sell_old_price {
       color: #b52e2e;
       text-decoration: line-through; }
+
+.b24-form-sign {
+  display: none; }
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/4629944500_1576858587.webp) center/cover no-repeat;

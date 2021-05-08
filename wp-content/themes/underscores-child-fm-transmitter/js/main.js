@@ -5,6 +5,7 @@ $(document).ready(function() {
             $(".site-header").addClass("active");
         } else {
             $(".site-header").removeClass("active");
+
         }
     });
 });

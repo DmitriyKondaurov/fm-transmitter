@@ -4,7 +4,7 @@ const   { watch, series, src, dest, parallel}   = require('gulp'),
         uglify                                  = require('gulp-uglify'),
         cssnano                                 = require('gulp-cssnano'),
         rename                                  = require('gulp-rename'),
-        browserSync                             = require('browser-sync'),
+        browserSync                             = require('browser-sync').create(),
         del                                     = require('del'),
         imagemin                                = require('gulp-imagemin'),
         pngquant                                = require('imagemin-pngquant'),
@@ -16,7 +16,7 @@ function sassTask() {
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))
         .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter'))
-        .pipe(browserSync.reload({stream: true}))
+        .pipe(browserSync.stream());
 }
 
 function cssLibsTask() {
@@ -60,20 +60,13 @@ function scriptsTask() {
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(dest('./wp-content/themes/underscores-child-fm-transmitter/'))
-        .pipe(browserSync.reload({stream: true}))
-
-}
-
-function buildTask(cb) {
-   series(sassTask, cssLibsTask, scriptsTask);
-   cb();
 }
 
 function watchTask() {
     watch('wp-content/themes/underscores-child-fm-transmitter/sass/**/*.+(scss|sass)', sassTask);
-    watch('wp-content/themes/underscores-child-fm-transmitter/**/*.+php', browserSyncReloadTask);
+    watch('wp-content/themes/underscores-child-fm-transmitter/**/*.+php').on('change', browserSync.reload);
     watch(['wp-content/themes/underscores-child-fm-transmitter/**/*.+js',
-        '!./wp-content/themes/underscores-child-fm-transmitter/libs.min.js'], scriptsTask);
+        '!./wp-content/themes/underscores-child-fm-transmitter/libs.min.js'], series(scriptsTask, browserSyncReloadTask));
 }
 
 
@@ -104,4 +97,4 @@ exports.img = function() {
 // Default Task
 //////////////////////////////
 
-exports.default = series(clean, clear, buildTask, parallel(browserSyncTask, watchTask) );
+exports.default = series(clean, clear, sassTask, cssLibsTask, scriptsTask, parallel(browserSyncTask, watchTask) );

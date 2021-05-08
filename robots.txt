@@ -3,8 +3,7 @@ Allow: /wp-content/uploads/
 Allow: /wp-admin/
 Allow: /wp-includes/js/
 Allow: /wp-content/plugins
-Allow: /wp-content/themes/underscores-child-fm-transmitter/
-Allow: /wp-content/themes/underscores/
+Allow: /wp-content/themes/landing-page-dk/
 Disallow: /wp-login.php
 Disallow: /wp-register.php
 Disallow: /xmlrpc.php
