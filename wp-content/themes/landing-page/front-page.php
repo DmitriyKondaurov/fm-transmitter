@@ -65,7 +65,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                     </div>
                     <div class="nav_button">
                         <a href="#" id="nav_down" class="slider_scroll_button">
-                            <i class="glyphicon glyphicon-menu-down"></i>
+                            <span class="icon_moon icon-moonuniE259"></span>
                         </a>
                     </div>
                 </div>
@@ -108,14 +108,14 @@ $current_post_content = apply_filters('the_content', $current_post);
                                 <tr>
                                     <td><?php echo $advantage['advantage']?></td>
 		                            <?php if ( $advantage['my_product']): ?>
-                                    <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                                    <td><span class="icon_moon icon-moonuniE013"></span></td>
                                     <?php else: ?>
-                                    <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
+                                    <td><span class="icon_moon icon-moonuniE014"></span></td>
 		                            <?php endif; ?>
                                     <?php if ( $advantage['other_product']): ?>
-                                    <td><span class="glyphicon glyphicon-ok text-success"></span></td>
+                                    <td><span class="icon_moon icon-moonuniE013"></td>
                                     <?php else: ?>
-                                    <td><span class="glyphicon glyphicon-remove text-danger"></span></td>
+                                    <td><span class="icon_moon icon-moonuniE014"></span></td>
                                     <?php endif; ?>
                                 </tr>
 		                        <?php

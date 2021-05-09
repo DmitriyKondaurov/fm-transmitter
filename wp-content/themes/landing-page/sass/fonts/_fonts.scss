@@ -1,46 +1,21 @@
-//@font-face {
-//  font-family: 'Oswald';
-//  src: url('fonts/Oswald-Regular/Oswald-Regular.eot'); /* IE9*/
-//  src: local("Oswald"),
-//  url('fonts/Oswald-Regular/Oswald-Regular.woff') format('woff'),
-//  url('fonts/Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
-//  url('fonts/Oswald-Regular/Oswald-Regular.svg') format('svg');
-//  font-weight: 400;
-//  font-style: normal;
-//}
-//
-
-//
-//@font-face {
-//  font-family: 'Oswald';
-//  src: url('fonts/Oswald-Bold/Oswald-Bold.eot'); /* IE9*/
-//  src: local("Oswald"),
-//  url('fonts/Oswald-Bold/Oswald-Bold.woff') format('woff'),
-//  url('fonts/Oswald-Bold/Oswald-Bold.ttf') format('truetype'),
-//  url('fonts/Oswald-Bold/Oswald-Bold.svg') format('svg');
-//  font-weight: 700;
-//  font-style: normal;
-//}
-
-//ICONS---------------------------------------------------------------
 @import "variables";
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?k0yto');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?k0yto#iefix') format('embedded-opentype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?k0yto') format('truetype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?k0yto') format('woff'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?k0yto##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vht4ki');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vht4ki#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?vht4ki') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?vht4ki') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?vht4ki##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+.icon_moon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  //font-family: '#{$icomoon-font-family}' !important;
-  speak: none;
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -52,187 +27,204 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-voice1 {
+.icon-moonvoice1 {
   &:before {
-    content: $icon-voice1;
+    content: $icon-moonvoice1;
   }
 }
-.icon-radio {
+.icon-moonradio {
   &:before {
-    content: $icon-radio;
+    content: $icon-moonradio;
   }
 }
-.icon-phone_bluetooth_speaker {
+.icon-moonphone_bluetooth_speaker {
   &:before {
-    content: $icon-phone_bluetooth_speaker;
+    content: $icon-moonphone_bluetooth_speaker;
   }
 }
-.icon-charg66 {
+.icon-mooncharg66 {
   &:before {
-    content: $icon-charg66;
+    content: $icon-mooncharg66;
   }
 }
-.icon-card1 {
+.icon-mooncard1 {
   &:before {
-    content: $icon-card1;
+    content: $icon-mooncard1;
   }
 }
-.icon-bluetooth_connected {
+.icon-moonbluetooth_connected {
   &:before {
-    content: $icon-bluetooth_connected;
+    content: $icon-moonbluetooth_connected;
   }
 }
-.icon-aux10 {
+.icon-moonaux10 {
   &:before {
-    content: $icon-aux10;
+    content: $icon-moonaux10;
   }
 }
-.icon-aux5 {
+.icon-moonaux5 {
   &:before {
-    content: $icon-aux5;
+    content: $icon-moonaux5;
   }
 }
-.icon-camera {
+.icon-moonuniE259 {
   &:before {
-    content: $icon-camera;
+    content: $icon-moonuniE259;
   }
 }
-.icon-headphones {
+.icon-moonuniE114 {
   &:before {
-    content: $icon-headphones;
+    content: $icon-moonuniE114;
   }
 }
-.icon-music {
+.icon-moonuniE014 {
   &:before {
-    content: $icon-music;
+    content: $icon-moonuniE014;
   }
 }
-.icon-mic {
+.icon-moonuniE013 {
   &:before {
-    content: $icon-mic;
+    content: $icon-moonuniE013;
   }
 }
-.icon-cart {
+.icon-mooncamera {
   &:before {
-    content: $icon-cart;
+    content: $icon-mooncamera;
   }
 }
-.icon-credit-card {
+.icon-moonheadphones {
   &:before {
-    content: $icon-credit-card;
+    content: $icon-moonheadphones;
   }
 }
-.icon-location {
+.icon-moonmusic {
   &:before {
-    content: $icon-location;
+    content: $icon-moonmusic;
   }
 }
-.icon-wrench {
+.icon-moonmic {
   &:before {
-    content: $icon-wrench;
+    content: $icon-moonmic;
   }
 }
-.icon-cog {
+.icon-mooncart {
   &:before {
-    content: $icon-cog;
+    content: $icon-mooncart;
   }
 }
-.icon-cogs {
+.icon-mooncredit-card {
   &:before {
-    content: $icon-cogs;
+    content: $icon-mooncredit-card;
   }
 }
-.icon-fire {
+.icon-moonlocation {
   &:before {
-    content: $icon-fire;
+    content: $icon-moonlocation;
   }
 }
-.icon-power {
+.icon-moonwrench {
   &:before {
-    content: $icon-power;
+    content: $icon-moonwrench;
   }
 }
-.icon-checkmark2 {
+.icon-mooncog {
   &:before {
-    content: $icon-checkmark2;
+    content: $icon-mooncog;
   }
 }
-.icon-facebook {
+.icon-mooncogs {
   &:before {
-    content: $icon-facebook;
+    content: $icon-mooncogs;
   }
 }
-.icon-instagram {
+.icon-moonfire {
   &:before {
-    content: $icon-instagram;
+    content: $icon-moonfire;
   }
 }
-.icon-twitter {
+.icon-moonpower {
   &:before {
-    content: $icon-twitter;
+    content: $icon-moonpower;
   }
 }
-.icon-youtube {
+.icon-mooncheckmark2 {
   &:before {
-    content: $icon-youtube;
+    content: $icon-mooncheckmark2;
   }
 }
-.icon-dropbox {
+.icon-moonfacebook {
   &:before {
-    content: $icon-dropbox;
+    content: $icon-moonfacebook;
   }
 }
-.icon-cloud {
+.icon-mooninstagram {
   &:before {
-    content: $icon-cloud;
+    content: $icon-mooninstagram;
   }
 }
-.icon-github {
+.icon-moontwitter {
   &:before {
-    content: $icon-github;
+    content: $icon-moontwitter;
   }
 }
-.icon-wordpress {
+.icon-moonyoutube {
   &:before {
-    content: $icon-wordpress;
+    content: $icon-moonyoutube;
   }
 }
-.icon-apple {
+.icon-moondropbox {
   &:before {
-    content: $icon-apple;
+    content: $icon-moondropbox;
   }
 }
-.icon-android {
+.icon-mooncloud {
   &:before {
-    content: $icon-android;
+    content: $icon-mooncloud;
   }
 }
-.icon-windows {
+.icon-moongithub {
   &:before {
-    content: $icon-windows;
+    content: $icon-moongithub;
   }
 }
-.icon-linkedin {
+.icon-moonwordpress {
   &:before {
-    content: $icon-linkedin;
+    content: $icon-moonwordpress;
   }
 }
-.icon-pinterest {
+.icon-moonapple {
   &:before {
-    content: $icon-pinterest;
+    content: $icon-moonapple;
   }
 }
-.icon-chrome {
+.icon-moonandroid {
   &:before {
-    content: $icon-chrome;
+    content: $icon-moonandroid;
   }
 }
-.icon-git {
+.icon-moonwindows {
   &:before {
-    content: $icon-git;
+    content: $icon-moonwindows;
   }
 }
-
-
-//------------------------------------------------------------------
+.icon-moonlinkedin {
+  &:before {
+    content: $icon-moonlinkedin;
+  }
+}
+.icon-moonpinterest {
+  &:before {
+    content: $icon-moonpinterest;
+  }
+}
+.icon-moonchrome {
+  &:before {
+    content: $icon-moonchrome;
+  }
+}
+.icon-moongit {
+  &:before {
+    content: $icon-moongit;
+  }
+}
 

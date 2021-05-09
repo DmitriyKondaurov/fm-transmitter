@@ -1,109 +1,121 @@
-.icon-voice1 {
+.icon-moonvoice1 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
 }
-.icon-radio {
+.icon-moonradio {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
 }
-.icon-phone_bluetooth_speaker {
+.icon-moonphone_bluetooth_speaker {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;');
 }
-.icon-charg66 {
+.icon-mooncharg66 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
 }
-.icon-card1 {
+.icon-mooncard1 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');
 }
-.icon-bluetooth_connected {
+.icon-moonbluetooth_connected {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
 }
-.icon-aux10 {
+.icon-moonaux10 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;');
 }
-.icon-aux5 {
+.icon-moonaux5 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;');
 }
-.icon-camera {
+.icon-moonuniE259 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe259;');
+}
+.icon-moonuniE114 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe114;');
+}
+.icon-moonuniE014 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe014;');
+}
+.icon-moonuniE013 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe013;');
+}
+.icon-mooncamera {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90f;');
 }
-.icon-headphones {
+.icon-moonheadphones {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe910;');
 }
-.icon-music {
+.icon-moonmusic {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;');
 }
-.icon-mic {
+.icon-moonmic {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91e;');
 }
-.icon-cart {
+.icon-mooncart {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe93a;');
 }
-.icon-credit-card {
+.icon-mooncredit-card {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe93f;');
 }
-.icon-location {
+.icon-moonlocation {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe947;');
 }
-.icon-wrench {
+.icon-moonwrench {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe991;');
 }
-.icon-cog {
+.icon-mooncog {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe994;');
 }
-.icon-cogs {
+.icon-mooncogs {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe995;');
 }
-.icon-fire {
+.icon-moonfire {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe9a9;');
 }
-.icon-power {
+.icon-moonpower {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe9b5;');
 }
-.icon-checkmark2 {
+.icon-mooncheckmark2 {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea11;');
 }
-.icon-facebook {
+.icon-moonfacebook {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea91;');
 }
-.icon-instagram {
+.icon-mooninstagram {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea92;');
 }
-.icon-twitter {
+.icon-moontwitter {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea96;');
 }
-.icon-youtube {
+.icon-moonyoutube {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea9d;');
 }
-.icon-dropbox {
+.icon-moondropbox {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaae;');
 }
-.icon-cloud {
+.icon-mooncloud {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaaf;');
 }
-.icon-github {
+.icon-moongithub {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab0;');
 }
-.icon-wordpress {
+.icon-moonwordpress {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab4;');
 }
-.icon-apple {
+.icon-moonapple {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeabe;');
 }
-.icon-android {
+.icon-moonandroid {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac0;');
 }
-.icon-windows {
+.icon-moonwindows {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac2;');
 }
-.icon-linkedin {
+.icon-moonlinkedin {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac9;');
 }
-.icon-pinterest {
+.icon-moonpinterest {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xead2;');
 }
-.icon-chrome {
+.icon-moonchrome {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xead9;');
 }
-.icon-git {
+.icon-moongit {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae7;');
 }
 
