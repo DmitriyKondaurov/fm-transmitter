@@ -30,7 +30,7 @@ function cssLibsTask() {
         .pipe(rename({suffix: '.min'}))
         .pipe(dest('./wp-content/themes/landing-page'));
 }
-
+  
 function browserSyncTask() {
     return  browserSync.init({
             // baseDir: './wp-content/themes',
