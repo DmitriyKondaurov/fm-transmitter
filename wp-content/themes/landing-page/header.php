@@ -35,9 +35,9 @@
 </style>
 <body <?php body_class(); ?>>
 
-<div class="loader">
-    <div class="loader_inner"></div>
-</div>
+<!--<div class="loader">-->
+<!--    <div class="loader_inner"></div>-->
+<!--</div>-->
 <div itemscope itemtype="http://schema.org/Product" id="page" class="site"> <!--микроданные-->
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 
