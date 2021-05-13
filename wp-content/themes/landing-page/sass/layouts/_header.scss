@@ -30,6 +30,10 @@
   .logo {
     margin: 0 10px 0 0;
   }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
 
   .phone {
     float: right;
