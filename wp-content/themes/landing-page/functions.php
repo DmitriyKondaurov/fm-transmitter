@@ -43,6 +43,7 @@ function crb_load() {
 	require_once( 'includes/carbon-fields/vendor/autoload.php' );
 	\Carbon_Fields\Carbon_Fields::boot();
 }
+add_action( 'wp_print_styles',     'my_deregister_styles', 100 );
 
 function underscores_child_scripts() {
 	$version = '0.0.0.0';
