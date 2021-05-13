@@ -27,10 +27,10 @@ $(document).ready(function() {
     $(".about_full_spec li:nth-child(8) p").animated("fadeInUp", "fadeOutUp");
 });
 // __________________Preload __________________________
-// $(window).on("load", function() {
-//     $(".loader_inner").fadeOut();
-//     $(".loader").delay(400).fadeOut("slow");
-// });
+$(window).on("load", function() {
+    $(".loader_inner").fadeOut();
+    $(".loader").delay(400).fadeOut("slow");
+});
 $(function() {
     // clicking the "down" button will make the page scroll to the $elem's height
     $('#nav_down').click(
