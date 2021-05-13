@@ -32,7 +32,8 @@ class CallToActionWidget extends Widget {
 				Field::make( 'text', 'items_left_amount', 'amount' )->set_width( 5 )
 				                                                    ->set_attribute( 'type', 'number' ),
 				Field::make( 'text', 'items_left_pieces', 'pcs' )->set_width( 5 ),
-				Field::make( 'text', 'order_button', 'Order button text' )->set_width( 50 ),
+				Field::make( 'text', 'order_button_text', 'Order button text' )->set_width( 50 ),
+				Field::make( 'text', 'order_button_class', 'Order button class' )->set_width( 50 ),
 				Field::make( 'textarea', 'button_script', 'Order button script for "Bitrix24"' )
 			));
 		$this->print_wrappers = false;
@@ -48,7 +49,8 @@ class CallToActionWidget extends Widget {
 					<span>' . $instance['current_price'] .'</span><span>'. $instance['price_currency'] . '</span>
               </span></div>';
 		echo $instance['button_script'];
-		echo '<button class="b24-web-form-popup-btn-8 order_button">' . $instance['order_button'] . '</button>';
+		echo '<button class="order_button '.$instance['order_button_class'].'">' .
+		$instance['order_button_text'] . '</button>';
 		echo '<div>' . $instance['items_left_text'] ;
 		echo '<span class="left_pcs">' . $instance['items_left_amount'] . '</span>';
 		echo $instance['items_left_pieces'] . '</div>';
