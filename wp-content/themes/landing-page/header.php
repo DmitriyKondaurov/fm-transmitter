@@ -52,6 +52,12 @@
 							     28, 28)) ?>" alt="logo" height="28" width="28"><?php
 	                echo $GLOBALS['custom_global_variable']['site_logo_text'] ?>
                     <span class="brand"> <?php echo $GLOBALS['custom_global_variable']['brand_name']?></span></a></h1>
+	        <?php
+	        if ( is_front_page() ) : ?>
+                <div class="login-container">
+                    <a href="<?php echo wp_login_url(); ?>" class="login-url" title="Login">Login</a>
+                </div>
+	        <?php endif; ?>
             <div class="phone">
                 <a href="viber://add?number=380978314414" class="tel"><span class="viber">Viber:</span>
 	                <?php echo $GLOBALS['custom_global_variable']['phone']?></a>

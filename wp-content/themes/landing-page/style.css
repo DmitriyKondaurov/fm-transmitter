@@ -929,7 +929,13 @@ div[data-bx-form-popup-close] {
     background-color: rgba(255, 150, 22, 0.3); }
   .site-header .site-branding {
     max-width: 1280px;
-    margin: auto; }
+    margin: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
   .site-header .site-title {
     display: inline-block;
     margin: auto;
@@ -950,6 +956,14 @@ div[data-bx-form-popup-close] {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .site-header .login-url {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: -6px; }
   .site-header .phone {
     float: right;
     margin: auto;

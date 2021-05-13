@@ -12,6 +12,8 @@
   .site-branding {
     max-width: $wrapper;
     margin: auto;
+    display: flex;
+    justify-content: space-evenly;
   }
   .site-title {
     display: inline-block;
@@ -30,9 +32,20 @@
   .logo {
     margin: 0 10px 0 0;
   }
+
   .logo-container {
     display: flex;
     align-items: center;
+  }
+
+  .login-url {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: -6px;
   }
 
   .phone {
