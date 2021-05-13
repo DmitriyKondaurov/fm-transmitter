@@ -33,6 +33,12 @@ body {
     padding: 10px;
   }
 }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .wrapper  {
   max-width: $wrapper;
   margin: auto;
@@ -60,6 +66,18 @@ body {
     background-position: center center;
     background-color: #000;
   }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px; }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px; }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; }
 }
 
 @media screen and ($xs) {

@@ -51,7 +51,7 @@ function browserSyncReloadTask(cb) {
 function scriptsTask() {
     return src([
         './bower_components/jquery/dist/jquery.min.js',
-        './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+        // './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         './bower_components/owl.carousel/dist/owl.carousel.min.js',
         './bower_components/parallax.js/parallax.min.js',
         './bower_components/waypoints/lib/jquery.waypoints.min.js',
