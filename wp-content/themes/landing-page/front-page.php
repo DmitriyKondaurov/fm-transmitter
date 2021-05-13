@@ -52,8 +52,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                                         <div><img src="<?php echo wp_get_original_image_url( $slide ); ?>"
                                                   class="main_img"
                                                   width="300" height="300"
-<!--                                                  title="FM модулятор 'BT-800'"-->
-<!--                                                  alt="FM модулятор 'BT-800'"-->
+                                                  alt=""
                                             >
                                         </div>
                                     <?php
@@ -92,8 +91,7 @@ $current_post_content = apply_filters('the_content', $current_post);
 	                                    $GLOBALS['custom_global_variable']['my_brand_icon'] ) ?>"
                                          class="brand_img_icon"
                                          width="85" height="85"
-<!--                                         title="FM модулятор 'BT-800'"-->
-<!--                                         alt="FM модулятор 'BT-800'"-->
+                                         alt=""
                                     >
 	                            <?php endif; ?>
                             </td>
@@ -103,8 +101,7 @@ $current_post_content = apply_filters('the_content', $current_post);
 	                                    $GLOBALS['custom_global_variable']['other_brand_icon'] ) ?>"
                                          class="brand_img_icon"
                                          width="85" height="85"
-<!--                                         title="другой FM модулятор"-->
-<!--                                         alt="FM модулятор"-->
+                                         alt=""
                                     >
 	                            <?php endif; ?>
                             </td>
@@ -164,8 +161,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                                 <img src="<?php echo wp_get_original_image_url(
 	                                carbon_get_post_meta( $page_id, 'spec_image' ) ) ?>"
                                      width="640" height="626"
-<!--                                     alt="explain device FM модулятор 'BT-800'" -->
-<!--                                     title="Спецификация на FM модулятор 'BT-800'"-->
+                                     alt=""
                                 >
                             </div>
                         </div>
