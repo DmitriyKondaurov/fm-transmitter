@@ -31,7 +31,7 @@ $current_post_content = apply_filters('the_content', $current_post);
                     <div class="brand_name">
 						<?php if ( carbon_get_post_meta( $page_id, 'hero_sticker' ) ): ?>
                             <img src="<?php echo wp_get_original_image_url( carbon_get_post_meta( $page_id, 'hero_sticker' ) ) ?>"
-                                 class="brand_new" alt="">
+                                 class="brand_new" width="180" height="36" alt="brand new">
 						<?php endif; ?>
                         <h2 class="slogan">
                             <span itemprop="name"><!--микроданные-->
@@ -50,9 +50,11 @@ $current_post_content = apply_filters('the_content', $current_post);
 							if ( $slides ) {
 								foreach ( $slides as $slide ) {?>
                                         <div><img src="<?php echo wp_get_original_image_url( $slide ); ?>"
-                                                  alt="FM модулятор 'BT-800'"
-                                                  title="FM модулятор 'BT-800'"
-                                                  class="main_img">
+                                                  class="main_img"
+                                                  width="300" height="300"
+<!--                                                  title="FM модулятор 'BT-800'"-->
+<!--                                                  alt="FM модулятор 'BT-800'"-->
+                                            >
                                         </div>
                                     <?php
 								}
@@ -88,16 +90,22 @@ $current_post_content = apply_filters('the_content', $current_post);
 	                            <?php if ( $GLOBALS['custom_global_variable']['my_brand_icon'] ): ?>
                                     <img itemprop="logo" src="<?php echo wp_get_original_image_url(
 	                                    $GLOBALS['custom_global_variable']['my_brand_icon'] ) ?>"
-                                         alt="FM модулятор 'BT-800'" title="FM модулятор 'BT-800'"
-                                         class="brand_img_icon">
+                                         class="brand_img_icon"
+                                         width="85" height="85"
+<!--                                         title="FM модулятор 'BT-800'"-->
+<!--                                         alt="FM модулятор 'BT-800'"-->
+                                    >
 	                            <?php endif; ?>
                             </td>
                             <td class="brands_icons">
 	                            <?php if ( $GLOBALS['custom_global_variable']['other_brand_icon'] ): ?>
                                     <img src="<?php echo wp_get_original_image_url(
 	                                    $GLOBALS['custom_global_variable']['other_brand_icon'] ) ?>"
-                                         alt="FM модулятор" title="другой FM модулятор"
-                                         class="brand_img_icon">
+                                         class="brand_img_icon"
+                                         width="85" height="85"
+<!--                                         title="другой FM модулятор"-->
+<!--                                         alt="FM модулятор"-->
+                                    >
 	                            <?php endif; ?>
                             </td>
                         </tr>
@@ -155,8 +163,10 @@ $current_post_content = apply_filters('the_content', $current_post);
                             <div class="exp_img">
                                 <img src="<?php echo wp_get_original_image_url(
 	                                carbon_get_post_meta( $page_id, 'spec_image' ) ) ?>"
-                                     alt="explain device FM модулятор 'BT-800'" title="Спецификация на FM модулятор
-                                     'BT-800'">
+                                     width="640" height="626"
+<!--                                     alt="explain device FM модулятор 'BT-800'" -->
+<!--                                     title="Спецификация на FM модулятор 'BT-800'"-->
+                                >
                             </div>
                         </div>
                     </div>
