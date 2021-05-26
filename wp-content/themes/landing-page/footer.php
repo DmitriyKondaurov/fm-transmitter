@@ -24,7 +24,8 @@
                 <ul class="social">
                 <?php if ($GLOBALS['custom_global_variable']['fb_url']):?>
                     <li>
-                        <a class="facebook-icon" href="<?php echo $GLOBALS['custom_global_variable']['fb_url']?>" target="_blank">
+                        <a class="facebook-icon" href="<?php echo $GLOBALS['custom_global_variable']['fb_url']?>"
+                           target="_blank">
                             <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
                     </li>
                 <?php endif; ?>

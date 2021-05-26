@@ -1189,8 +1189,8 @@ div.call_to_action {
     border-bottom: 1px solid var(--brand-color, #FF9616); }
     .hero .brand_name img.brand_new {
       position: relative;
-      top: 0;
-      left: 50%;
+      top: 50px;
+      left: 20px;
       width: 180px;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);

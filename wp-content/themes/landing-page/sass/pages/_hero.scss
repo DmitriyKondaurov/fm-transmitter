@@ -8,8 +8,8 @@
     border-bottom: 1px solid var(--brand-color, $brand-color);
     img.brand_new {
       position: relative;
-      top: 0;
-      left: 50%;
+      top: 50px;
+      left: 20px;
       width: 180px;
       transform: translateX(-50%);
       animation-delay: 0.4s;
