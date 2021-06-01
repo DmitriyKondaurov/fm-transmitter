@@ -11,7 +11,7 @@ use Carbon_Fields\Field\Complex_Field;
 Container::make( 'post_meta', 'Landing Page content' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
-         ->where( 'user_role', '=', 'administrator' )
+         ->where( 'current_user_role', 'IN', array( 'administrator', 'editor' ) )
          ->add_tab('HERO (section)', array(
 	         Field::make( 'image', 'hero_bg', 'Section background' ),
 	         Field::make( 'text', 'hero_banner', 'Hero Banner' )->set_width( 50 ),
