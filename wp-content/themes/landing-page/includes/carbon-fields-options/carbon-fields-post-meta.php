@@ -8,21 +8,20 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 use Carbon_Fields\Field\Complex_Field;
 
-Container::make( 'post_meta', 'HERO' )
+Container::make( 'post_meta', 'Landing Page content' )
          ->where( 'post_type', '=', 'page' )
          ->where( 'post_id', '=', 2 )
-         ->add_fields( array(
+         ->where( 'user_role', '=', 'administrator' )
+         ->add_tab('HERO (section)', array(
+	         Field::make( 'image', 'hero_bg', 'Section background' ),
 	         Field::make( 'text', 'hero_banner', 'Hero Banner' )->set_width( 50 ),
 	         Field::make( 'image', 'hero_sticker', 'Hero sticker "brand new"' )->set_width( 50 ),
 	         Field::make( 'media_gallery', 'hero_gallery', 'Brand gallery (slider)' ),
 	         Field::make( 'rich_text', 'hero_shot_spec', 'Shot specification' )->set_classes( 'hero_shot_spec' ),
-	         Field::make( 'image', 'hero_bg', 'Hero background' ),
-	         Field::make( 'separator', 'crb_separator', 'Call to action form is widget, you can find it in sidebars menu' ),
-         ) );
-Container::make( 'post_meta', 'ADVANTAGES' )
-         ->where( 'post_type', '=', 'page' )
-         ->where( 'post_id', '=', 2 )
-         ->add_fields( array(
+	         Field::make( 'separator', 'crb_separator', 'Call to action form is widget, you can find it in sidebars menu' )
+	              ->set_classes('crb_separator-attention'),
+         ) )
+         ->add_tab('ADVANTAGES (section)', array(
 	         Field::make( 'text', 'sec_advantages', 'Section caption' ),
 	         Field::make( 'image', 'my_brand_icon' )->set_width( 50 ),
 	         Field::make( 'image', 'other_brand_icon' )->set_width( 50 ),
@@ -46,13 +45,10 @@ Container::make( 'post_meta', 'ADVANTAGES' )
 	              )
 	              ->set_max( 10 )
 	              ->set_header_template( '<% if (advantage) { %>Advantage: <%- advantage %><% } %>' )
-         ) );
-Container::make( 'post_meta', 'FUNCTIONS' )
-         ->where( 'post_type', '=', 'page' )
-         ->where( 'post_id', '=', 2 )
-         ->add_fields( array(
+         ) )
+         ->add_tab('FUNCTIONS (section)', array(
 	         Field::make( 'text', 'sec_functions', 'Section caption' ),
-	         Field::make( 'image', 'sec_functions_bg', 'Section functions background' ),
+	         Field::make( 'image', 'sec_functions_bg', 'Section background' ),
 	         Field::make( 'complex', 'crb_functions', 'List of support functions (max 10)' )
 	              ->set_collapsed( false )
 	              ->add_fields( 'crb_function', array(
@@ -100,28 +96,16 @@ Container::make( 'post_meta', 'FUNCTIONS' )
 		              )
 	              )
 	              ->set_max( 10 )
-         ) );
-
-Container::make( 'post_meta', 'SPECIFICATION' )
-         ->where( 'post_type', '=', 'page' )
-         ->where( 'post_id', '=', 2 )
-         ->add_fields( array(
+         ) )
+         ->add_tab('SPECIFICATION (section)', array(
 	         Field::make( 'text', 'sec_specification', 'Section caption' ),
 	         Field::make( 'image', 'spec_image' ),
-         ) );
-
-Container::make( 'post_meta', 'VIDEO OVERVIEW' )
-         ->where( 'post_type', '=', 'page' )
-         ->where( 'post_id', '=', 2 )
-         ->add_fields( array(
+         ) )
+         ->add_tab('VIDEO OVERVIEW (section)', array(
 	         Field::make( 'text', 'sec_screencast', 'Section caption' ),
 	         Field::make( 'text', 'link_overview', 'Add youtube link of overview your product here...' ),
-//
-         ) );
-Container::make( 'post_meta', 'SHIPMENT INFO' )
-         ->where( 'post_type', '=', 'page' )
-         ->where( 'post_id', '=', 2 )
-         ->add_fields( array(
+         ) )
+         ->add_tab('SHIPMENT INFO (section)', array(
 	         Field::make( 'text', 'sec_shipment', 'Section caption' ),
 	         Field::make( 'rich_text', 'shipment_info', ''),
          ) );

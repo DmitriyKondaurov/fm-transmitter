@@ -12,8 +12,8 @@ RewriteRule . /index.php [L]
 
 # END WordPressp
 # BEGIN ShortPixelWebp
-# Директивы (строки) между `BEGIN ShortPixelWebp` и `END ShortPixelWebp`
-# созданы автоматически и подлежат изменению только через фильтры WordPress.
-# Сделанные вручную изменения между этими маркерами будут перезаписаны.
+# The directives (lines) between "BEGIN ShortPixelWebp" and "END ShortPixelWebp" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
 
 # END ShortPixelWebp

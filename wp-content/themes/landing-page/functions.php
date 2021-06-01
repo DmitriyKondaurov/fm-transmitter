@@ -1,4 +1,14 @@
 <?php
+//* Add CSS directly into the admin head
+add_action( 'admin_head', 'rv_custom_wp_admin_style_head' );
+function rv_custom_wp_admin_style_head() { ?>
+	<style>
+		#post-content-0 {display: none}
+		div.edit-post-text-editor {flex-grow: 0}
+		.crb_separator-attention > div.cf-field__body > h3 {color: red}
+	</style>
+<?php }
+
 //______________________CARBON-FIELDS_____________________________________________
 use function Sodium\add;
 
