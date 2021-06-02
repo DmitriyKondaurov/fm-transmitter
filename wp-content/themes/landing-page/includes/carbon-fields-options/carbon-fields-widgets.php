@@ -19,7 +19,7 @@ class CallToActionWidget extends Widget {
 				Field::make( 'select', 'price_currency', 'Price currency' )->set_width( 14 )->add_options(
 					array(
 					'eur' => __( 'EUR' ),
-					'usd' => __( 'USD' ),
+					'$' => __( 'USD' ),
 					'pln' => __( 'PLN' ),
 					'грн' => __( 'UAH' ),
 					'руб' => __( 'RUB' ),
