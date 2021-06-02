@@ -12,6 +12,7 @@
     border-color: #894d0f;
     color: var(--main-text-color, $main-text-color);
     box-shadow: 0 0 20px -1px;
+    cursor: pointer;
   }
   &:active{
     transition: all 20ms;

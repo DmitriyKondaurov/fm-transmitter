@@ -887,7 +887,8 @@ div[data-bx-form-popup-close] {
   .order_button:hover, #submit:hover {
     border-color: #894d0f;
     color: var(--main-text-color, #FFFFE1);
-    box-shadow: 0 0 20px -1px; }
+    box-shadow: 0 0 20px -1px;
+    cursor: pointer; }
   .order_button:active, #submit:active {
     transition: all 20ms;
     -webkit-transform: translateY(2px);
