@@ -1117,6 +1117,7 @@ div.call_to_action {
     text-align: center;
     margin: 10px 0 10px 0; }
     div.call_to_action .prices .old_price {
+      padding: 10px;
       display: inline-block;
       color: #8A2525;
       font: 700 24px/28px "Arial";
@@ -1191,11 +1192,11 @@ div.call_to_action {
     .hero .brand_name img.brand_new {
       position: relative;
       top: 50px;
-      left: 20px;
+      left: -70px;
       width: 180px;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
+      -webkit-transform: scale(0.5);
+          -ms-transform: scale(0.5);
+              transform: scale(0.5);
       -webkit-animation-delay: 0.4s;
               animation-delay: 0.4s; }
     .hero .brand_name .slogan {
@@ -1254,17 +1255,23 @@ div.call_to_action {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+    .hero .brand_name img.brand_new {
+      left: -50px; } }
 
 @media screen and (min-width: 992px) {
   .hero {
-    padding-top: 100px; } }
+    padding-top: 100px; }
+    .hero .brand_name img.brand_new {
+      left: 20px; } }
 
 @media screen and (min-width: 1280px) {
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
     .hero .brand_name .slogan {
-      font: 700 24px/30px "Arial", sans-serif; } }
+      font: 700 24px/30px "Arial", sans-serif; }
+    .hero .brand_name img.brand_new {
+      left: -50px; } }
 
 .explaining {
   background: radial-gradient(#183046, black);

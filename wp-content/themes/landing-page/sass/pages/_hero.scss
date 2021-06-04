@@ -9,9 +9,9 @@
     img.brand_new {
       position: relative;
       top: 50px;
-      left: 20px;
+      left: -70px;
       width: 180px;
-      transform: translateX(-50%);
+      transform: scale(0.5);
       animation-delay: 0.4s;
     }
     .slogan {
@@ -75,12 +75,22 @@
 @media screen and ($sm) {
   .hero {
     padding-top: 50px;
+    .brand_name {
+      img.brand_new {
+        left: -50px;
+      }
+    }
   }
 }
 
 @media screen and ($md) {
   .hero {
     padding-top: 100px;
+    .brand_name {
+      img.brand_new {
+        left: 20px;
+      }
+    }
   }
 }
 
@@ -90,6 +100,9 @@
     .brand_name {
       .slogan {
         font: 700 24px/30px $sec-font;
+      }
+      img.brand_new {
+        left: -50px;
       }
     }
   }
