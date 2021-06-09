@@ -1,5 +1,5 @@
 .explaining {
-  background: radial-gradient(rgb(24, 48, 70), black);
+  background: radial-gradient(rgb(24, 48, 70), var(--spec-bg));
   background-blend-mode: multiply;
   .flex_box {
     display: flex;

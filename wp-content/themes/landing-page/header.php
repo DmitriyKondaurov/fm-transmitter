@@ -31,8 +31,13 @@
         --brand-color: <?php echo carbon_get_theme_option('brand_color')?>;
         --main-text-color: <?php echo carbon_get_theme_option('main-text-color')?>;
         --sec-text-color: <?php echo carbon_get_theme_option('sec-text-color')?>;
+        --hero-bg: <?php echo "url('".wp_get_original_image_url( carbon_get_post_meta( $page_id, 'hero_bg' ) )."')" ?>;
+        --functions-bg: <?php echo "url('".wp_get_original_image_url( carbon_get_post_meta( $page_id, 'sec_functions_bg' ) )."')" ?>;
+        --advantages-bg: <?php echo carbon_get_post_meta( $page_id, 'advantages_bg')?>;
+        --spec-bg: <?php echo carbon_get_post_meta( $page_id, 'spec_bg')?>;
     }
 </style>
+
 <body <?php body_class(); ?>>
 
 <div class="loader">

@@ -1,5 +1,5 @@
 .compare {
-  background: radial-gradient(rgb(49, 49, 49), black);
+  background: radial-gradient(rgb(49, 49, 49), var(--advantages-bg));
   background-blend-mode: multiply;
   .compare_table, th {
     text-align: center;

@@ -19,7 +19,9 @@ Version: 1.0
 :root {
   --brand-color: #FF9616;
   --main-text-color: #FFFFE1;
-  --sec-text-color: #DEF1B8; }
+  --sec-text-color: #DEF1B8;
+  --advantages-bg: #000000;
+  --spec-bg: #000000; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -1182,7 +1184,7 @@ div.call_to_action {
   display: none; }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/4629944500_1576858587.webp) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--hero-bg) center/cover no-repeat;
   background-blend-mode: multiply; }
   .hero .brand_name {
     position: relative;
@@ -1274,7 +1276,7 @@ div.call_to_action {
       left: -50px; } }
 
 .explaining {
-  background: radial-gradient(#183046, black);
+  background: radial-gradient(#183046, var(--spec-bg));
   background-blend-mode: multiply; }
   .explaining .flex_box {
     display: -webkit-flex;
@@ -1442,7 +1444,7 @@ div.call_to_action {
       padding: 2px; }
 
 .compare {
-  background: radial-gradient(#313131, black);
+  background: radial-gradient(#313131, var(--advantages-bg));
   background-blend-mode: multiply; }
   .compare .compare_table, .compare th {
     text-align: center; }
@@ -1465,7 +1467,7 @@ div.call_to_action {
       max-width: inherit; }
 
 .about {
-  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), var(--functions-bg) center/cover no-repeat;
   background-blend-mode: multiply; }
   .about .about_full_spec {
     display: -webkit-flex;

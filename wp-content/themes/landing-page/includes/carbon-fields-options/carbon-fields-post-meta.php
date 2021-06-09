@@ -22,6 +22,7 @@ Container::make( 'post_meta', 'Landing Page content' )
 	              ->set_classes('crb_separator-attention'),
          ) )
          ->add_tab('ADVANTAGES (section)', array(
+	         Field::make( 'color', 'advantages_bg', __( 'Background Color' ) ),
 	         Field::make( 'text', 'sec_advantages', 'Section caption' ),
 	         Field::make( 'image', 'my_brand_icon' )->set_width( 50 ),
 	         Field::make( 'image', 'other_brand_icon' )->set_width( 50 ),
@@ -99,6 +100,7 @@ Container::make( 'post_meta', 'Landing Page content' )
          ) )
          ->add_tab('SPECIFICATION (section)', array(
 	         Field::make( 'text', 'sec_specification', 'Section caption' ),
+	         Field::make( 'color', 'spec_bg', __( 'Background Color' ) ),
 	         Field::make( 'image', 'spec_image' ),
          ) )
          ->add_tab('VIDEO OVERVIEW (section)', array(

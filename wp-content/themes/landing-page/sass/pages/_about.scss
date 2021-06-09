@@ -1,5 +1,5 @@
 .about {
-  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), url(img/bg-hero.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9), rgba(16, 32, 48, 0.9)), var(--functions-bg) center/cover no-repeat;
   background-blend-mode: multiply;
   .about_full_spec {
     display: flex;
