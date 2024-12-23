@@ -1,3 +1,4 @@
+/*
 const   { watch, series, src, dest, parallel}   = require('gulp'),
         sass                                    = require('gulp-sass'),
         concat                                  = require('gulp-concat'),
@@ -61,14 +62,16 @@ function scriptsTask() {
         .pipe(uglify())
         .pipe(dest('./wp-content/themes/landing-page/'))
 }
+*/
 
-function watchTask() {
-    watch('wp-content/themes/landing-page/sass/**/*.+(scss|sass)', sassTask);
-    watch('wp-content/themes/landing-page/**/*.+php').on('change', browserSync.reload);
-    watch(['wp-content/themes/landing-page/**/*.+js',
-        '!./wp-content/themes/landing-page/libs.min.js'], series(scriptsTask, browserSyncReloadTask));
-}
+// function watchTask() {
+//     watch('wp-content/themes/landing-page/sass/**/*.+(scss|sass)', sassTask);
+//     watch('wp-content/themes/landing-page/**/*.+php').on('change', browserSync.reload);
+//     watch(['wp-content/themes/landing-page/**/*.+js',
+//         '!./wp-content/themes/landing-page/libs.min.js'], series(scriptsTask, browserSyncReloadTask));
+// }
 
+/*
 
 //перед watch, build надо сделать clean папки dist
 function clean(cb) {
@@ -81,20 +84,20 @@ function clear(cb) {
     cache.clearAll();
     cb();
 }
-
+*/
 // зжатие картинок
-exports.img = function() {
-    return src('./wp-content/themes/landing-page/img/**/*')
-        .pipe(cache(imagemin({
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            une: [pngquant()]
-        })))
-        .pipe(dest('./wp-content/themes/landing-page/image_min'));
-};
+// exports.img = function() {
+//     return src('./wp-content/themes/landing-page/img/**/*')
+//         .pipe(cache(imagemin({
+//             interlaced: true,
+//             progressive: true,
+//             svgoPlugins: [{removeViewBox: false}],
+//             une: [pngquant()]
+//         })))
+//         .pipe(dest('./wp-content/themes/landing-page/image_min'));
+// };
 //////////////////////////////
 // Default Task
 //////////////////////////////
 
-exports.default = series(clean, clear, sassTask, cssLibsTask, scriptsTask, parallel(browserSyncTask, watchTask) );
+// exports.default = series(clean, clear, sassTask, cssLibsTask, scriptsTask, parallel(browserSyncTask, watchTask) );
